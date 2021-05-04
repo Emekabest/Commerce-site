@@ -1,3 +1,15 @@
+@mixin tab-1 {
+  @media screen and (max-width: 1024) {
+    @content;
+  }
+}
+
+@mixin tab-lg-screen {
+  @media screen and (max-width: 920px) {
+    @content;
+  }
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -52,6 +64,7 @@ body {
       color: white;
     }
   }
+
   li :hover {
     background-color: #d6d6d6;
     color: #111;
@@ -221,9 +234,8 @@ span {
     padding-bottom: 10px;
     font-size: 19px;
   }
+
   .content-price {
     font-weight: bold;
   }
 }
-
-/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,235 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  list-style-type: none;
+  text-decoration: none;
+}
+
+body {
+  position: relative;
+  background-color: #333;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.content-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  height: auto;
+}
+
+.content-container-1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  margin: 30px 0;
+}
+
+.nav {
+  background-color: #1c1c1c;
+  width: 25%;
+  height: 100vh;
+  position: fixed;
+}
+
+.navul-content {
+  text-align: center;
+  padding-top: 120px;
+}
+
+.navul-content li a {
+  padding: 20px 0px;
+  display: block;
+  color: white;
+}
+
+.navul-content li :hover {
+  background-color: #d6d6d6;
+  color: #222;
+}
+
+.content {
+  background-color: #333;
+  width: 75%;
+}
+
+.content-headerbox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  padding: 34px;
+  color: #fff;
+}
+
+.content-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 50rem;
+}
+
+.content-header-register {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 0 10px;
+}
+
+.register-p {
+  display: inline-block;
+  margin-right: 15px;
+}
+
+.register-p a {
+  color: #fff;
+}
+
+.container-sales-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  /* margin-top: 30px; */
+}
+
+.container-sales-container {
+  width: 95%;
+  border-radius: 2.5px;
+  -webkit-box-shadow: 2px 2px 2px 5px #292929;
+  box-shadow: 0px 0px 30px 1px rgba(0, 0, 0, 0.652);
+  text-align: justify;
+  padding: 0 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  /* height: 60vh; */
+}
+
+span {
+  text-decoration: line-through;
+}
+
+.sales-category {
+  padding: 5px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.sales-category-p {
+  width: 100px;
+  height: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 5px;
+  border-radius: 2px;
+}
+
+.sales-category-p a {
+  color: #fff;
+}
+
+.sales-category-p:hover {
+  -webkit-box-shadow: 2px 2px 2px 2px #bebdbd;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.72);
+}
+
+.container-sales-b {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+}
+
+.container-sales {
+  /* width: 240px; */
+  height: auto;
+  text-align: center;
+}
+
+.content-sales-img-wrapper {
+  width: 250px;
+  height: 280px;
+}
+
+.content-sales-img-wrapper .content-sales-img {
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+  padding: 0 5px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+
+.things {
+  width: 100%;
+  text-align: center;
+}
+
+.right-container {
+  /* position: absolute; */
+}
+
+.content-salesOption {
+  padding: 20px;
+  color: #fff;
+}
+
+.content-salesOption .content-name {
+  padding-bottom: 10px;
+  font-size: 19px;
+}
+
+.content-salesOption .content-price {
+  font-weight: bold;
+}
+/*# sourceMappingURL=style.css.map */

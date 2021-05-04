@@ -46,6 +46,7 @@ body {
   }
   &-open-btn {
     padding-right: 15px;
+    display: none;
   }
 
   @include tab {
@@ -66,6 +67,9 @@ body {
     &.open {
       display: block;
     }
+    &-open-btn {
+      display: block;
+    }
   }
 
   @include phone {
@@ -76,6 +80,10 @@ body {
 
     &.open {
       display: flex;
+    }
+    &-open-btn {
+      display: block;
+      font-size: 20px;
     }
   }
 }
@@ -113,6 +121,10 @@ body {
   align-items: center;
   padding: 34px;
   color: #fff;
+
+  @include phone {
+    flex-direction: column;
+  }
 }
 
 .content-header {
@@ -126,7 +138,11 @@ body {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  // width: 50rem;
+  font-size: 12px;
+  padding-bottom: 10px;
+
+  // &-name {
+  // }
 }
 
 .content-header-register {
@@ -225,6 +241,11 @@ span {
 .content-sales-img-wrapper {
   width: 250px;
   height: 280px;
+
+  @include phone {
+    width: 200px;
+    height: 210px;
+  }
 
   .content-sales-img {
     width: 100%;

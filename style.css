@@ -209,6 +209,16 @@ body {
   /* height: 60vh; */
 }
 
+.container-sales-container .container-sales-b {
+  padding: 20px 0px;
+}
+
+.container-sales-container .container-sales-b .container-sales:hover {
+  cursor: pointer;
+  -webkit-box-shadow: 0px 0px 30px 1px rgba(10, 10, 10, 0.563), 0px 0px 30px 1px #212121;
+          box-shadow: 0px 0px 30px 1px rgba(10, 10, 10, 0.563), 0px 0px 30px 1px #212121;
+}
+
 span {
   text-decoration: line-through;
 }

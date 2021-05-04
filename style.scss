@@ -31,9 +31,13 @@ body {
 }
 .right-container {
   flex: 1 1 auto;
+  height: 100vh;
+  overflow-y: scroll;
 }
 .nav {
   flex: 0 0 300px;
+  height: 100vh;
+  overflow-y: auto;
   background-color: rgb(28, 28, 28);
   color: white;
 
@@ -49,7 +53,6 @@ body {
 
     position: fixed;
     width: 300px;
-    height: 100%;
 
     &-close-btn {
       display: block;
@@ -162,6 +165,7 @@ body {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  margin-bottom: 30px;
   /* height: 60vh; */
 }
 

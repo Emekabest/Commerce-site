@@ -24,12 +24,16 @@ body {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 auto;
           flex: 1 1 auto;
+  height: 100vh;
+  overflow-y: scroll;
 }
 
 .nav {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 300px;
           flex: 0 0 300px;
+  height: 100vh;
+  overflow-y: auto;
   background-color: #1c1c1c;
   color: white;
 }
@@ -47,7 +51,6 @@ body {
     display: none;
     position: fixed;
     width: 300px;
-    height: 100%;
   }
   .nav-close-btn {
     display: block;
@@ -177,6 +180,7 @@ body {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  margin-bottom: 30px;
   /* height: 60vh; */
 }
 

@@ -166,6 +166,12 @@ body {
   padding: 0 10px;
 }
 
+@media screen and (max-width: 420px) {
+  .content-header-register {
+    padding: 0;
+  }
+}
+
 .register-p {
   display: inline-block;
   margin-right: 15px;

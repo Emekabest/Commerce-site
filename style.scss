@@ -140,9 +140,6 @@ body {
   align-items: center;
   font-size: 12px;
   padding-bottom: 10px;
-
-  // &-name {
-  // }
 }
 
 .content-header-register {
@@ -150,6 +147,10 @@ body {
   -ms-flex-align: center;
   align-items: center;
   padding: 0 10px;
+
+  @include phone {
+    padding: 0;
+  }
 }
 
 .register-p {

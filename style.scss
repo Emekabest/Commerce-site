@@ -162,7 +162,9 @@ body {
   color: #fff;
 }
 
-.container-sales-box {
+.container-sales-box1,
+.container-sales-box2,
+.container-sales-box3 {
   display: flex;
   width: 100%;
   -webkit-box-pack: center;
@@ -185,7 +187,9 @@ body {
   margin-bottom: 30px;
   /* height: 60vh; */
 
-  .container-sales-b {
+  .container-sales-b1,
+  .container-sales-b2,
+  .container-sales-b3 {
     padding: 20px 0px;
 
     .container-sales:hover {
@@ -235,7 +239,9 @@ span {
   box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.72);
 }
 
-.container-sales-b {
+.container-sales-b1,
+.container-sales-b2,
+.container-sales-b3 {
   display: flex;
   flex-wrap: wrap;
   width: 100%;

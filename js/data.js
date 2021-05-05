@@ -7,7 +7,7 @@ const product = [
         name: "Bigman cloths",
         discount_price: 60,
         main_price: 40,
-        image: "./image/consult.jpg",
+        image: "./image/pexels-photo-2955375.jpeg",
       },
 
       {

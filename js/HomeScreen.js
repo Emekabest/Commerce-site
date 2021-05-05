@@ -1,14 +1,10 @@
 import product from "./data.js";
 
-const containerSales = [
-  document.querySelector(".container-sales-b1"),
-  document.querySelector(".container-sales-b2"),
-  document.querySelector(".container-sales-b3"),
-];
+const Sales_block = document.querySelectorAll(".sales-bk");
 
 const HomeScreen = {
   render() {
-    return containerSales.forEach((eachBlock) => {
+    return Sales_block.forEach((eachBlock) => {
       product.map((product) => {
         if (eachBlock.id.trim() == product.id) {
           product.section.map((eachsalesTag) => {

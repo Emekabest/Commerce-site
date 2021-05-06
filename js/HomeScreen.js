@@ -1,24 +1,22 @@
 import product from "./data.js";
 
-const containerSales = [
-  document.querySelector(".container-sales-b1"),
-  document.querySelector(".container-sales-b2"),
-  document.querySelector(".container-sales-b3"),
-];
+const Sales_block = document.querySelectorAll(".sales-bk");
 
 const HomeScreen = {
   render() {
-    return containerSales.forEach((eachBlock) => {
+    return Sales_block.forEach((eachBlock) => {
       product.map((product) => {
         if (eachBlock.id.trim() == product.id) {
           product.section.map((eachsalesTag) => {
             eachBlock.innerHTML += `<div class="container-sales">
-                  <div class="content-sales-img-wrapper">
+            <a href = "" style = "display:block">
+            <div class="content-sales-img-wrapper">
                       <img
                           src="${eachsalesTag.image}"
-                          class="content-sales-img"
+                          class="content-sales-img" 
                           alt=""
                       />
+                     
                   </div>
                   <div class="content-salesOption">
                       <div class="content-name">
@@ -28,15 +26,13 @@ const HomeScreen = {
                           <p><span>$${eachsalesTag.discount_price}</span> $${eachsalesTag.main_price}</p>
                       </div>
                   </div>
+                   </a>
               </div>`;
           });
         }
       });
     });
   },
-
-  view2: {},
-  view3: {},
 };
 
 HomeScreen.render();

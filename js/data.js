@@ -1,4 +1,5 @@
 const product = [
+  // Box 1
   {
     id: 1,
     section: [
@@ -36,6 +37,8 @@ const product = [
     ],
   },
 
+  // Box 2
+
   {
     id: 2,
     section: [
@@ -72,6 +75,8 @@ const product = [
       },
     ],
   },
+
+  // Box 3
 
   {
     id: 3,

@@ -69,6 +69,7 @@ body {
     }
     &-open-btn {
       display: block;
+      font-size: 1.5rem;
     }
   }
 
@@ -147,6 +148,22 @@ body {
   -ms-flex-align: center;
   align-items: center;
   padding: 0 10px;
+
+  display: flex;
+
+  &-login p {
+    color: #fff;
+  }
+  &-login a {
+    color: #fff;
+  }
+
+  &-signUp a {
+    color: #fff;
+  }
+
+  .login-user-fa {
+  }
 
   @include phone {
     padding: 0;
@@ -297,4 +314,24 @@ span {
   .content-price {
     font-weight: bold;
   }
+}
+.login-user-fa i,
+.signUp-user-fa i {
+  display: none;
+
+  @include phone {
+    display: block;
+    font-size: 20px;
+    padding: 0px 25px;
+  }
+}
+
+.login-user-txt,
+.signUp-user-txt {
+  @include phone {
+    display: none;
+  }
+}
+
+.content-header-register {
 }

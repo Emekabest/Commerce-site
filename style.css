@@ -65,6 +65,7 @@ body {
   }
   .nav-open-btn {
     display: block;
+    font-size: 1.5rem;
   }
 }
 
@@ -164,6 +165,21 @@ body {
   -ms-flex-align: center;
   align-items: center;
   padding: 0 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.content-header-register-login p {
+  color: #fff;
+}
+
+.content-header-register-login a {
+  color: #fff;
+}
+
+.content-header-register-signUp a {
+  color: #fff;
 }
 
 @media screen and (max-width: 420px) {
@@ -335,5 +351,26 @@ span {
 
 .content-salesOption .content-price {
   font-weight: bold;
+}
+
+.login-user-fa i,
+.signUp-user-fa i {
+  display: none;
+}
+
+@media screen and (max-width: 420px) {
+  .login-user-fa i,
+  .signUp-user-fa i {
+    display: block;
+    font-size: 20px;
+    padding: 0px 25px;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .login-user-txt,
+  .signUp-user-txt {
+    display: none;
+  }
 }
 /*# sourceMappingURL=style.css.map */

@@ -16,7 +16,7 @@ const HomeScreen = {
                           class="content-sales-img" 
                           alt=""
                       />
-                     
+      
                   </div>
                   <div class="content-salesOption">
                       <div class="content-name">

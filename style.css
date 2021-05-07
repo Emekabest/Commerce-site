@@ -172,6 +172,7 @@ body {
 
 .content-header-register-login p {
   color: #fff;
+  display: block;
 }
 
 .content-header-register-login a {

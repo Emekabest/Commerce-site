@@ -35,4 +35,4 @@ const HomeScreen = {
   },
 };
 
-HomeScreen.render();
+export { HomeScreen };

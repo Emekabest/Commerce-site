@@ -160,6 +160,10 @@ body {
   padding-bottom: 10px;
 }
 
+.content-header-name h1 a {
+  color: #fff;
+}
+
 .content-header-register {
   -webkit-box-align: center;
   -ms-flex-align: center;

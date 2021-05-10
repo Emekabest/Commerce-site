@@ -1,6 +1,6 @@
 import { allProducts } from "./data.js";
 
-const productDetails_div = document.querySelector(".product_details");
+const mainArea_main = document.querySelector(".main-area");
 
 class ProductScreen {
   constructor() {
@@ -24,7 +24,7 @@ class ProductScreen {
 
   display() {
     console.log(this.product);
-    productDetails_div.innerHTML = `
+    mainArea_main.innerHTML = `
           <div>
             
           </div>

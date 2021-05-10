@@ -202,9 +202,7 @@ body {
   color: #fff;
 }
 
-.container-sales-box1,
-.container-sales-box2,
-.container-sales-box3 {
+.product-cards {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

@@ -12,7 +12,7 @@ const HomeScreen = {
             <a href = "" style = "display:block">
             <div class="content-sales-img-wrapper">
                       <img
-                          src="${eachsalesTag.image}"
+                          src="../image/${eachsalesTag.image}"
                           class="content-sales-img" 
                           alt=""
                       />
@@ -35,4 +35,6 @@ const HomeScreen = {
   },
 };
 
-export { HomeScreen };
+HomeScreen.render();
+
+// export { HomeScreen };

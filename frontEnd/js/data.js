@@ -8,7 +8,7 @@ const product = [
         name: "Bigman cloths",
         discount_price: 60,
         main_price: 40,
-        image: "./image/pexels-photo-2955375.jpeg",
+        image: "pexels-photo-2955375.jpeg",
       },
 
       {
@@ -16,7 +16,7 @@ const product = [
         name: "Shakky",
         discount_price: 90,
         main_price: 70,
-        image: "./image/pexels-photo-3310694.jpeg",
+        image: "pexels-photo-3310694.jpeg",
       },
 
       {
@@ -24,7 +24,7 @@ const product = [
         name: "Kins quatty wears",
         discount_price: 140,
         main_price: 100,
-        image: "./image/pexels-photo-2728263.jpeg",
+        image: "pexels-photo-2728263.jpeg",
       },
 
       {
@@ -32,7 +32,7 @@ const product = [
         name: "Broad arms",
         discount_price: 90,
         main_price: 80,
-        image: "./image/pexels-photo-3193731.jpeg",
+        image: "pexels-photo-3193731.jpeg",
       },
     ],
   },
@@ -47,7 +47,7 @@ const product = [
         name: "Bigman cloths",
         discount_price: 60,
         main_price: 40,
-        image: "./image/pexels-photo-1719641.jpeg",
+        image: "pexels-photo-1719641.jpeg",
       },
 
       {
@@ -55,7 +55,7 @@ const product = [
         name: "Shakky",
         discount_price: 90,
         main_price: 70,
-        image: "./image/pexels-photo-2726161.jpeg",
+        image: "pexels-photo-2726161.jpeg",
       },
 
       {
@@ -63,7 +63,7 @@ const product = [
         name: "Kins quatty wears",
         discount_price: 140,
         main_price: 100,
-        image: "./image/pexels-photo-2922301.jpeg",
+        image: "pexels-photo-2922301.jpeg",
       },
 
       {
@@ -71,7 +71,7 @@ const product = [
         name: "Broad arms",
         discount_price: 90,
         main_price: 80,
-        image: "./image/pexels-photo-4890733.jpeg",
+        image: "pexels-photo-4890733.jpeg",
       },
     ],
   },
@@ -86,7 +86,7 @@ const product = [
         name: "Bigman cloths",
         discount_price: 60,
         main_price: 40,
-        image: "./image/pexels-photo-6112012.jpeg",
+        image: "pexels-photo-6112012.jpeg",
       },
 
       {
@@ -94,7 +94,7 @@ const product = [
         name: "Shakky",
         discount_price: 90,
         main_price: 70,
-        image: "./image/pexels-photo-3907595.jpeg",
+        image: "pexels-photo-3907595.jpeg",
       },
 
       {
@@ -102,7 +102,7 @@ const product = [
         name: "Kins quatty wears",
         discount_price: 140,
         main_price: 100,
-        image: "./image/pexels-photo-2466756(1).jpeg",
+        image: "pexels-photo-2466756(1).jpeg",
       },
 
       {
@@ -110,7 +110,7 @@ const product = [
         name: "Broad arms",
         discount_price: 90,
         main_price: 80,
-        image: "./image/pexels-photo-952214.jpeg",
+        image: "pexels-photo-952214.jpeg",
       },
     ],
   },

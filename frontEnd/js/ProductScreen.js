@@ -1,4 +1,4 @@
-import { products } from "./data.js";
+import { allProducts } from "./data.js";
 
 const productDetails_div = document.querySelector(".product_details");
 
@@ -32,7 +32,7 @@ class ProductScreen {
   }
 
   fetchProduct() {
-    const product = products.find((product) => {
+    const product = allProducts.find((product) => {
       console.log(product.section, this.slug);
       return product.slug === this.slug;
     });

@@ -263,14 +263,9 @@ span {
   box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.72);
 }
 
-.container-sales-b1,
-.container-sales-b2,
-.container-sales-b3 {
+.container-sales-boxes {
   display: flex;
-  flex-wrap: wrap;
-  width: 100%;
-  -ms-flex-pack: distribute;
-  justify-content: space-around;
+  overflow-x: auto;
 }
 
 .container-sales {

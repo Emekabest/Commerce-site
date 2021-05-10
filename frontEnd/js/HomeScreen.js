@@ -9,12 +9,12 @@ const HomeScreen = {
         if (eachBlock.id.trim() == product.id) {
           product.section.map((eachsalesTag) => {
             eachBlock.innerHTML += `<div class="container-sales">
-            <a href = "" style = "display:block">
+            <a href="./product.html?slug=${eachsalesTag.slug}" style="display:block">
             <div class="content-sales-img-wrapper">
                       <img
                           src="../image/${eachsalesTag.image}"
                           class="content-sales-img" 
-                          alt=""
+                          alt="${eachsalesTag.name}"
                       />
       
                   </div>

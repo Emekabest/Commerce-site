@@ -13,5 +13,5 @@ closeBtn_el.addEventListener("click", () => {
 });
 
 for (let i = 0; i < product.length; i++) {
-  console.log(product[i]);
+  // console.log(product[i]);
 }

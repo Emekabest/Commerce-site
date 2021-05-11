@@ -21,7 +21,8 @@ class ProductCards {
                             <p>${product.name}</p>
                         </div>
                         <div class="content-price">
-                            <p><span>$${product.discount_price}</span> $${product.main_price}</p>
+                           <span class = "content-price-discount"> <p>$${product.discount_price}</p></span> 
+                           <span class = "content-price-mainPrice">  $${product.main_price}</span>
                         </div>
                     </div>
                 </a>

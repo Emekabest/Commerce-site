@@ -25,10 +25,27 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+::-webkit-scrollbar {
+  height: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  height: 10px;
+  width: 10px;
+  background-color: rgba(61, 250, 250, 0.131);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+  background-color: rgb(94, 95, 95);
+}
+
 .container {
   display: flex;
   position: relative;
 }
+
 .right-container {
   flex: 1 1 auto;
   height: 100vh;
@@ -222,8 +239,19 @@ body {
   }
 }
 
-span {
-  text-decoration: line-through;
+.content-price {
+  display: flex;
+
+  justify-content: center;
+
+  &-discount {
+    margin: 0 5px;
+    text-decoration: line-through;
+  }
+  &-mainPrice {
+    margin: 0 5px;
+    // text-decoration: line-through;
+  }
 }
 
 .sales-category {
@@ -337,20 +365,62 @@ span {
 // Product screen section
 
 .left-bar {
-  border: 2px solid #000;
+  // border: 2px solid #000;
   min-height: 200px;
   width: 67%;
   margin: 10px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 
-  &-Top {
+  &Top {
+    width: 100%;
+    display: flex;
+    margin: 8px;
+    overflow-x: auto;
+  }
+
+  &Topimg {
+    flex-shrink: 0;
+    margin: 5px;
+    border: 1px solid #000;
+
+    width: 350px;
+
+    height: 300px;
+  }
+
+  &Buttom {
+    // margin: 10px;
+    height: 20em;
+    width: 100%;
+    border: 1px solid #000;
   }
 }
 
 .right-bar {
-  border: 2px solid #000;
+  // border: 2px solid #000;
   min-height: 200px;
   margin: 10px;
   width: 33%;
+  background-color: #fff;
+  padding: 10px;
+
+  &Content_name-tag {
+    margin-bottom: 30px;
+  }
+
+  &ContentProduct-details {
+    margin: 30px 0;
+
+    &_image-tag {
+      border: 1px solid #000;
+      height: 120px;
+      width: 150px;
+    }
+  }
 }
 
 .main-areaContent {

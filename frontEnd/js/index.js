@@ -9,3 +9,5 @@ openBtn_el.addEventListener("click", () => {
 closeBtn_el.addEventListener("click", () => {
   navBar_el.classList.remove("open");
 });
+
+console.log(location);

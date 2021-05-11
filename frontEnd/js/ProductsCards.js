@@ -4,6 +4,7 @@ class ProductCards {
       let cardsHTMLString = "";
 
       // Build cards into string => cardsHTMLString
+
       products.forEach((product) => {
         cardsHTMLString += `
             <div class="container-sales">
@@ -44,7 +45,6 @@ class ProductCards {
                       ></a>
                     </p>
                   </div>
-
                   <div class="container-sales-boxes">${getCardsHTMLString()}</div>
                 </div>
               </div>

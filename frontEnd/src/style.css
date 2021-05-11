@@ -370,4 +370,24 @@ span {
     display: none;
   }
 }
+
+.left-bar {
+  border: 2px solid #000;
+  min-height: 200px;
+  width: 67%;
+  margin: 10px;
+}
+
+.right-bar {
+  border: 2px solid #000;
+  min-height: 200px;
+  margin: 10px;
+  width: 33%;
+}
+
+.main-areaContent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
 /*# sourceMappingURL=style.css.map */

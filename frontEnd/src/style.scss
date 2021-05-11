@@ -331,5 +331,28 @@ span {
   }
 }
 
-.content-header-register {
+// .content-header-register {
+// }
+
+// Product screen section
+
+.left-bar {
+  border: 2px solid #000;
+  min-height: 200px;
+  width: 67%;
+  margin: 10px;
+
+  &-Top {
+  }
+}
+
+.right-bar {
+  border: 2px solid #000;
+  min-height: 200px;
+  margin: 10px;
+  width: 33%;
+}
+
+.main-areaContent {
+  display: flex;
 }

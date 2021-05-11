@@ -100,7 +100,7 @@ const allProducts = [
   {
     id: 4,
     name: "Suit brandy",
-    slug: "suit-brandy ",
+    slug: "suit-brandy",
     discount_price: 90,
     main_price: 80,
     image: "pexels-photo-952214.jpeg",
@@ -214,7 +214,7 @@ const kidProducts = [
   {
     id: 4,
     name: "Suit brandy",
-    slug: "suit-brandy ",
+    slug: "suit-brandy",
     discount_price: 90,
     main_price: 80,
     image: "pexels-photo-952214.jpeg",

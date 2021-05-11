@@ -3,27 +3,29 @@ class ProductCards {
     const getCardsHTMLString = () => {
       let cardsHTMLString = "";
 
-      products.map((product) => {
-        cardsHTMLString += `<div class="container-sales">
+      // Build cards into string => cardsHTMLString
+      products.forEach((product) => {
+        cardsHTMLString += `
+            <div class="container-sales">
                 <a href="./product.html?slug=${product.slug}" style="display:block">
-                <div class="content-sales-img-wrapper">
-                          <img
-                              src="../image/${product.image}"
-                              class="content-sales-img" 
-                              alt="${product.name}"
-                          />
-      
-                      </div>
-                      <div class="content-salesOption">
-                          <div class="content-name">
-                              <p>${product.name}</p>
-                          </div>
-                          <div class="content-price">
-                              <p><span>$${product.discount_price}</span> $${product.main_price}</p>
-                          </div>
-                      </div>
-                       </a>
-                  </div>`;
+                    <div class="content-sales-img-wrapper">
+                        <img
+                            src="../image/${product.image}"
+                            class="content-sales-img" 
+                            alt="${product.name}"
+                        />
+                    </div>
+                    <div class="content-salesOption">
+                        <div class="content-name">
+                            <p>${product.name}</p>
+                        </div>
+                        <div class="content-price">
+                            <p><span>$${product.discount_price}</span> $${product.main_price}</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        `;
       });
 
       return cardsHTMLString;

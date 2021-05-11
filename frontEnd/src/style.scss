@@ -419,6 +419,7 @@ body {
   width: 33%;
   background-color: #fff;
   padding: 10px;
+  border-radius: 10px;
 
   &Content_measureMent-box {
     text-align: center;
@@ -428,12 +429,17 @@ body {
   }
 
   &Content_description-box {
+    border: 1px solid #000;
+    height: 150px;
+    margin-bottom: 10px;
     text-align: center;
   }
   &ContentPrice-tag {
     // margin: 20px 0;
 
     & span {
+      font-family: Georgia, "Times New Roman", Times, serif;
+      font-size: 15px;
       margin: 10px 0;
       display: block;
     }
@@ -441,6 +447,9 @@ body {
 
   &Content_name-tag {
     margin-bottom: 30px;
+    font-size: 20px;
+
+    font-family: Georgia, "Times New Roman", Times, serif;
   }
 
   &Content_image {

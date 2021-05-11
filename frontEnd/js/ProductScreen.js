@@ -55,7 +55,7 @@ class ProductScreen {
                         <h1>Discount: $${this.product.discount_price}</h1>
                       </span>
                       <span>
-                        <h1>Main Price:$${this.product.main_price}</h1>
+                        <h1>Main Price: $${this.product.main_price}</h1>
                       </span>
                       <span>
                         <h1>  Material: Soft cotton </h1>
@@ -75,7 +75,7 @@ class ProductScreen {
                     <div class="right-barContent_measureMent-box">
                       MeasureMent Box
                     </div>
-
+                    
                     <div class="right-barContent_description-box">
                       <article>Description-Tag</article>
                     </div>

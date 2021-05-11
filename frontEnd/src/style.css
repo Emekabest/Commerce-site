@@ -467,6 +467,7 @@ body {
   width: 33%;
   background-color: #fff;
   padding: 10px;
+  border-radius: 10px;
 }
 
 .right-barContent_measureMent-box {
@@ -477,16 +478,23 @@ body {
 }
 
 .right-barContent_description-box {
+  border: 1px solid #000;
+  height: 150px;
+  margin-bottom: 10px;
   text-align: center;
 }
 
 .right-barContentPrice-tag span {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 15px;
   margin: 10px 0;
   display: block;
 }
 
 .right-barContent_name-tag {
   margin-bottom: 30px;
+  font-size: 20px;
+  font-family: Georgia, "Times New Roman", Times, serif;
 }
 
 .right-barContent_image {

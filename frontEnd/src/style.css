@@ -478,9 +478,6 @@ body {
 
 .right-barContent_description-box {
   text-align: center;
-  border: 1px solid #000;
-  height: 150px;
-  margin-bottom: 10px;
 }
 
 .right-barContentPrice-tag span {
@@ -492,18 +489,23 @@ body {
   margin-bottom: 30px;
 }
 
+.right-barContent_image {
+  width: 150px;
+  height: 150px;
+  margin-bottom: 10px;
+}
+
+.right-barContent_image img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: contain;
+     object-position: contain;
+}
+
 .right-barContentProduct-details {
   margin: 30px 0;
-}
-
-.right-barContentProduct-details_image-tag {
-  border: 1px solid #000;
-  height: 120px;
-  width: 150px;
-}
-
-.right-barContentProduct-details_image-tag img {
-  width: 100px;
 }
 
 .right-barContent_addButton a {

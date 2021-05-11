@@ -47,18 +47,18 @@ class ProductScreen {
                 <section class="right-bar">
                   <div class="right-barContent">
                     <div class="right-barContent_name-tag">
-                      <h1>Product name</h1>
+                      <h1>${this.product.name}</h1>
                     </div>
 
                     <div class="right-barContentPrice-tag">
                       <span>
-                        <h1>Discount price</h1>
+                        <h1>Discount: $${this.product.discount_price}</h1>
                       </span>
                       <span>
-                        <h1>Main-Price</h1>
+                        <h1>Main Price:$${this.product.main_price}</h1>
                       </span>
                       <span>
-                        <h1><!-- Fabric made of  --></h1>
+                        <h1>  Material: Soft cotton </h1>
                       </span>
                     </div>
 
@@ -66,7 +66,7 @@ class ProductScreen {
                       <div class="right-barContentProduct-details_image-tag">
                         <div class="right-barContent_image-tag-inner">
                           <div class="right-barContent_image">
-                            <!-- Image -->
+                       <img src="../image/${this.product.image}" alt="${this.product.name}" />
                           </div>
                         </div>
                       </div>

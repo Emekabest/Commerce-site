@@ -47,15 +47,15 @@ class ProductScreen {
                 <section class="right-bar">
                   <div class="right-barContent">
                     <div class="right-barContent_name-tag">
-                      <h1>${this.product.name}</h1>
+                      <h1 style="color: #003d59">${this.product.name}</h1>
                     </div>
 
                     <div class="right-barContentPrice-tag">
                       <span>
-                        <h1>Discount: $${this.product.discount_price}</h1>
+                        <h1 style="  color: #540a0a;">Discount: $${this.product.discount_price}</h1>
                       </span>
                       <span>
-                        <h1>Main Price: $${this.product.main_price}</h1>
+                        <h1 style="  color: #003d59">Main Price: $${this.product.main_price}</h1>
                       </span>
                       <span>
                         <h1>  Material: Soft cotton </h1>
@@ -67,6 +67,7 @@ class ProductScreen {
                         <div class="right-barContent_image-tag-inner">
                           <div class="right-barContent_image">
                        <img src="../image/${this.product.image}" alt="${this.product.name}" />
+
                           </div>
                         </div>
                       </div>
@@ -75,7 +76,7 @@ class ProductScreen {
                     <div class="right-barContent_measureMent-box">
                       MeasureMent Box
                     </div>
-                    
+
                     <div class="right-barContent_description-box">
                       <article>Description-Tag</article>
                     </div>

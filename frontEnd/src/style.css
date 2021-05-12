@@ -9,7 +9,6 @@
 
 body {
   position: relative;
-  background-color: #333;
   font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -132,11 +131,8 @@ body {
   color: #111;
 }
 
-.content {
-  background-color: #333;
-}
-
 .content-headerbox {
+  background-color: #f0f0f0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -146,8 +142,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 34px;
-  color: #fff;
+  padding: 15px;
 }
 
 @media screen and (max-width: 420px) {
@@ -177,7 +172,7 @@ body {
 }
 
 .content-header-name h1 a {
-  color: #fff;
+  color: #000;
 }
 
 .content-header-register {
@@ -191,16 +186,16 @@ body {
 }
 
 .content-header-register-login p {
-  color: #fff;
+  color: #000;
   display: block;
 }
 
 .content-header-register-login a {
-  color: #fff;
+  color: #000;
 }
 
 .content-header-register-signUp a {
-  color: #fff;
+  color: #000;
 }
 
 @media screen and (max-width: 420px) {
@@ -215,7 +210,11 @@ body {
 }
 
 .register-p a {
-  color: #fff;
+  color: #000;
+}
+
+.main-area {
+  margin-top: 50px;
 }
 
 .product-cards {
@@ -230,11 +229,9 @@ body {
 }
 
 .container-sales-container {
-  background-color: rgba(61, 250, 250, 0.131);
+  background-color: #01445c;
   width: 95%;
   border-radius: 2.5px;
-  -webkit-box-shadow: 2px 2px 2px 5px #292929;
-  box-shadow: 0px 0px 30px 1px rgba(0, 0, 0, 0.652);
   text-align: justify;
   padding: 0 5px;
   display: -webkit-box;
@@ -465,7 +462,7 @@ body {
   min-height: 200px;
   margin: 10px;
   width: 33%;
-  background-color: #fff;
+  background-color: #f0f0f0;
   padding: 10px;
   border-radius: 10px;
 }
@@ -485,8 +482,8 @@ body {
 }
 
 .right-barContentPrice-tag span {
-  font-family: Georgia, "Times New Roman", Times, serif;
-  font-size: 15px;
+  font-family: cambria;
+  font-size: 12.5px;
   margin: 10px 0;
   display: block;
 }
@@ -494,7 +491,7 @@ body {
 .right-barContent_name-tag {
   margin-bottom: 30px;
   font-size: 20px;
-  font-family: Georgia, "Times New Roman", Times, serif;
+  font-family: "Times New Roman", Times, serif;
 }
 
 .right-barContent_image {

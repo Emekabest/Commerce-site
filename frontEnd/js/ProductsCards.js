@@ -21,7 +21,7 @@ class ProductCards {
                             <p>${product.name}</p>
                         </div>
                         <div class="content-price">
-                           <span class = "content-price-discount"> <p>$${product.discount_price}</p></span> 
+                           <span class = "content-price-discount">$${product.discount_price}</p></span> 
                            <span class = "content-price-mainPrice">  $${product.main_price}</span>
                         </div>
                     </div>
@@ -39,7 +39,6 @@ class ProductCards {
                 <div class="things">
                   <div class="sales-category">
                     <p class="sales-category-p">${header.text}</p>
-
                     <p class="sales-category-p">
                       <a href="${header.href}">
                         View more <i class="fa fa-angle-right"></i

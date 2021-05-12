@@ -16,6 +16,7 @@ class ProductCards {
                             alt="${product.name}"
                         />
                     </div>
+                    
                     <div class="content-salesOption">
                         <div class="content-name">
                             <p>${product.name}</p>
@@ -38,10 +39,10 @@ class ProductCards {
               <div class="container-sales-container">
                 <div class="things">
                   <div class="sales-category">
-                    <p class="sales-category-p">${header.text}</p>
-                    <p class="sales-category-p">
+                    <h5 class="sales-category-heading">${header.text}</h5>
+                    <p class="sales-category-view-more">
                       <a href="${header.href}">
-                        View more <i class="fa fa-angle-right"></i
+                        View more <i class="fa fa-angle-right" ></i
                       ></a>
                     </p>
                   </div>

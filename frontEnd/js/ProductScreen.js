@@ -52,14 +52,12 @@ class ProductScreen {
 
                     <div class="right-barContentPrice-tag">
                       <span>
-                        <h1 style="  color: #540a0a;">Discount: $${this.product.discount_price}</h1>
+                        <h1 style="  color: #540a0a;">Discount: $ ${this.product.discount_price}</h1>
                       </span>
                       <span>
-                        <h1 style="  color: #003d59">Main Price: $${this.product.main_price}</h1>
+                        <h1 style="  color: #003d59">Main Price: $ ${this.product.main_price}</h1>
                       </span>
-                      <span>
-                        <h1>  Material: Soft cotton </h1>
-                      </span>
+                    
                     </div>
 
                     <div class="right-barContentProduct-details">
@@ -82,7 +80,7 @@ class ProductScreen {
                     </div>
 
                     <div class="right-barContent_addButton">
-                      <a href="#"> <button>ADD</button> </a>
+                      <a href="#"> <button>ADD <i class="fas addbtn-cart  fa-cart-plus"></i></button>    </a>
                     </div>
                   </div>
                 </section>

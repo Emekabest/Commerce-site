@@ -6,6 +6,8 @@ class ProductCards {
       // Build cards into string => cardsHTMLString
 
       products.forEach((product) => {
+        // product.getDiscount();
+        product.getDiscount();
         cardsHTMLString += `
             <div class="container-sales">
                 <a href="./product.html?slug=${product.slug}" style="display:block">
@@ -16,13 +18,13 @@ class ProductCards {
                             alt="${product.name}"
                         />
                     </div>
-                    
+
                     <div class="content-salesOption">
                         <div class="content-name">
                             <p>${product.name}</p>
                         </div>
                         <div class="content-price">
-                           <span class = "content-price-discount">$${product.discount_price}</p></span> 
+                           <span class = "content-price-discount">$${product.recent_price}</p></span> 
                            <span class = "content-price-mainPrice">  $${product.main_price}</span>
                         </div>
                     </div>

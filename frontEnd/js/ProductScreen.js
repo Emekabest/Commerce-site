@@ -60,10 +60,10 @@ class ProductScreen {
                         <h1 style="  color: #003d59">Discount: ${this.product.discount_price}%</h1>
                       </span>
                       <span>
-                        <h1 style="color:#540a0a; text-decoration:line-through">Price: ${currency_sign.naira} ${this.product.recent_price}</h1>
+                        <h1 style="color:#540a0a; text-decoration:line-through">Price: ${this.product.currency_symbol.naira} ${this.product.recent_price}</h1>
                       </span>
                       <span>
-                        <h1 style="  color: #003d59">Price: ${currency_sign.naira} ${this.product.main_price}</h1>
+                        <h1 style="  color: #003d59">Price: ${this.product.currency_symbol.naira} ${this.product.main_price}</h1>
                       </span>
                     </div>
 

@@ -18,14 +18,14 @@ class ProductCards {
                             alt="${product.name}"
                         />
                     </div>
-
+ 
                     <div class="content-salesOption">
                         <div class="content-name">
                             <p>${product.name}</p>
                         </div>
                         <div class="content-price">
-                           <span class = "content-price-discount">$${product.recent_price}</p></span> 
-                           <span class = "content-price-mainPrice">  $${product.main_price}</span>
+                           <span class = "content-price-discount"> ${product.currency_symbol.naira}  ${product.recent_price}</p></span> 
+                           <span class = "content-price-mainPrice">  ${product.currency_symbol.naira} ${product.main_price}</span>
                         </div>
                     </div>
                 </a>

@@ -148,58 +148,55 @@ body {
   padding: 15px;
   // color: #fff;
 
-  @include phone {
-    flex-direction: column;
-  }
-}
-
-.content-header {
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  font-size: 12px;
-  padding-bottom: 10px;
-}
-
-.content-header-name h1 a {
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
-  color: #000;
-}
-
-.content-header-register {
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  padding: 0 10px;
-
-  display: flex;
-
-  &-login p {
-    color: #000;
-    display: block;
+  &-productName {
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    font-size: 12px;
+    padding-bottom: 10px;
   }
 
-  &-login a {
+  &-name h1 a {
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+      "Lucida Sans", Arial, sans-serif;
     color: #000;
   }
 
-  &-signUp a {
-    color: #000;
-  }
+  &-register {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 0 10px;
 
-  .login-user-fa {
+    display: flex;
+
+    &-login p {
+      color: #000;
+      display: block;
+    }
+
+    &-login a {
+      color: #000;
+    }
+
+    &-signUp a {
+      color: #000;
+    }
+
+    @include phone {
+      padding: 0;
+    }
   }
 
   @include phone {
-    padding: 0;
+    flex-direction: column;
   }
 }
 
@@ -227,7 +224,7 @@ body {
 }
 
 .container-sales-container {
-  background-color: #fefefe;
+  background-color: #fdfdfd;
   width: 95%;
   border-radius: 2.5px;
   // -webkit-box-shadow: 2px 2px 2px 5px #292929;

@@ -150,16 +150,7 @@ body {
   padding: 15px;
 }
 
-@media screen and (max-width: 420px) {
-  .content-headerbox {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-}
-
-.content-header {
+.content-headerbox-productName {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -176,12 +167,12 @@ body {
   padding-bottom: 10px;
 }
 
-.content-header-name h1 a {
+.content-headerbox-name h1 a {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
   color: #000;
 }
 
-.content-header-register {
+.content-headerbox-register {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
@@ -191,22 +182,31 @@ body {
   display: flex;
 }
 
-.content-header-register-login p {
+.content-headerbox-register-login p {
   color: #000;
   display: block;
 }
 
-.content-header-register-login a {
+.content-headerbox-register-login a {
   color: #000;
 }
 
-.content-header-register-signUp a {
+.content-headerbox-register-signUp a {
   color: #000;
 }
 
 @media screen and (max-width: 420px) {
-  .content-header-register {
+  .content-headerbox-register {
     padding: 0;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .content-headerbox {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }
 
@@ -235,7 +235,7 @@ body {
 }
 
 .container-sales-container {
-  background-color: #fefefe;
+  background-color: #fdfdfd;
   width: 95%;
   border-radius: 2.5px;
   -webkit-box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.07), 0px 0px 30px rgba(0, 0, 0, 0.07);

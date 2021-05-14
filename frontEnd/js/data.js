@@ -1,3 +1,8 @@
+const currency_sign = {
+  naira: "&#8358",
+  dollar: "&#36",
+};
+
 const allProducts = [
   {
     id: 1,
@@ -7,9 +12,9 @@ const allProducts = [
     discount_price: 60,
     main_price: 40,
     image: "pexels-photo-2955375.jpeg",
-    currency_sign: {
-      naira: "&#8358",
-      dollar: "$",
+    currency_symbol: {
+      naira: currency_sign.naira,
+      dollar: currency_sign.dollar,
     },
 
     getDiscount() {
@@ -27,9 +32,9 @@ const allProducts = [
     discount_price: 90,
     main_price: 70,
     image: "pexels-photo-3310694.jpeg",
-    currency_sign: {
-      naira: "N",
-      dollar: "$",
+    currency_symbol: {
+      naira: currency_sign.naira,
+      dollar: currency_sign.dollar,
     },
 
     getDiscount() {
@@ -47,9 +52,9 @@ const allProducts = [
     discount_price: 140,
     main_price: 100,
     image: "pexels-photo-2728263.jpeg",
-    currency_sign: {
-      naira: "N",
-      dollar: "$",
+    currency_symbol: {
+      naira: currency_sign.naira,
+      dollar: currency_sign.dollar,
     },
 
     getDiscount() {
@@ -67,9 +72,9 @@ const allProducts = [
     discount_price: 90,
     main_price: 80,
     image: "pexels-photo-3193731.jpeg",
-    currency_sign: {
-      naira: "N",
-      dollar: "$",
+    currency_symbol: {
+      naira: currency_sign.naira,
+      dollar: currency_sign.dollar,
     },
 
     getDiscount() {
@@ -87,9 +92,9 @@ const allProducts = [
     discount_price: 60,
     main_price: 40,
     image: "pexels-photo-1719641.jpeg",
-    currency_sign: {
-      naira: "N",
-      dollar: "$",
+    currency_symbol: {
+      naira: currency_sign.naira,
+      dollar: currency_sign.dollar,
     },
 
     getDiscount() {
@@ -107,9 +112,9 @@ const allProducts = [
     discount_price: 90,
     main_price: 70,
     image: "pexels-photo-2726161.jpeg",
-    currency_sign: {
-      naira: "N",
-      dollar: "$",
+    currency_symbol: {
+      naira: currency_sign.naira,
+      dollar: currency_sign.dollar,
     },
 
     getDiscount() {
@@ -127,9 +132,9 @@ const allProducts = [
     discount_price: 140,
     main_price: 100,
     image: "pexels-photo-2922301.jpeg",
-    currency_sign: {
-      naira: "N",
-      dollar: "$",
+    currency_symbol: {
+      naira: currency_sign.naira,
+      dollar: currency_sign.dollar,
     },
 
     getDiscount() {
@@ -147,9 +152,9 @@ const allProducts = [
     discount_price: 90,
     main_price: 80,
     image: "pexels-photo-4890733.jpeg",
-    currency_sign: {
-      naira: "N",
-      dollar: "$",
+    currency_symbol: {
+      naira: currency_sign.naira,
+      dollar: currency_sign.dollar,
     },
 
     getDiscount() {
@@ -166,9 +171,9 @@ const allProducts = [
     discount_price: 60,
     main_price: 40,
     image: "pexels-photo-6112012.jpeg",
-    currency_sign: {
-      naira: "N",
-      dollar: "$",
+    currency_symbol: {
+      naira: currency_sign.naira,
+      dollar: currency_sign.dollar,
     },
 
     getDiscount() {
@@ -186,9 +191,9 @@ const allProducts = [
     discount_price: 90,
     main_price: 70,
     image: "pexels-photo-3907595.jpeg",
-    currency_sign: {
-      naira: "N",
-      dollar: "$",
+    currency_symbol: {
+      naira: currency_sign.naira,
+      dollar: currency_sign.dollar,
     },
 
     getDiscount() {
@@ -206,9 +211,9 @@ const allProducts = [
     discount_price: 140,
     main_price: 100,
     image: "pexels-photo-2466756(1).jpeg",
-    currency_sign: {
-      naira: "N",
-      dollar: "$",
+    currency_symbol: {
+      naira: currency_sign.naira,
+      dollar: currency_sign.dollar,
     },
 
     getDiscount() {
@@ -226,9 +231,9 @@ const allProducts = [
     discount_price: 90,
     main_price: 80,
     image: "pexels-photo-952214.jpeg",
-    currency_sign: {
-      naira: "N",
-      dollar: "$",
+    currency_symbol: {
+      naira: currency_sign.naira,
+      dollar: currency_sign.dollar,
     },
 
     getDiscount() {
@@ -248,9 +253,9 @@ const manStuffProducts = [
     discount_price: 60,
     main_price: 40,
     image: "pexels-photo-2955375.jpeg",
-    currency_sign: {
-      naira: "N",
-      dollar: "$",
+    currency_symbol: {
+      naira: currency_sign.naira,
+      dollar: currency_sign.dollar,
     },
 
     getDiscount() {
@@ -268,9 +273,9 @@ const manStuffProducts = [
     discount_price: 90,
     main_price: 70,
     image: "pexels-photo-3310694.jpeg",
-    currency_sign: {
-      naira: "N",
-      dollar: "$",
+    currency_symbol: {
+      naira: currency_sign.naira,
+      dollar: currency_sign.dollar,
     },
 
     getDiscount() {
@@ -288,9 +293,9 @@ const manStuffProducts = [
     discount_price: 140,
     main_price: 100,
     image: "pexels-photo-2728263.jpeg",
-    currency_sign: {
-      naira: "N",
-      dollar: "$",
+    currency_symbol: {
+      naira: currency_sign.naira,
+      dollar: currency_sign.dollar,
     },
 
     getDiscount() {
@@ -308,9 +313,9 @@ const manStuffProducts = [
     discount_price: 90,
     main_price: 80,
     image: "pexels-photo-3193731.jpeg",
-    currency_sign: {
-      naira: "N",
-      dollar: "$",
+    currency_symbol: {
+      naira: currency_sign.naira,
+      dollar: currency_sign.dollar,
     },
 
     getDiscount() {
@@ -330,9 +335,9 @@ const skirtProducts = [
     discount_price: 60,
     main_price: 40,
     image: "pexels-photo-1719641.jpeg",
-    currency_sign: {
-      naira: "N",
-      dollar: "$",
+    currency_symbol: {
+      naira: currency_sign.naira,
+      dollar: currency_sign.dollar,
     },
 
     getDiscount() {
@@ -350,9 +355,9 @@ const skirtProducts = [
     discount_price: 90,
     main_price: 70,
     image: "pexels-photo-2726161.jpeg",
-    currency_sign: {
-      naira: "N",
-      dollar: "$",
+    currency_symbol: {
+      naira: currency_sign.naira,
+      dollar: currency_sign.dollar,
     },
 
     getDiscount() {
@@ -370,9 +375,9 @@ const skirtProducts = [
     discount_price: 140,
     main_price: 100,
     image: "pexels-photo-2922301.jpeg",
-    currency_sign: {
-      naira: "N",
-      dollar: "$",
+    currency_symbol: {
+      naira: currency_sign.naira,
+      dollar: currency_sign.dollar,
     },
 
     getDiscount() {
@@ -390,9 +395,9 @@ const skirtProducts = [
     discount_price: 90,
     main_price: 80,
     image: "pexels-photo-4890733.jpeg",
-    currency_sign: {
-      naira: "N",
-      dollar: "$",
+    currency_symbol: {
+      naira: currency_sign.naira,
+      dollar: currency_sign.dollar,
     },
 
     getDiscount() {
@@ -412,9 +417,9 @@ const kidProducts = [
     discount_price: 60,
     main_price: 40,
     image: "pexels-photo-6112012.jpeg",
-    currency_sign: {
-      naira: "N",
-      dollar: "$",
+    currency_symbol: {
+      naira: currency_sign.naira,
+      dollar: currency_sign.dollar,
     },
 
     getDiscount() {
@@ -432,9 +437,9 @@ const kidProducts = [
     discount_price: 90,
     main_price: 70,
     image: "pexels-photo-3907595.jpeg",
-    currency_sign: {
-      naira: "N",
-      dollar: "$",
+    currency_symbol: {
+      naira: currency_sign.naira,
+      dollar: currency_sign.dollar,
     },
 
     getDiscount() {
@@ -452,9 +457,9 @@ const kidProducts = [
     discount_price: 140,
     main_price: 100,
     image: "pexels-photo-2466756(1).jpeg",
-    currency_sign: {
-      naira: "N",
-      dollar: "$",
+    currency_symbol: {
+      naira: currency_sign.naira,
+      dollar: currency_sign.dollar,
     },
 
     getDiscount() {
@@ -472,9 +477,9 @@ const kidProducts = [
     discount_price: 90,
     main_price: 80,
     image: "pexels-photo-952214.jpeg",
-    currency_sign: {
-      naira: "N",
-      dollar: "$",
+    currency_symbol: {
+      naira: currency_sign.naira,
+      dollar: currency_sign.dollar,
     },
 
     getDiscount() {

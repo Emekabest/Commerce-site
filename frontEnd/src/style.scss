@@ -34,12 +34,12 @@ body {
 ::-webkit-scrollbar-thumb {
   height: 10px;
   width: 30px;
-  background-color: #9acbf8a8;
+  background-color: #6ca6dda8;
   // border-radius: 4px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background-color: #8dbfeea8;
+  background-color: #528dc4a8;
   cursor: pointer;
 }
 
@@ -64,6 +64,7 @@ body {
   overflow-y: auto;
   background-color: rgb(28, 28, 28);
   color: white;
+  display: none;
 
   &-close-btn {
     display: none;
@@ -74,8 +75,6 @@ body {
   }
 
   @include tab {
-    display: none;
-
     position: fixed;
     width: 300px;
 
@@ -143,23 +142,90 @@ body {
 .content-headerbox {
   background-color: #f0f0f0;
   display: flex;
-  justify-content: space-between;
+  // flex-wrap: wrap;
+  justify-content: center;
   align-items: center;
   padding: 15px;
   // color: #fff;
 
+  &-right {
+    display: flex;
+
+    &_menu-list {
+      // flex: 1;
+
+      & ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+
+      & li {
+        margin: 10px;
+      }
+      & li a {
+        font-size: 16px;
+        padding: 15px;
+        // margin: 10px;
+        color: #333;
+        font-weight: 550;
+
+        &:hover {
+          transition: 0.5s;
+          background-color: #6ca6dda8;
+          color: #fff;
+        }
+      }
+    }
+
+    &-register {
+      // flex: 1;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      padding: 0 10px;
+      display: flex;
+
+      &-login a,
+      &-signUp a {
+        margin: 10px;
+        // background-color: #3675afa8;
+        color: #1f1f1f;
+        font-size: 16x;
+        font-weight: 560;
+        display: block;
+      }
+      &-login a p,
+      &-signUp a p {
+        text-decoration: underline;
+      }
+
+      // &-signUp a {
+      //   color: #1f1f1f;
+      //   font-size: 15px;
+      //   font-weight: 560;
+      //   display: block;
+      // }
+
+      @include phone {
+        padding: 0;
+      }
+    }
+  }
+
   &-productName {
+    // flex: 1;
     display: flex;
     -webkit-box-pack: center;
     -ms-flex-pack: center;
-    justify-content: center;
+    // justify-content: center;
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    font-size: 12px;
+    font-size: 11px;
     padding-bottom: 10px;
   }
 
@@ -167,32 +233,6 @@ body {
     font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
       "Lucida Sans", Arial, sans-serif;
     color: #000;
-  }
-
-  &-register {
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    padding: 0 10px;
-
-    display: flex;
-
-    &-login p {
-      color: #000;
-      display: block;
-    }
-
-    &-login a {
-      color: #000;
-    }
-
-    &-signUp a {
-      color: #000;
-    }
-
-    @include phone {
-      padding: 0;
-    }
   }
 
   @include phone {

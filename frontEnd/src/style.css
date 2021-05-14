@@ -21,11 +21,11 @@ body {
 ::-webkit-scrollbar-thumb {
   height: 10px;
   width: 30px;
-  background-color: #9acbf8a8;
+  background-color: #6ca6dda8;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background-color: #8dbfeea8;
+  background-color: #528dc4a8;
   cursor: pointer;
 }
 
@@ -56,6 +56,7 @@ body {
   overflow-y: auto;
   background-color: #1c1c1c;
   color: white;
+  display: none;
 }
 
 .nav-close-btn {
@@ -69,7 +70,6 @@ body {
 
 @media screen and (max-width: 768px) {
   .nav {
-    display: none;
     position: fixed;
     width: 300px;
   }
@@ -141,38 +141,51 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   padding: 15px;
 }
 
-.content-headerbox-productName {
+.content-headerbox-right {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.content-headerbox-right_menu-list ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  font-size: 12px;
-  padding-bottom: 10px;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-.content-headerbox-name h1 a {
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
-  color: #000;
+.content-headerbox-right_menu-list li {
+  margin: 10px;
 }
 
-.content-headerbox-register {
+.content-headerbox-right_menu-list li a {
+  font-size: 16px;
+  padding: 15px;
+  color: #333;
+  font-weight: 550;
+}
+
+.content-headerbox-right_menu-list li a:hover {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  background-color: #6ca6dda8;
+  color: #fff;
+}
+
+.content-headerbox-right-register {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
@@ -182,23 +195,45 @@ body {
   display: flex;
 }
 
-.content-headerbox-register-login p {
-  color: #000;
+.content-headerbox-right-register-login a,
+.content-headerbox-right-register-signUp a {
+  margin: 10px;
+  color: #1f1f1f;
+  font-size: 16x;
+  font-weight: 560;
   display: block;
 }
 
-.content-headerbox-register-login a {
-  color: #000;
-}
-
-.content-headerbox-register-signUp a {
-  color: #000;
+.content-headerbox-right-register-login a p,
+.content-headerbox-right-register-signUp a p {
+  text-decoration: underline;
 }
 
 @media screen and (max-width: 420px) {
-  .content-headerbox-register {
+  .content-headerbox-right-register {
     padding: 0;
   }
+}
+
+.content-headerbox-productName {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-size: 11px;
+  padding-bottom: 10px;
+}
+
+.content-headerbox-name h1 a {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  color: #000;
 }
 
 @media screen and (max-width: 420px) {

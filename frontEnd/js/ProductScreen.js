@@ -87,7 +87,7 @@ class ProductScreen {
                     </div>
                   
                     <div class="right-barContent_addButton">
-                      <a href="#"> <button>ADD <i class="fas addbtn-cart  fa-cart-plus"></i></button>    </a>
+                      <a href="#"> <button>ADD <i class="fas fa-cart-plus"></i></button> </a>
                     </div>
                   </div>
                 </section>

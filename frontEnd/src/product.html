@@ -6,10 +6,14 @@
     <title>RICHY</title>
     <!-- <link rel="stylesheet" href="./font-awesome/css/font-awesome.min.css" /> -->
     <link
+      href="/your-path-to-fontawesome/css/fontawesome.css"
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
-      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Girassol&family=Libre+Baskerville:wght@700&family=Reggae+One&display=swap"
+      rel="stylesheet"
     />
     <!-- <link rel="stylesheet" href=".style.css" /> -->
     <link rel="stylesheet" href="style.css" />
@@ -79,9 +83,15 @@
               <div class="main-areaContent">
                 <section class="left-bar">
                   <div class="left-barTop">
-                    <div class="left-barTopimg"></div>
-                    <div class="left-barTopimg"></div>
-                    <div class="left-barTopimg"></div>
+                    <div class="left-barTopimg">
+                      <img src="../image/" alt="" />
+                    </div>
+                    <div class="left-barTopimg">
+                      <img src="../image/" alt="" />
+                    </div>
+                    <div class="left-barTopimg">
+                      <img src="../image/" alt="" />
+                    </div>
                   </div>
                   <div class="left-barButtom">
                     <div class="left-barButtomimg"></div>
@@ -90,34 +100,41 @@
                 <section class="right-bar">
                   <div class="right-barContent">
                     <div class="right-barContent_name-tag">
-                      <h1><!--Product name --></h1>
+                      <h1>Product name</h1>
                     </div>
+
+                    <div class="right-barContentPrice-tag">
+                      <span>
+                        <h1>Discount price</h1>
+                      </span>
+                      <span>
+                        <h1>Main-Price</h1>
+                      </span>
+                      <span>
+                        <h1><!-- Fabric made of  --></h1>
+                      </span>
+                    </div>
+
                     <div class="right-barContentProduct-details">
-                      <div class="right-barContent_image-tag">
+                      <div class="right-barContentProduct-details_image-tag">
                         <div class="right-barContent_image-tag-inner">
                           <div class="right-barContent_image">
                             <!-- Image -->
                           </div>
                         </div>
                       </div>
-
-                      <div class="right-barContentPrice-tag">
-                        <span>
-                          <h1><!-- Discount price  --></h1>
-                        </span>
-                        <span>
-                          <h1><!-- Main-Price  --></h1>
-                        </span>
-                        <span>
-                          <h1><!-- Fabric made of  --></h1>
-                        </span>
-                      </div>
                     </div>
 
-                    <div>
-                      <article>
-                        <!-- Description-Tag  -->
-                      </article>
+                    <div class="right-barContent_measureMent-box">
+                      MeasureMent Box
+                    </div>
+
+                    <div class="right-barContent_description-box">
+                      <article>Description-Tag</article>
+                    </div>
+
+                    <div class="right-barContent_addButton">
+                      <a href="#"> <button>ADD</button> </a>
                     </div>
                   </div>
                 </section>

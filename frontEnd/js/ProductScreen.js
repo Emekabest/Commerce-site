@@ -2,6 +2,11 @@ import { allProducts } from "./data.js";
 
 const mainArea_main = document.querySelector(".main-area");
 
+const currency_sign = {
+  naira: "&#8358",
+  dollar: "&#36",
+};
+
 class ProductScreen {
   constructor() {
     this.slug = "";
@@ -23,64 +28,76 @@ class ProductScreen {
   }
 
   display() {
-    console.log(this.product);
-    mainArea_main.innerHTML = `
-           <div class="main-areaContent">
+    this.product.getDiscount();
+    mainArea_main.innerHTML = `<div class="main-areaContent">
                 <section class="left-bar">
                   <div class="left-barTop">
-                    <div class="left-barTopimg"></div>
-                    <div class="left-barTopimg"></div>
-                    <div class="left-barTopimg"></div>
+                    <div class="left-barTopimg">
+                      <img src="../image/${this.product.image}" alt="${this.product.name}" />
+                    </div>
+                    <div class="left-barTopimg">
+                      <img src="../image/${this.product.image}" alt="${this.product.name}" />
+
+                    </div>
+                    <div class="left-barTopimg">
+                       <img src="../image/${this.product.image}" alt="${this.product.name}" />
+
+                    </div>
                   </div>
                   <div class="left-barButtom">
-                    <div class="left-barButtomimg"></div>
+                       <img src="../image/${this.product.image}" alt="${this.product.name}" />
+                    <div class="left-barButtomimg">   </div>
                   </div>
                 </section>
                 <section class="right-bar">
                   <div class="right-barContent">
                     <div class="right-barContent_name-tag">
-                      <h1><!--Product name --></h1>
+                      <h1 style="color: #003d59">${this.product.name}</h1>
                     </div>
+
+                    <div class="right-barContentPrice-tag">
+                     <span>
+                        <h1 style="  color: #003d59">Discount: ${this.product.discount_price}%</h1>
+                      </span>
+                      <span>
+                        <h1 style="color:#540a0a; text-decoration:line-through">Price: ${this.product.currency_symbol.naira} ${this.product.recent_price}</h1>
+                      </span>
+                      <span>
+                        <h1 style="  color: #003d59">Price: ${this.product.currency_symbol.naira} ${this.product.main_price}</h1>
+                      </span>
+                    </div>
+
                     <div class="right-barContentProduct-details">
-                      <div class="right-barContent_image-tag">
+                      <div class="right-barContentProduct-details_image-tag">
                         <div class="right-barContent_image-tag-inner">
                           <div class="right-barContent_image">
-                            <!-- Image -->
+                       <img src="../image/${this.product.image}" alt="${this.product.name}" />
+
                           </div>
                         </div>
                       </div>
-
-                      <div class="right-barContentPrice-tag">
-                        <span>
-                          <h1><!-- Discount price  --></h1>
-                        </span>
-                        <span>
-                          <h1><!-- Main-Price  --></h1>
-                        </span>
-                        <span>
-                          <h1><!-- Fabric made of  --></h1>
-                        </span>
-                      </div>
                     </div>
 
-                    <div>
-                      <article>
-                       
-                          <!-- Description-Tag  -->
-                    
-                      </article>
+                    <div class="right-barContent_measureMent-box">
+                      MeasureMent Box
+                    </div>
+
+                    <div class="right-barContent_description-box">
+                      <article>Description-Tag</article>
+                    </div>
+                  
+                    <div class="right-barContent_addButton">
+                      <a href="#"> <button>ADD <i class="fas fa-cart-plus"></i></button> </a>
                     </div>
                   </div>
                 </section>
-              </div>
-        `;
+              </div> `;
   }
 
   fetchProduct() {
     const product = allProducts.find((product) => {
       return product.slug === this.slug;
     });
-
     this.product = product;
   }
 

@@ -151,7 +151,7 @@ const allProducts = [
     recent_price: 80,
     discount_price: 90,
     main_price: 80,
-    image: "pexels-photo-4890733.jpeg",
+    image: "pexels-photo-1018911.jpeg",
     currency_symbol: {
       naira: currency_sign.naira,
       dollar: currency_sign.dollar,

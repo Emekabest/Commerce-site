@@ -45,8 +45,10 @@ class ProductScreen {
                     </div>
                   </div>
                   <div class="left-barButtom">
-                       <img src="./image/${this.product.image}" alt="${this.product.name}" />
-                    <div class="left-barButtomimg">   </div>
+                    
+                    <div class="left-barButtomimg">
+                     <img src="./image/${this.product.image}" alt="${this.product.name}" />
+                      </div>
                   </div>
                 </section>
                 <section class="right-bar">

@@ -5,7 +5,7 @@
 }
 
 @mixin tab {
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 930px) {
     @content;
   }
 }
@@ -58,6 +58,7 @@ body {
   height: 100vh;
   overflow-y: scroll;
 }
+
 .nav {
   flex: 0 0 300px;
   height: 100vh;
@@ -142,11 +143,39 @@ body {
 .content-headerbox {
   background-color: #f0f0f0;
   display: flex;
-  // flex-wrap: wrap;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   padding: 15px;
   // color: #fff;
+
+  &-productName {
+    flex: 0.1;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    // justify-content: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    font-size: 11px;
+
+    // padding-bottom: 10px;
+
+    &_name h1 a {
+      font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+        "Lucida Sans", Arial, sans-serif;
+      color: #000;
+    }
+
+    @include tab {
+      flex: 1;
+      justify-content: end;
+    }
+  }
 
   &-right {
     display: flex;
@@ -163,8 +192,9 @@ body {
       & li {
         margin: 10px;
       }
+
       & li a {
-        font-size: 16px;
+        font-size: 12.49px;
         padding: 15px;
         // margin: 10px;
         color: #333;
@@ -176,6 +206,10 @@ body {
           color: #fff;
         }
       }
+
+      @include tab() {
+        display: none;
+      }
     }
 
     &-register {
@@ -185,21 +219,109 @@ body {
       align-items: center;
       padding: 0 10px;
       display: flex;
+      flex-wrap: wrap;
+
+      &-login {
+        &-user-txt {
+          display: flex;
+
+          & p {
+            padding-left: 5px;
+          }
+
+          @include phone {
+            display: none;
+          }
+        }
+
+        &-user-fa {
+          & i {
+            display: none;
+
+            @include phone {
+              text-align: center;
+              display: block;
+              font-size: 20px;
+              // padding: 0px 25px;
+            }
+          }
+
+          & h6 {
+            display: none;
+
+            @include phone {
+              display: block;
+              text-align: center;
+              font-size: 12.45px;
+              // padding: 0px 20px;
+            }
+          }
+        }
+      }
+
+      &-signUp {
+        &-user-txt {
+          display: flex;
+
+          & p {
+            padding-left: 4px;
+          }
+
+          @include phone {
+            display: none;
+          }
+        }
+
+        &-user-fa {
+          display: none;
+
+          & i {
+            font-size: 20px;
+
+            @include phone {
+              text-align: center;
+              display: block;
+              font-size: 20px;
+              // padding: 0px 25px;
+            }
+          }
+
+          & h6 {
+            font-size: 12.45px;
+          }
+
+          @include phone {
+            display: block;
+          }
+        }
+      }
 
       &-login a,
       &-signUp a {
         margin: 10px;
         // background-color: #3675afa8;
         color: #1f1f1f;
-        font-size: 16x;
-        font-weight: 560;
+        font-size: 14.44px;
+        font-weight: 550;
         display: block;
       }
+
       &-login a p,
       &-signUp a p {
         text-decoration: underline;
       }
 
+      &-p {
+        display: inline-block;
+        margin-right: 15px;
+
+        & a {
+          color: #000;
+        }
+      }
+
+      .register-p a {
+      }
       // &-signUp a {
       //   color: #1f1f1f;
       //   font-size: 15px;
@@ -213,40 +335,10 @@ body {
     }
   }
 
-  &-productName {
-    // flex: 1;
-    display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    // justify-content: center;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    font-size: 11px;
-    padding-bottom: 10px;
-  }
-
-  &-name h1 a {
-    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-      "Lucida Sans", Arial, sans-serif;
-    color: #000;
-  }
-
   @include phone {
+    padding: 5px;
     flex-direction: column;
   }
-}
-
-.register-p {
-  display: inline-block;
-  margin-right: 15px;
-}
-
-.register-p a {
-  color: #000;
 }
 
 .main-area {
@@ -388,10 +480,6 @@ body {
   text-align: center;
 }
 
-.right-container {
-  /* position: absolute; */
-}
-
 .content-salesOption {
   padding: 20px;
   color: #333;
@@ -408,13 +496,6 @@ body {
 
 .login-user-fa i,
 .signUp-user-fa i {
-  display: none;
-
-  @include phone {
-    display: block;
-    font-size: 20px;
-    padding: 0px 25px;
-  }
 }
 
 .login-user-txt,
@@ -499,6 +580,7 @@ body {
     margin-bottom: 10px;
     text-align: center;
   }
+
   &ContentPrice-tag {
     // margin: 20px 0;
 

@@ -68,7 +68,7 @@ body {
   display: none;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 930px) {
   .nav {
     position: fixed;
     width: 300px;
@@ -141,6 +141,8 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -148,6 +150,40 @@ body {
       -ms-flex-align: center;
           align-items: center;
   padding: 15px;
+}
+
+.content-headerbox-productName {
+  -webkit-box-flex: 0.1;
+      -ms-flex: 0.1;
+          flex: 0.1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-size: 11px;
+}
+
+.content-headerbox-productName_name h1 a {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  color: #000;
+}
+
+@media screen and (max-width: 930px) {
+  .content-headerbox-productName {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: end;
+  }
 }
 
 .content-headerbox-right {
@@ -172,7 +208,7 @@ body {
 }
 
 .content-headerbox-right_menu-list li a {
-  font-size: 16px;
+  font-size: 12.49px;
   padding: 15px;
   color: #333;
   font-weight: 550;
@@ -185,6 +221,12 @@ body {
   color: #fff;
 }
 
+@media screen and (max-width: 930px) {
+  .content-headerbox-right_menu-list {
+    display: none;
+  }
+}
+
 .content-headerbox-right-register {
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -193,14 +235,98 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.content-headerbox-right-register-login-user-txt {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.content-headerbox-right-register-login-user-txt p {
+  padding-left: 5px;
+}
+
+@media screen and (max-width: 420px) {
+  .content-headerbox-right-register-login-user-txt {
+    display: none;
+  }
+}
+
+.content-headerbox-right-register-login-user-fa i {
+  display: none;
+}
+
+@media screen and (max-width: 420px) {
+  .content-headerbox-right-register-login-user-fa i {
+    text-align: center;
+    display: block;
+    font-size: 20px;
+  }
+}
+
+.content-headerbox-right-register-login-user-fa h6 {
+  display: none;
+}
+
+@media screen and (max-width: 420px) {
+  .content-headerbox-right-register-login-user-fa h6 {
+    display: block;
+    text-align: center;
+    font-size: 12.45px;
+  }
+}
+
+.content-headerbox-right-register-signUp-user-txt {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.content-headerbox-right-register-signUp-user-txt p {
+  padding-left: 4px;
+}
+
+@media screen and (max-width: 420px) {
+  .content-headerbox-right-register-signUp-user-txt {
+    display: none;
+  }
+}
+
+.content-headerbox-right-register-signUp-user-fa {
+  display: none;
+}
+
+.content-headerbox-right-register-signUp-user-fa i {
+  font-size: 20px;
+}
+
+@media screen and (max-width: 420px) {
+  .content-headerbox-right-register-signUp-user-fa i {
+    text-align: center;
+    display: block;
+    font-size: 20px;
+  }
+}
+
+.content-headerbox-right-register-signUp-user-fa h6 {
+  font-size: 12.45px;
+}
+
+@media screen and (max-width: 420px) {
+  .content-headerbox-right-register-signUp-user-fa {
+    display: block;
+  }
 }
 
 .content-headerbox-right-register-login a,
 .content-headerbox-right-register-signUp a {
   margin: 10px;
   color: #1f1f1f;
-  font-size: 16x;
-  font-weight: 560;
+  font-size: 14.44px;
+  font-weight: 550;
   display: block;
 }
 
@@ -209,49 +335,29 @@ body {
   text-decoration: underline;
 }
 
+.content-headerbox-right-register-p {
+  display: inline-block;
+  margin-right: 15px;
+}
+
+.content-headerbox-right-register-p a {
+  color: #000;
+}
+
 @media screen and (max-width: 420px) {
   .content-headerbox-right-register {
     padding: 0;
   }
 }
 
-.content-headerbox-productName {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  font-size: 11px;
-  padding-bottom: 10px;
-}
-
-.content-headerbox-name h1 a {
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
-  color: #000;
-}
-
 @media screen and (max-width: 420px) {
   .content-headerbox {
+    padding: 5px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
   }
-}
-
-.register-p {
-  display: inline-block;
-  margin-right: 15px;
-}
-
-.register-p a {
-  color: #000;
 }
 
 .main-area {
@@ -415,10 +521,6 @@ body {
   text-align: center;
 }
 
-.right-container {
-  /* position: absolute; */
-}
-
 .content-salesOption {
   padding: 20px;
   color: #333;
@@ -431,20 +533,6 @@ body {
 
 .content-salesOption .content-price {
   font-weight: bold;
-}
-
-.login-user-fa i,
-.signUp-user-fa i {
-  display: none;
-}
-
-@media screen and (max-width: 420px) {
-  .login-user-fa i,
-  .signUp-user-fa i {
-    display: block;
-    font-size: 20px;
-    padding: 0px 25px;
-  }
 }
 
 @media screen and (max-width: 420px) {

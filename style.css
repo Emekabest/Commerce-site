@@ -57,6 +57,7 @@ body {
   background-color: #1c1c1c;
   color: white;
   display: none;
+  z-index: 1000;
 }
 
 .nav-close-btn {
@@ -141,7 +142,7 @@ body {
   top: 0;
   z-index: 100;
   position: fixed;
-  background-color: #f8f8f8;
+  background-color: #f5f5f5;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

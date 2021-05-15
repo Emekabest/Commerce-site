@@ -33,19 +33,19 @@ class ProductScreen {
                 <section class="left-bar">
                   <div class="left-barTop">
                     <div class="left-barTopimg">
-                      <img src="../image/${this.product.image}" alt="${this.product.name}" />
+                      <img src="./image/${this.product.image}" alt="${this.product.name}" />
                     </div>
                     <div class="left-barTopimg">
-                      <img src="../image/${this.product.image}" alt="${this.product.name}" />
+                      <img src="./image/${this.product.image}" alt="${this.product.name}" />
 
                     </div>
                     <div class="left-barTopimg">
-                       <img src="../image/${this.product.image}" alt="${this.product.name}" />
+                       <img src="./image/${this.product.image}" alt="${this.product.name}" />
 
                     </div>
                   </div>
                   <div class="left-barButtom">
-                       <img src="../image/${this.product.image}" alt="${this.product.name}" />
+                       <img src="./image/${this.product.image}" alt="${this.product.name}" />
                     <div class="left-barButtomimg">   </div>
                   </div>
                 </section>
@@ -71,7 +71,7 @@ class ProductScreen {
                       <div class="right-barContentProduct-details_image-tag">
                         <div class="right-barContent_image-tag-inner">
                           <div class="right-barContent_image">
-                       <img src="../image/${this.product.image}" alt="${this.product.name}" />
+                       <img src="./image/${this.product.image}" alt="${this.product.name}" />
 
                           </div>
                         </div>

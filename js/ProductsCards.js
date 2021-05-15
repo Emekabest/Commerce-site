@@ -13,7 +13,7 @@ class ProductCards {
                 <a href="./product.html?slug=${product.slug}" style="display:block">
                     <div class="content-sales-img-wrapper">
                         <img
-                            src="../image/${product.image}"
+                            src="./image/${product.image}"
                             class="content-sales-img" 
                             alt="${product.name}"
                         />

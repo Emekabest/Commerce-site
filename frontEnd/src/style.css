@@ -137,7 +137,11 @@ body {
 }
 
 .content-headerbox {
-  background-color: #f0f0f0;
+  width: 100%;
+  top: 0;
+  z-index: 100;
+  position: fixed;
+  background-color: #f8f8f8;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -508,12 +512,31 @@ body {
   margin-left: 10px;
 }
 
+@media screen and (max-width: 420px) {
+  .sales-category-view-more a i {
+    margin-left: 4px;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .sales-category-view-more a {
+    width: 100px;
+    padding: 13px 6px;
+  }
+}
+
 .sales-category-heading {
   font-size: 120%;
 }
 
 .sales-category-heading::first-letter {
   text-transform: uppercase;
+}
+
+@media screen and (max-width: 420px) {
+  .sales-category-heading {
+    font-size: 97%;
+  }
 }
 
 .things {

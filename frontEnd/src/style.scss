@@ -136,25 +136,23 @@ body {
   }
 }
 
-.content {
-  // background-color: #333;
-}
-
 .content-headerbox {
-  background-color: #f0f0f0;
+  width: 100%;
+  top: 0;
+  z-index: 100;
+  position: fixed;
+  background-color: #f8f8f8;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   padding: 15px;
-  // color: #fff;
 
   &-productName {
     flex: 0.1;
     display: flex;
     -webkit-box-pack: center;
     -ms-flex-pack: center;
-    // justify-content: center;
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
@@ -162,8 +160,6 @@ body {
     -ms-flex-align: center;
     align-items: center;
     font-size: 11px;
-
-    // padding-bottom: 10px;
 
     &_name h1 a {
       font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
@@ -463,14 +459,26 @@ body {
     }
     & i {
       margin-left: 10px;
+
+      @include phone {
+        margin-left: 4px;
+      }
+    }
+
+    @include phone {
+      width: 100px;
+      padding: 13px 6px;
     }
   }
 
   &-heading {
     font-size: 120%;
-
     &::first-letter {
       text-transform: uppercase;
+    }
+
+    @include phone {
+      font-size: 97%;
     }
   }
 }

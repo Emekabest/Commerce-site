@@ -521,10 +521,6 @@ body {
   }
 }
 
-.login-user-fa i,
-.signUp-user-fa i {
-}
-
 .login-user-txt,
 .signUp-user-txt {
   @include phone {
@@ -532,15 +528,16 @@ body {
   }
 }
 
-// .content-header-register {
-// }
-
 // Product screen section
+
+.main-area {
+  // margin-top: 55px;
+}
 
 .left-bar {
   // border: 2px solid #000;
   min-height: 200px;
-  width: 67%;
+  width: 79%;
   margin: 10px;
   padding: 10px;
   display: flex;
@@ -572,38 +569,39 @@ body {
   }
 
   &Buttom {
-    height: 20em;
-    width: 100%;
-    // border: 1px solid #000;
-
-    img {
-      height: 100%;
-      width: 100%;
-      object-fit: cover;
-      object-position: center;
+    &image {
+      // border: 1px solid #000;
+      height: 25em;
+      width: 60rem;
+      img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        object-position: center;
+      }
     }
   }
 }
 
 .right-bar {
-  // border: 2px solid #000;
-  min-height: 200px;
-  margin: 10px;
-  width: 33%;
+  right: 0;
+  position: fixed;
+  height: calc(100vh - 68px);
+  width: 21%;
   background-color: #fafafa;
-  padding: 10px;
+  padding: 50px 10px;
   border-radius: 10px;
 
   &Content_measureMent-box {
     text-align: center;
     border: 1px solid #000;
-    height: 150px;
+    height: 90px;
     margin-bottom: 10px;
   }
 
   &Content_description-box {
     border: 1px solid #000;
-    height: 150px;
+    height: 90px;
     margin-bottom: 10px;
     text-align: center;
   }
@@ -643,6 +641,7 @@ body {
   &ContentProduct-details {
     margin: 30px 0;
   }
+
   &Content_addButton {
     & a {
       display: block;

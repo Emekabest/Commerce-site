@@ -595,7 +595,7 @@ body {
 
 .left-bar {
   min-height: 200px;
-  width: 67%;
+  width: 79%;
   margin: 10px;
   padding: 10px;
   display: -webkit-box;
@@ -639,12 +639,12 @@ body {
      object-position: contain;
 }
 
-.left-barButtom {
-  height: 20em;
-  width: 100%;
+.left-barButtomimage {
+  height: 25em;
+  width: 60rem;
 }
 
-.left-barButtom img {
+.left-barButtomimage img {
   height: 100%;
   width: 100%;
   -o-object-fit: cover;
@@ -654,24 +654,25 @@ body {
 }
 
 .right-bar {
-  min-height: 200px;
-  margin: 10px;
-  width: 33%;
+  right: 0;
+  position: fixed;
+  height: calc(100vh - 68px);
+  width: 21%;
   background-color: #fafafa;
-  padding: 10px;
+  padding: 50px 10px;
   border-radius: 10px;
 }
 
 .right-barContent_measureMent-box {
   text-align: center;
   border: 1px solid #000;
-  height: 150px;
+  height: 90px;
   margin-bottom: 10px;
 }
 
 .right-barContent_description-box {
   border: 1px solid #000;
-  height: 150px;
+  height: 90px;
   margin-bottom: 10px;
   text-align: center;
 }

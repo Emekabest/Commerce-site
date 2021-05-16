@@ -48,6 +48,12 @@ body {
   overflow-y: scroll;
 }
 
+@media screen and (max-width: 420px) {
+  .right-container_content-container {
+    margin-top: 120px;
+  }
+}
+
 .nav {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 300px;
@@ -70,6 +76,21 @@ body {
 }
 
 @media screen and (max-width: 930px) {
+  .nav-open-btn {
+    display: block;
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .nav-open-btn {
+    position: absolute;
+    left: 10px;
+    top: 40%;
+  }
+}
+
+@media screen and (max-width: 930px) {
   .nav {
     position: fixed;
     width: 300px;
@@ -83,10 +104,6 @@ body {
   }
   .nav.open {
     display: block;
-  }
-  .nav-open-btn {
-    display: block;
-    font-size: 1.5rem;
   }
 }
 
@@ -158,6 +175,7 @@ body {
 }
 
 .content-headerbox-productName {
+  margin-right: 7vw;
   -webkit-box-flex: 0.1;
       -ms-flex: 0.1;
           flex: 0.1;
@@ -188,6 +206,13 @@ body {
     -webkit-box-pack: end;
         -ms-flex-pack: end;
             justify-content: end;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .content-headerbox-productName {
+    margin: 0;
+    font-size: 8.5px;
   }
 }
 
@@ -268,7 +293,7 @@ body {
   .content-headerbox-right-register-login-user-fa i {
     text-align: center;
     display: block;
-    font-size: 20px;
+    font-size: 15px;
   }
 }
 
@@ -280,7 +305,7 @@ body {
   .content-headerbox-right-register-login-user-fa h6 {
     display: block;
     text-align: center;
-    font-size: 12.45px;
+    font-size: 11px;
   }
 }
 
@@ -304,20 +329,16 @@ body {
   display: none;
 }
 
-.content-headerbox-right-register-signUp-user-fa i {
-  font-size: 20px;
-}
-
 @media screen and (max-width: 420px) {
   .content-headerbox-right-register-signUp-user-fa i {
     text-align: center;
     display: block;
-    font-size: 20px;
+    font-size: 15px;
   }
 }
 
 .content-headerbox-right-register-signUp-user-fa h6 {
-  font-size: 12.45px;
+  font-size: 11px;
 }
 
 @media screen and (max-width: 420px) {
@@ -357,7 +378,7 @@ body {
 
 @media screen and (max-width: 420px) {
   .content-headerbox {
-    padding: 5px;
+    padding: 10px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -396,7 +417,6 @@ body {
   align-items: center;
   margin-bottom: 30px;
   border-radius: 10px;
-  /* height: 60vh; */
 }
 
 .container-sales-container .container-sales-boxes {
@@ -451,6 +471,12 @@ body {
 .container-sales-container .container-sales-boxes .container-sales:hover .content-sales-img {
   -webkit-transform: scale(1.05);
           transform: scale(1.05);
+}
+
+@media screen and (max-width: 420px) {
+  .container-sales-container ::-webkit-scrollbar {
+    height: 3px;
+  }
 }
 
 .content-price {
@@ -523,6 +549,7 @@ body {
   .sales-category-view-more a {
     width: 100px;
     padding: 13px 6px;
+    font-size: 14.54px;
   }
 }
 

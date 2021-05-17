@@ -673,3 +673,89 @@ body {
   flex-wrap: wrap;
   flex-shrink: max($numbers: 10);
 }
+
+.contact-container{
+  margin-top: 65px;
+  width: 100%;
+  
+}
+
+.contact-box{
+  background-image: url(./image/pexels-photo-2922301.jpeg);
+  justify-content: center;
+  width: 100%;
+  background-repeat: no-repeat; 
+  // background-attachment: scroll;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  height: 60vh;
+}
+
+.contact-box-msg{
+  text-align: center;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.contact-guide{
+  display: flex;
+  // grid-template-columns: 350px 350px;
+  justify-content: center;
+  align-content: center;
+  height: 40vh;
+  // grid-gap:20px;
+  // grid-template-rows: 300px;
+  background-color: white;
+  // position: fixed;
+}
+
+.contact-box-guide-call{
+  background-color: white;
+  box-shadow: 3px 3px 3px 3px rgb(184, 183, 183);
+  // position: absolute;
+  width: 35rem;
+  display: flex;
+  align-items: center;
+  padding: 0px 15px;
+  border-radius: 5px;
+  text-align: center;
+  height: 290px;
+  margin: 0 10px;
+  // position: absolute;
+}
+
+.contact-box-guide-box{
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  bottom: 20px;
+  width: 100%;
+  // background-color: red;
+  // height: 30vh;
+}
+
+.phone{
+  font-size: 30px;
+}
+
+.contact-box-guide-call-p{
+  line-height: 1.5em;
+}
+
+.phone, .contact-box-guide-call-h3, .contact-box-guide-call-p{
+  padding: 10px 0;
+}
+
+.contact-box-guide-call-a-1{
+  background-color: red;
+  padding: 10px 15px;
+  width: auto;
+  cursor: pointer;
+  color: white;
+  // margin-top: 0px;
+  font-weight: bolder;
+  border-radius: 3px;
+}
+

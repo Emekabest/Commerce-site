@@ -734,4 +734,98 @@ body {
   -ms-flex-negative: 10;
       flex-shrink: 10;
 }
+
+.contact-container {
+  margin-top: 65px;
+  width: 100%;
+}
+
+.contact-box {
+  background-image: url(./image/pexels-photo-2922301.jpeg);
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 60vh;
+}
+
+.contact-box-msg {
+  text-align: center;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.contact-guide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  height: 40vh;
+  background-color: white;
+}
+
+.contact-box-guide-call {
+  background-color: white;
+  -webkit-box-shadow: 3px 3px 3px 3px #b8b7b7;
+          box-shadow: 3px 3px 3px 3px #b8b7b7;
+  width: 35rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0px 15px;
+  border-radius: 5px;
+  text-align: center;
+  height: 290px;
+  margin: 0 10px;
+}
+
+.contact-box-guide-box {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  bottom: 20px;
+  width: 100%;
+}
+
+.phone {
+  font-size: 30px;
+}
+
+.contact-box-guide-call-p {
+  line-height: 1.5em;
+}
+
+.phone, .contact-box-guide-call-h3, .contact-box-guide-call-p {
+  padding: 10px 0;
+}
+
+.contact-box-guide-call-a-1 {
+  background-color: red;
+  padding: 10px 15px;
+  width: auto;
+  cursor: pointer;
+  color: white;
+  font-weight: bolder;
+  border-radius: 3px;
+}
 /*# sourceMappingURL=style.css.map */

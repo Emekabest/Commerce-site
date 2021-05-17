@@ -20,7 +20,7 @@ body {
 
 ::-webkit-scrollbar-thumb {
   height: 10px;
-  width: 30px;
+  width: 7px;
   background-color: #6ca6dda8;
 }
 
@@ -386,10 +386,6 @@ body {
   }
 }
 
-.main-area {
-  margin-top: 50px;
-}
-
 .product-cards {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -595,9 +591,7 @@ body {
 
 .left-bar {
   min-height: 200px;
-  width: 79%;
-  margin: 10px;
-  padding: 10px;
+  margin: 0px 10px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -605,12 +599,6 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
 .left-barTop {
@@ -618,7 +606,7 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: 8px;
+  margin-bottom: 70px;
   overflow-x: auto;
 }
 
@@ -654,13 +642,12 @@ body {
 }
 
 .right-bar {
-  right: 0;
-  position: fixed;
-  height: calc(100vh - 68px);
-  width: 21%;
   background-color: #fafafa;
   padding: 50px 10px;
-  border-radius: 10px;
+  width: 500px;
+  -webkit-box-flex: end;
+      -ms-flex: end;
+          flex: end;
 }
 
 .right-barContent_measureMent-box {
@@ -709,6 +696,10 @@ body {
   margin: 30px 0;
 }
 
+.right-barContent_addButton {
+  margin-top: 50px;
+}
+
 .right-barContent_addButton a {
   display: block;
 }
@@ -735,5 +726,12 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-negative: 10;
+      flex-shrink: 10;
 }
 /*# sourceMappingURL=style.css.map */

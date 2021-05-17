@@ -28,12 +28,13 @@ body {
 }
 
 ::-webkit-scrollbar {
+  // display: none;
   height: 10px;
 }
 
 ::-webkit-scrollbar-thumb {
   height: 10px;
-  width: 30px;
+  width: 7px;
   background-color: #6ca6dda8;
   // border-radius: 4px;
 }
@@ -350,8 +351,15 @@ body {
   }
 }
 
+.main-Content {
+  // margin-top: 190px;
+}
+
 .main-area {
-  margin-top: 50px;
+}
+
+.productMain-content {
+  // overflow-y: scroll;
 }
 
 .product-cards {
@@ -360,7 +368,6 @@ body {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-
   /* margin-top: 30px; */
 }
 
@@ -530,26 +537,19 @@ body {
 
 // Product screen section
 
-.main-area {
-  // margin-top: 55px;
-}
-
 .left-bar {
-  // border: 2px solid #000;
   min-height: 200px;
-  width: 79%;
-  margin: 10px;
-  padding: 10px;
+  // flex: 1;
+  margin: 0px 10px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
 
   &Top {
     width: 100%;
     display: flex;
-    margin: 8px;
+    margin-bottom: 70px;
     overflow-x: auto;
+    // justify-content: center;
   }
 
   &Topimg {
@@ -584,13 +584,11 @@ body {
 }
 
 .right-bar {
-  right: 0;
-  position: fixed;
-  height: calc(100vh - 68px);
-  width: 21%;
+  // flex: 1;
   background-color: #fafafa;
   padding: 50px 10px;
-  border-radius: 10px;
+  width: 500px;
+  flex: end;
 
   &Content_measureMent-box {
     text-align: center;
@@ -643,6 +641,8 @@ body {
   }
 
   &Content_addButton {
+    margin-top: 50px;
+
     & a {
       display: block;
 
@@ -669,4 +669,7 @@ body {
 
 .main-areaContent {
   display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-shrink: max($numbers: 10);
 }

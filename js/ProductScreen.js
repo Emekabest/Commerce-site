@@ -45,7 +45,7 @@ class ProductScreen {
                     </div>
                   </div>
                   <div class="left-barButtom">
-                    
+
                     <div class="left-barButtomimage">
                      <img src="./image/${this.product.image}" alt="${this.product.name}" />
                       </div>
@@ -87,7 +87,7 @@ class ProductScreen {
                     <div class="right-barContent_description-box">
                       <article>Description-Tag</article>
                     </div>
-                  
+
                     <div class="right-barContent_addButton">
                       <a href="#"> <button>ADD <i class="fas fa-cart-plus"></i></button> </a>
                     </div>

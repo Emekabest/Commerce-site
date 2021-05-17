@@ -57,6 +57,12 @@ body {
   flex: 1 1 auto;
   height: 100vh;
   overflow-y: scroll;
+
+  &_content-container {
+    @include phone {
+      margin-top: 120px;
+    }
+  }
 }
 
 .nav {
@@ -71,9 +77,21 @@ body {
   &-close-btn {
     display: none;
   }
+
   &-open-btn {
     padding-right: 15px;
     display: none;
+
+    @include tab {
+      display: block;
+      font-size: 1.5rem;
+    }
+
+    @include phone {
+      position: absolute;
+      left: 10px;
+      top: 40%;
+    }
   }
 
   @include tab {
@@ -91,10 +109,6 @@ body {
 
     &.open {
       display: block;
-    }
-    &-open-btn {
-      display: block;
-      font-size: 1.5rem;
     }
   }
 
@@ -148,8 +162,10 @@ body {
   justify-content: center;
   align-items: center;
   padding: 15px;
+  // position: relative;
 
   &-productName {
+    margin-right: 7vw;
     flex: 0.1;
     display: flex;
     -webkit-box-pack: center;
@@ -171,6 +187,11 @@ body {
     @include tab {
       flex: 1;
       justify-content: end;
+    }
+
+    @include phone {
+      margin: 0;
+      font-size: 8.5px;
     }
   }
 
@@ -238,7 +259,7 @@ body {
             @include phone {
               text-align: center;
               display: block;
-              font-size: 20px;
+              font-size: 15px;
               // padding: 0px 25px;
             }
           }
@@ -249,7 +270,7 @@ body {
             @include phone {
               display: block;
               text-align: center;
-              font-size: 12.45px;
+              font-size: 11px;
               // padding: 0px 20px;
             }
           }
@@ -273,18 +294,18 @@ body {
           display: none;
 
           & i {
-            font-size: 20px;
+            // font-size: 20px;
 
             @include phone {
               text-align: center;
               display: block;
-              font-size: 20px;
+              font-size: 15px;
               // padding: 0px 25px;
             }
           }
 
           & h6 {
-            font-size: 12.45px;
+            font-size: 11px;
           }
 
           @include phone {
@@ -317,15 +338,6 @@ body {
         }
       }
 
-      .register-p a {
-      }
-      // &-signUp a {
-      //   color: #1f1f1f;
-      //   font-size: 15px;
-      //   font-weight: 560;
-      //   display: block;
-      // }
-
       @include phone {
         padding: 0;
       }
@@ -333,7 +345,7 @@ body {
   }
 
   @include phone {
-    padding: 5px;
+    padding: 10px;
     flex-direction: column;
   }
 }
@@ -366,7 +378,6 @@ body {
   align-items: center;
   margin-bottom: 30px;
   border-radius: 10px;
-  /* height: 60vh; */
 
   .container-sales-boxes {
     padding: 20px;
@@ -410,6 +421,12 @@ body {
           transform: scale(1.05);
         }
       }
+    }
+  }
+
+  @include phone {
+    ::-webkit-scrollbar {
+      height: 3px;
     }
   }
 }
@@ -469,6 +486,7 @@ body {
     @include phone {
       width: 100px;
       padding: 13px 6px;
+      font-size: 14.54px;
     }
   }
 

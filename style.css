@@ -782,7 +782,7 @@ body {
   background-color: white;
   -webkit-box-shadow: 3px 3px 3px 3px #b8b7b7;
           box-shadow: 3px 3px 3px 3px #b8b7b7;
-  width: 35rem;
+  width: 30rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -792,7 +792,7 @@ body {
   padding: 0px 15px;
   border-radius: 5px;
   text-align: center;
-  height: 290px;
+  height: 270px;
   margin: 0 10px;
 }
 
@@ -804,7 +804,7 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  bottom: 20px;
+  bottom: 15px;
   width: 100%;
 }
 
@@ -817,16 +817,47 @@ body {
 }
 
 .phone, .contact-box-guide-call-h3, .contact-box-guide-call-p {
-  padding: 10px 0;
+  padding: 5px 0;
 }
 
 .contact-box-guide-call-a-1 {
   background-color: red;
   padding: 10px 15px;
   width: auto;
+  height: auto;
+  outline: none;
+  border: none;
   cursor: pointer;
   color: white;
   font-weight: bolder;
   border-radius: 3px;
+}
+
+.contact-box-guide-call-a-1:hover {
+  background-color: maroon;
+}
+
+@media screen and (max-width: 530px) {
+  .contact-box-guide-call-box {
+    font-size: 15px;
+    height: auto;
+  }
+  .contact-box-guide-call-h3, .phone, .contact-box-guide-call-h3 {
+    font-size: 17px;
+  }
+  .contact-box-guide-call-a-1 {
+    padding: 5px 10px;
+  }
+}
+
+@media screen and (max-width: 352px) {
+  .contact-box-guide-call-a-1 {
+    padding: 3px 8px;
+    font-size: 11px;
+  }
+  .contact-box-guide-call-box {
+    font-size: 13px;
+    height: auto;
+  }
 }
 /*# sourceMappingURL=style.css.map */

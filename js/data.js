@@ -146,8 +146,8 @@ const allProducts = [
 
   {
     id: 4,
-    name: "Cover arms",
-    slug: "cover-arms",
+    name: "Yellow tikky",
+    slug: "yellow-tikky",
     recent_price: 80,
     discount_price: 90,
     main_price: 80,
@@ -185,12 +185,12 @@ const allProducts = [
 
   {
     id: 2,
-    name: "Red native",
-    slug: "red-native",
+    name: "Corbs",
+    slug: "corbs",
     recent_price: 70,
     discount_price: 90,
     main_price: 70,
-    image: "pexels-photo-3907595.jpeg",
+    image: "pexels-photo-3526923.jpeg",
     currency_symbol: {
       naira: currency_sign.naira,
       dollar: currency_sign.dollar,
@@ -389,12 +389,12 @@ const skirtProducts = [
 
   {
     id: 4,
-    name: "Cover arms",
-    slug: "cover-arms",
+    name: "Yellow tikky",
+    slug: "yellow-tikky",
     recent_price: 80,
     discount_price: 90,
     main_price: 80,
-    image: "pexels-photo-4890733.jpeg",
+    image: "pexels-photo-1018911.jpeg",
     currency_symbol: {
       naira: currency_sign.naira,
       dollar: currency_sign.dollar,
@@ -431,12 +431,12 @@ const kidProducts = [
 
   {
     id: 2,
-    name: "Red native",
-    slug: "red-native",
+    name: "Corbs",
+    slug: "corbs",
     recent_price: 70,
     discount_price: 90,
     main_price: 70,
-    image: "pexels-photo-3907595.jpeg",
+    image: "pexels-photo-3526923.jpeg",
     currency_symbol: {
       naira: currency_sign.naira,
       dollar: currency_sign.dollar,

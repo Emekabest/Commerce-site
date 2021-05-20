@@ -28,12 +28,13 @@ body {
 }
 
 ::-webkit-scrollbar {
+  // display: none;
   height: 10px;
 }
 
 ::-webkit-scrollbar-thumb {
   height: 10px;
-  width: 30px;
+  width: 7px;
   background-color: #6ca6dda8;
   // border-radius: 4px;
 }
@@ -350,8 +351,15 @@ body {
   }
 }
 
+.main-Content {
+  // margin-top: 190px;
+}
+
 .main-area {
-  margin-top: 50px;
+}
+
+.productMain-content {
+  // overflow-y: scroll;
 }
 
 .product-cards {
@@ -360,7 +368,6 @@ body {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-
   /* margin-top: 30px; */
 }
 
@@ -521,10 +528,6 @@ body {
   }
 }
 
-.login-user-fa i,
-.signUp-user-fa i {
-}
-
 .login-user-txt,
 .signUp-user-txt {
   @include phone {
@@ -532,27 +535,21 @@ body {
   }
 }
 
-// .content-header-register {
-// }
-
 // Product screen section
 
 .left-bar {
-  // border: 2px solid #000;
   min-height: 200px;
-  width: 67%;
-  margin: 10px;
-  padding: 10px;
+  // flex: 1;
+  margin: 0px 10px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
 
   &Top {
     width: 100%;
     display: flex;
-    margin: 8px;
+    margin-bottom: 70px;
     overflow-x: auto;
+    // justify-content: center;
   }
 
   &Topimg {
@@ -572,38 +569,37 @@ body {
   }
 
   &Buttom {
-    height: 20em;
-    width: 100%;
-    // border: 1px solid #000;
-
-    img {
-      height: 100%;
-      width: 100%;
-      object-fit: cover;
-      object-position: center;
+    &image {
+      // border: 1px solid #000;
+      height: 25em;
+      width: 60rem;
+      img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        object-position: center;
+      }
     }
   }
 }
 
 .right-bar {
-  // border: 2px solid #000;
-  min-height: 200px;
-  margin: 10px;
-  width: 33%;
+  // flex: 1;
   background-color: #fafafa;
-  padding: 10px;
-  border-radius: 10px;
+  padding: 50px 10px;
+  width: 500px;
+  flex: end;
 
   &Content_measureMent-box {
     text-align: center;
     border: 1px solid #000;
-    height: 150px;
+    height: 90px;
     margin-bottom: 10px;
   }
 
   &Content_description-box {
     border: 1px solid #000;
-    height: 150px;
+    height: 90px;
     margin-bottom: 10px;
     text-align: center;
   }
@@ -643,7 +639,10 @@ body {
   &ContentProduct-details {
     margin: 30px 0;
   }
+
   &Content_addButton {
+    margin-top: 50px;
+
     & a {
       display: block;
 
@@ -670,6 +669,9 @@ body {
 
 .main-areaContent {
   display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-shrink: max($numbers: 10);
 }
 
 .contact-container{

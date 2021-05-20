@@ -1,6 +1,9 @@
-const currency_sign = {
-  naira: "&#8358",
-  dollar: "&#36",
+const Extras = {
+  currency_sign: {
+    naira: "&#8358",
+    dollar: "&#36",
+  },
+  productCardHeaderName: "Related items",
 };
 
 const allProducts = [
@@ -8,15 +11,51 @@ const allProducts = [
     id: 1,
     name: "Bigman cloths",
     slug: "bigman-cloths",
-    recent_price: 40,
-    discount_price: 60,
+    recent_price: 20000,
+    discount_price: 20,
     main_price: 40,
     image: "pexels-photo-2955375.jpeg",
     currency_symbol: {
-      naira: currency_sign.naira,
-      dollar: currency_sign.dollar,
+      naira: Extras.currency_sign.naira,
+      dollar: Extras.currency_sign.dollar,
     },
+    related_items: [
+      {
+        header: { text: Extras.productCardHeaderName, href: "#" },
 
+        products: [
+          //Related products here
+
+          {
+            id: 2,
+            name: "Timberlin",
+            slug: "timberlin",
+            recent_price: 70,
+            discount_price: 90,
+            main_price: 70,
+            image: "pexels-photo-1317712.jpeg",
+            currency_symbol: {
+              naira: Extras.currency_sign.naira,
+              dollar: Extras.currency_sign.dollar,
+            },
+
+            related_items: [
+              {
+                header: { text: Extras.productCardHeaderName, href: "#" },
+                products: [],
+              },
+            ],
+
+            getDiscount() {
+              const getDiscount =
+                (this.recent_price / 100) * this.discount_price;
+
+              this.main_price = Math.floor(this.recent_price - getDiscount);
+            },
+          },
+        ],
+      },
+    ],
     getDiscount() {
       const getDiscount = (this.recent_price / 100) * this.discount_price;
 
@@ -33,9 +72,47 @@ const allProducts = [
     main_price: 70,
     image: "pexels-photo-3310694.jpeg",
     currency_symbol: {
-      naira: currency_sign.naira,
-      dollar: currency_sign.dollar,
+      naira: Extras.currency_sign.naira,
+      dollar: Extras.currency_sign.dollar,
     },
+
+    related_items: [
+      {
+        header: { text: Extras.productCardHeaderName, href: "#" },
+
+        products: [
+          //Related products here
+
+          {
+            id: 2,
+            name: "Timberlin",
+            slug: "timberlin",
+            recent_price: 70,
+            discount_price: 90,
+            main_price: 70,
+            image: "pexels-photo-1317712.jpeg",
+            currency_symbol: {
+              naira: Extras.currency_sign.naira,
+              dollar: Extras.currency_sign.dollar,
+            },
+
+            related_items: [
+              {
+                header: { text: Extras.productCardHeaderName, href: "#" },
+                products: [],
+              },
+            ],
+
+            getDiscount() {
+              const getDiscount =
+                (this.recent_price / 100) * this.discount_price;
+
+              this.main_price = Math.floor(this.recent_price - getDiscount);
+            },
+          },
+        ],
+      },
+    ],
 
     getDiscount() {
       const getDiscount = (this.recent_price / 100) * this.discount_price;
@@ -53,9 +130,47 @@ const allProducts = [
     main_price: 100,
     image: "pexels-photo-2728263.jpeg",
     currency_symbol: {
-      naira: currency_sign.naira,
-      dollar: currency_sign.dollar,
+      naira: Extras.currency_sign.naira,
+      dollar: Extras.currency_sign.dollar,
     },
+
+    related_items: [
+      {
+        header: { text: Extras.productCardHeaderName, href: "#" },
+
+        products: [
+          //Related products here
+
+          {
+            id: 2,
+            name: "Timberlin",
+            slug: "timberlin",
+            recent_price: 70,
+            discount_price: 90,
+            main_price: 70,
+            image: "pexels-photo-1317712.jpeg",
+            currency_symbol: {
+              naira: Extras.currency_sign.naira,
+              dollar: Extras.currency_sign.dollar,
+            },
+
+            related_items: [
+              {
+                header: { text: Extras.productCardHeaderName, href: "#" },
+                products: [],
+              },
+            ],
+
+            getDiscount() {
+              const getDiscount =
+                (this.recent_price / 100) * this.discount_price;
+
+              this.main_price = Math.floor(this.recent_price - getDiscount);
+            },
+          },
+        ],
+      },
+    ],
 
     getDiscount() {
       const getDiscount = (this.recent_price / 100) * this.discount_price;
@@ -73,9 +188,47 @@ const allProducts = [
     main_price: 80,
     image: "pexels-photo-3193731.jpeg",
     currency_symbol: {
-      naira: currency_sign.naira,
-      dollar: currency_sign.dollar,
+      naira: Extras.currency_sign.naira,
+      dollar: Extras.currency_sign.dollar,
     },
+
+    related_items: [
+      {
+        header: { text: Extras.productCardHeaderName, href: "#" },
+
+        products: [
+          //Related products here
+
+          {
+            id: 2,
+            name: "Timberlin",
+            slug: "timberlin",
+            recent_price: 70,
+            discount_price: 90,
+            main_price: 70,
+            image: "pexels-photo-1317712.jpeg",
+            currency_symbol: {
+              naira: Extras.currency_sign.naira,
+              dollar: Extras.currency_sign.dollar,
+            },
+
+            related_items: [
+              {
+                header: { text: Extras.productCardHeaderName, href: "#" },
+                products: [],
+              },
+            ],
+
+            getDiscount() {
+              const getDiscount =
+                (this.recent_price / 100) * this.discount_price;
+
+              this.main_price = Math.floor(this.recent_price - getDiscount);
+            },
+          },
+        ],
+      },
+    ],
 
     getDiscount() {
       const getDiscount = (this.recent_price / 100) * this.discount_price;
@@ -93,9 +246,47 @@ const allProducts = [
     main_price: 40,
     image: "pexels-photo-1719641.jpeg",
     currency_symbol: {
-      naira: currency_sign.naira,
-      dollar: currency_sign.dollar,
+      naira: Extras.currency_sign.naira,
+      dollar: Extras.currency_sign.dollar,
     },
+
+    related_items: [
+      {
+        header: { text: Extras.productCardHeaderName, href: "#" },
+
+        products: [
+          //Related products here
+
+          {
+            id: 2,
+            name: "Timberlin",
+            slug: "timberlin",
+            recent_price: 70,
+            discount_price: 90,
+            main_price: 70,
+            image: "pexels-photo-1317712.jpeg",
+            currency_symbol: {
+              naira: Extras.currency_sign.naira,
+              dollar: Extras.currency_sign.dollar,
+            },
+
+            related_items: [
+              {
+                header: { text: Extras.productCardHeaderName, href: "#" },
+                products: [],
+              },
+            ],
+
+            getDiscount() {
+              const getDiscount =
+                (this.recent_price / 100) * this.discount_price;
+
+              this.main_price = Math.floor(this.recent_price - getDiscount);
+            },
+          },
+        ],
+      },
+    ],
 
     getDiscount() {
       const getDiscount = (this.recent_price / 100) * this.discount_price;
@@ -113,9 +304,47 @@ const allProducts = [
     main_price: 70,
     image: "pexels-photo-2726161.jpeg",
     currency_symbol: {
-      naira: currency_sign.naira,
-      dollar: currency_sign.dollar,
+      naira: Extras.currency_sign.naira,
+      dollar: Extras.currency_sign.dollar,
     },
+
+    related_items: [
+      {
+        header: { text: Extras.productCardHeaderName, href: "#" },
+
+        products: [
+          //Related products here
+
+          {
+            id: 2,
+            name: "Timberlin",
+            slug: "timberlin",
+            recent_price: 70,
+            discount_price: 90,
+            main_price: 70,
+            image: "pexels-photo-1317712.jpeg",
+            currency_symbol: {
+              naira: Extras.currency_sign.naira,
+              dollar: Extras.currency_sign.dollar,
+            },
+
+            related_items: [
+              {
+                header: { text: Extras.productCardHeaderName, href: "#" },
+                products: [],
+              },
+            ],
+
+            getDiscount() {
+              const getDiscount =
+                (this.recent_price / 100) * this.discount_price;
+
+              this.main_price = Math.floor(this.recent_price - getDiscount);
+            },
+          },
+        ],
+      },
+    ],
 
     getDiscount() {
       const getDiscount = (this.recent_price / 100) * this.discount_price;
@@ -133,9 +362,47 @@ const allProducts = [
     main_price: 100,
     image: "pexels-photo-2922301.jpeg",
     currency_symbol: {
-      naira: currency_sign.naira,
-      dollar: currency_sign.dollar,
+      naira: Extras.currency_sign.naira,
+      dollar: Extras.currency_sign.dollar,
     },
+
+    related_items: [
+      {
+        header: { text: Extras.productCardHeaderName, href: "#" },
+
+        products: [
+          //Related products here
+
+          {
+            id: 2,
+            name: "Timberlin",
+            slug: "timberlin",
+            recent_price: 70,
+            discount_price: 90,
+            main_price: 70,
+            image: "pexels-photo-1317712.jpeg",
+            currency_symbol: {
+              naira: Extras.currency_sign.naira,
+              dollar: Extras.currency_sign.dollar,
+            },
+
+            related_items: [
+              {
+                header: { text: Extras.productCardHeaderName, href: "#" },
+                products: [],
+              },
+            ],
+
+            getDiscount() {
+              const getDiscount =
+                (this.recent_price / 100) * this.discount_price;
+
+              this.main_price = Math.floor(this.recent_price - getDiscount);
+            },
+          },
+        ],
+      },
+    ],
 
     getDiscount() {
       const getDiscount = (this.recent_price / 100) * this.discount_price;
@@ -153,9 +420,47 @@ const allProducts = [
     main_price: 80,
     image: "pexels-photo-1018911.jpeg",
     currency_symbol: {
-      naira: currency_sign.naira,
-      dollar: currency_sign.dollar,
+      naira: Extras.currency_sign.naira,
+      dollar: Extras.currency_sign.dollar,
     },
+
+    related_items: [
+      {
+        header: { text: Extras.productCardHeaderName, href: "#" },
+
+        products: [
+          //Related products here
+
+          {
+            id: 2,
+            name: "Timberlin",
+            slug: "timberlin",
+            recent_price: 70,
+            discount_price: 90,
+            main_price: 70,
+            image: "pexels-photo-1317712.jpeg",
+            currency_symbol: {
+              naira: Extras.currency_sign.naira,
+              dollar: Extras.currency_sign.dollar,
+            },
+
+            related_items: [
+              {
+                header: { text: Extras.productCardHeaderName, href: "#" },
+                products: [],
+              },
+            ],
+
+            getDiscount() {
+              const getDiscount =
+                (this.recent_price / 100) * this.discount_price;
+
+              this.main_price = Math.floor(this.recent_price - getDiscount);
+            },
+          },
+        ],
+      },
+    ],
 
     getDiscount() {
       const getDiscount = (this.recent_price / 100) * this.discount_price;
@@ -172,9 +477,47 @@ const allProducts = [
     main_price: 40,
     image: "pexels-photo-6112012.jpeg",
     currency_symbol: {
-      naira: currency_sign.naira,
-      dollar: currency_sign.dollar,
+      naira: Extras.currency_sign.naira,
+      dollar: Extras.currency_sign.dollar,
     },
+
+    related_items: [
+      {
+        header: { text: Extras.productCardHeaderName, href: "#" },
+
+        products: [
+          //Related products here
+
+          {
+            id: 2,
+            name: "Timberlin",
+            slug: "timberlin",
+            recent_price: 70,
+            discount_price: 90,
+            main_price: 70,
+            image: "pexels-photo-1317712.jpeg",
+            currency_symbol: {
+              naira: Extras.currency_sign.naira,
+              dollar: Extras.currency_sign.dollar,
+            },
+
+            related_items: [
+              {
+                header: { text: Extras.productCardHeaderName, href: "#" },
+                products: [],
+              },
+            ],
+
+            getDiscount() {
+              const getDiscount =
+                (this.recent_price / 100) * this.discount_price;
+
+              this.main_price = Math.floor(this.recent_price - getDiscount);
+            },
+          },
+        ],
+      },
+    ],
 
     getDiscount() {
       const getDiscount = (this.recent_price / 100) * this.discount_price;
@@ -192,9 +535,47 @@ const allProducts = [
     main_price: 70,
     image: "pexels-photo-3526923.jpeg",
     currency_symbol: {
-      naira: currency_sign.naira,
-      dollar: currency_sign.dollar,
+      naira: Extras.currency_sign.naira,
+      dollar: Extras.currency_sign.dollar,
     },
+
+    related_items: [
+      {
+        header: { text: Extras.productCardHeaderName, href: "#" },
+
+        products: [
+          //Related products here
+
+          {
+            id: 2,
+            name: "Timberlin",
+            slug: "timberlin",
+            recent_price: 70,
+            discount_price: 90,
+            main_price: 70,
+            image: "pexels-photo-1317712.jpeg",
+            currency_symbol: {
+              naira: Extras.currency_sign.naira,
+              dollar: Extras.currency_sign.dollar,
+            },
+
+            related_items: [
+              {
+                header: { text: Extras.productCardHeaderName, href: "#" },
+                products: [],
+              },
+            ],
+
+            getDiscount() {
+              const getDiscount =
+                (this.recent_price / 100) * this.discount_price;
+
+              this.main_price = Math.floor(this.recent_price - getDiscount);
+            },
+          },
+        ],
+      },
+    ],
 
     getDiscount() {
       const getDiscount = (this.recent_price / 100) * this.discount_price;
@@ -212,9 +593,47 @@ const allProducts = [
     main_price: 100,
     image: "pexels-photo-2466756(1).jpeg",
     currency_symbol: {
-      naira: currency_sign.naira,
-      dollar: currency_sign.dollar,
+      naira: Extras.currency_sign.naira,
+      dollar: Extras.currency_sign.dollar,
     },
+
+    related_items: [
+      {
+        header: { text: Extras.productCardHeaderName, href: "#" },
+
+        products: [
+          //Related products here
+
+          {
+            id: 2,
+            name: "Timberlin",
+            slug: "timberlin",
+            recent_price: 70,
+            discount_price: 90,
+            main_price: 70,
+            image: "pexels-photo-1317712.jpeg",
+            currency_symbol: {
+              naira: Extras.currency_sign.naira,
+              dollar: Extras.currency_sign.dollar,
+            },
+
+            related_items: [
+              {
+                header: { text: Extras.productCardHeaderName, href: "#" },
+                products: [],
+              },
+            ],
+
+            getDiscount() {
+              const getDiscount =
+                (this.recent_price / 100) * this.discount_price;
+
+              this.main_price = Math.floor(this.recent_price - getDiscount);
+            },
+          },
+        ],
+      },
+    ],
 
     getDiscount() {
       const getDiscount = (this.recent_price / 100) * this.discount_price;
@@ -232,9 +651,47 @@ const allProducts = [
     main_price: 80,
     image: "pexels-photo-952214.jpeg",
     currency_symbol: {
-      naira: currency_sign.naira,
-      dollar: currency_sign.dollar,
+      naira: Extras.currency_sign.naira,
+      dollar: Extras.currency_sign.dollar,
     },
+
+    related_items: [
+      {
+        header: { text: Extras.productCardHeaderName, href: "#" },
+
+        products: [
+          //Related products here
+
+          {
+            id: 2,
+            name: "Timberlin",
+            slug: "timberlin",
+            recent_price: 70,
+            discount_price: 90,
+            main_price: 70,
+            image: "pexels-photo-1317712.jpeg",
+            currency_symbol: {
+              naira: Extras.currency_sign.naira,
+              dollar: Extras.currency_sign.dollar,
+            },
+
+            related_items: [
+              {
+                header: { text: Extras.productCardHeaderName, href: "#" },
+                products: [],
+              },
+            ],
+
+            getDiscount() {
+              const getDiscount =
+                (this.recent_price / 100) * this.discount_price;
+
+              this.main_price = Math.floor(this.recent_price - getDiscount);
+            },
+          },
+        ],
+      },
+    ],
 
     getDiscount() {
       const getDiscount = (this.recent_price / 100) * this.discount_price;
@@ -249,14 +706,52 @@ const manStuffProducts = [
     id: 1,
     name: "Bigman cloths",
     slug: "bigman-cloths",
-    recent_price: 40,
-    discount_price: 60,
+    recent_price: 20000,
+    discount_price: 20,
     main_price: 40,
     image: "pexels-photo-2955375.jpeg",
     currency_symbol: {
-      naira: currency_sign.naira,
-      dollar: currency_sign.dollar,
+      naira: Extras.currency_sign.naira,
+      dollar: Extras.currency_sign.dollar,
     },
+
+    related_items: [
+      {
+        header: { text: Extras.productCardHeaderName, href: "#" },
+
+        products: [
+          //Related products here
+
+          {
+            id: 2,
+            name: "Timberlin",
+            slug: "timberlin",
+            recent_price: 70,
+            discount_price: 90,
+            main_price: 70,
+            image: "pexels-photo-1317712.jpeg",
+            currency_symbol: {
+              naira: Extras.currency_sign.naira,
+              dollar: Extras.currency_sign.dollar,
+            },
+
+            related_items: [
+              {
+                header: { text: Extras.productCardHeaderName, href: "#" },
+                products: [],
+              },
+            ],
+
+            getDiscount() {
+              const getDiscount =
+                (this.recent_price / 100) * this.discount_price;
+
+              this.main_price = Math.floor(this.recent_price - getDiscount);
+            },
+          },
+        ],
+      },
+    ],
 
     getDiscount() {
       const getDiscount = (this.recent_price / 100) * this.discount_price;
@@ -274,9 +769,47 @@ const manStuffProducts = [
     main_price: 70,
     image: "pexels-photo-3310694.jpeg",
     currency_symbol: {
-      naira: currency_sign.naira,
-      dollar: currency_sign.dollar,
+      naira: Extras.currency_sign.naira,
+      dollar: Extras.currency_sign.dollar,
     },
+
+    related_items: [
+      {
+        header: { text: Extras.productCardHeaderName, href: "#" },
+
+        products: [
+          //Related products here
+
+          {
+            id: 2,
+            name: "Timberlin",
+            slug: "timberlin",
+            recent_price: 70,
+            discount_price: 90,
+            main_price: 70,
+            image: "pexels-photo-1317712.jpeg",
+            currency_symbol: {
+              naira: Extras.currency_sign.naira,
+              dollar: Extras.currency_sign.dollar,
+            },
+
+            related_items: [
+              {
+                header: { text: Extras.productCardHeaderName, href: "#" },
+                products: [],
+              },
+            ],
+
+            getDiscount() {
+              const getDiscount =
+                (this.recent_price / 100) * this.discount_price;
+
+              this.main_price = Math.floor(this.recent_price - getDiscount);
+            },
+          },
+        ],
+      },
+    ],
 
     getDiscount() {
       const getDiscount = (this.recent_price / 100) * this.discount_price;
@@ -294,9 +827,47 @@ const manStuffProducts = [
     main_price: 100,
     image: "pexels-photo-2728263.jpeg",
     currency_symbol: {
-      naira: currency_sign.naira,
-      dollar: currency_sign.dollar,
+      naira: Extras.currency_sign.naira,
+      dollar: Extras.currency_sign.dollar,
     },
+
+    related_items: [
+      {
+        header: { text: Extras.productCardHeaderName, href: "#" },
+
+        products: [
+          //Related products here
+
+          {
+            id: 2,
+            name: "Timberlin",
+            slug: "timberlin",
+            recent_price: 70,
+            discount_price: 90,
+            main_price: 70,
+            image: "pexels-photo-1317712.jpeg",
+            currency_symbol: {
+              naira: Extras.currency_sign.naira,
+              dollar: Extras.currency_sign.dollar,
+            },
+
+            related_items: [
+              {
+                header: { text: Extras.productCardHeaderName, href: "#" },
+                products: [],
+              },
+            ],
+
+            getDiscount() {
+              const getDiscount =
+                (this.recent_price / 100) * this.discount_price;
+
+              this.main_price = Math.floor(this.recent_price - getDiscount);
+            },
+          },
+        ],
+      },
+    ],
 
     getDiscount() {
       const getDiscount = (this.recent_price / 100) * this.discount_price;
@@ -314,9 +885,47 @@ const manStuffProducts = [
     main_price: 80,
     image: "pexels-photo-3193731.jpeg",
     currency_symbol: {
-      naira: currency_sign.naira,
-      dollar: currency_sign.dollar,
+      naira: Extras.currency_sign.naira,
+      dollar: Extras.currency_sign.dollar,
     },
+
+    related_items: [
+      {
+        header: { text: Extras.productCardHeaderName, href: "#" },
+
+        products: [
+          //Related products here
+
+          {
+            id: 2,
+            name: "Timberlin",
+            slug: "timberlin",
+            recent_price: 70,
+            discount_price: 90,
+            main_price: 70,
+            image: "pexels-photo-1317712.jpeg",
+            currency_symbol: {
+              naira: Extras.currency_sign.naira,
+              dollar: Extras.currency_sign.dollar,
+            },
+
+            related_items: [
+              {
+                header: { text: Extras.productCardHeaderName, href: "#" },
+                products: [],
+              },
+            ],
+
+            getDiscount() {
+              const getDiscount =
+                (this.recent_price / 100) * this.discount_price;
+
+              this.main_price = Math.floor(this.recent_price - getDiscount);
+            },
+          },
+        ],
+      },
+    ],
 
     getDiscount() {
       const getDiscount = (this.recent_price / 100) * this.discount_price;
@@ -336,9 +945,47 @@ const skirtProducts = [
     main_price: 40,
     image: "pexels-photo-1719641.jpeg",
     currency_symbol: {
-      naira: currency_sign.naira,
-      dollar: currency_sign.dollar,
+      naira: Extras.currency_sign.naira,
+      dollar: Extras.currency_sign.dollar,
     },
+
+    related_items: [
+      {
+        header: { text: Extras.productCardHeaderName, href: "#" },
+
+        products: [
+          //Related products here
+
+          {
+            id: 2,
+            name: "Timberlin",
+            slug: "timberlin",
+            recent_price: 70,
+            discount_price: 90,
+            main_price: 70,
+            image: "pexels-photo-1317712.jpeg",
+            currency_symbol: {
+              naira: Extras.currency_sign.naira,
+              dollar: Extras.currency_sign.dollar,
+            },
+
+            related_items: [
+              {
+                header: { text: Extras.productCardHeaderName, href: "#" },
+                products: [],
+              },
+            ],
+
+            getDiscount() {
+              const getDiscount =
+                (this.recent_price / 100) * this.discount_price;
+
+              this.main_price = Math.floor(this.recent_price - getDiscount);
+            },
+          },
+        ],
+      },
+    ],
 
     getDiscount() {
       const getDiscount = (this.recent_price / 100) * this.discount_price;
@@ -356,9 +1003,47 @@ const skirtProducts = [
     main_price: 70,
     image: "pexels-photo-2726161.jpeg",
     currency_symbol: {
-      naira: currency_sign.naira,
-      dollar: currency_sign.dollar,
+      naira: Extras.currency_sign.naira,
+      dollar: Extras.currency_sign.dollar,
     },
+
+    related_items: [
+      {
+        header: { text: Extras.productCardHeaderName, href: "#" },
+
+        products: [
+          //Related products here
+
+          {
+            id: 2,
+            name: "Timberlin",
+            slug: "timberlin",
+            recent_price: 70,
+            discount_price: 90,
+            main_price: 70,
+            image: "pexels-photo-1317712.jpeg",
+            currency_symbol: {
+              naira: Extras.currency_sign.naira,
+              dollar: Extras.currency_sign.dollar,
+            },
+
+            related_items: [
+              {
+                header: { text: Extras.productCardHeaderName, href: "#" },
+                products: [],
+              },
+            ],
+
+            getDiscount() {
+              const getDiscount =
+                (this.recent_price / 100) * this.discount_price;
+
+              this.main_price = Math.floor(this.recent_price - getDiscount);
+            },
+          },
+        ],
+      },
+    ],
 
     getDiscount() {
       const getDiscount = (this.recent_price / 100) * this.discount_price;
@@ -376,9 +1061,47 @@ const skirtProducts = [
     main_price: 100,
     image: "pexels-photo-2922301.jpeg",
     currency_symbol: {
-      naira: currency_sign.naira,
-      dollar: currency_sign.dollar,
+      naira: Extras.currency_sign.naira,
+      dollar: Extras.currency_sign.dollar,
     },
+
+    related_items: [
+      {
+        header: { text: Extras.productCardHeaderName, href: "#" },
+
+        products: [
+          //Related products here
+
+          {
+            id: 2,
+            name: "Timberlin",
+            slug: "timberlin",
+            recent_price: 70,
+            discount_price: 90,
+            main_price: 70,
+            image: "pexels-photo-1317712.jpeg",
+            currency_symbol: {
+              naira: Extras.currency_sign.naira,
+              dollar: Extras.currency_sign.dollar,
+            },
+
+            related_items: [
+              {
+                header: { text: Extras.productCardHeaderName, href: "#" },
+                products: [],
+              },
+            ],
+
+            getDiscount() {
+              const getDiscount =
+                (this.recent_price / 100) * this.discount_price;
+
+              this.main_price = Math.floor(this.recent_price - getDiscount);
+            },
+          },
+        ],
+      },
+    ],
 
     getDiscount() {
       const getDiscount = (this.recent_price / 100) * this.discount_price;
@@ -396,9 +1119,47 @@ const skirtProducts = [
     main_price: 80,
     image: "pexels-photo-1018911.jpeg",
     currency_symbol: {
-      naira: currency_sign.naira,
-      dollar: currency_sign.dollar,
+      naira: Extras.currency_sign.naira,
+      dollar: Extras.currency_sign.dollar,
     },
+
+    related_items: [
+      {
+        header: { text: Extras.productCardHeaderName, href: "#" },
+
+        products: [
+          //Related products here
+
+          {
+            id: 2,
+            name: "Timberlin",
+            slug: "timberlin",
+            recent_price: 70,
+            discount_price: 90,
+            main_price: 70,
+            image: "pexels-photo-1317712.jpeg",
+            currency_symbol: {
+              naira: Extras.currency_sign.naira,
+              dollar: Extras.currency_sign.dollar,
+            },
+
+            related_items: [
+              {
+                header: { text: Extras.productCardHeaderName, href: "#" },
+                products: [],
+              },
+            ],
+
+            getDiscount() {
+              const getDiscount =
+                (this.recent_price / 100) * this.discount_price;
+
+              this.main_price = Math.floor(this.recent_price - getDiscount);
+            },
+          },
+        ],
+      },
+    ],
 
     getDiscount() {
       const getDiscount = (this.recent_price / 100) * this.discount_price;
@@ -418,9 +1179,47 @@ const kidProducts = [
     main_price: 40,
     image: "pexels-photo-6112012.jpeg",
     currency_symbol: {
-      naira: currency_sign.naira,
-      dollar: currency_sign.dollar,
+      naira: Extras.currency_sign.naira,
+      dollar: Extras.currency_sign.dollar,
     },
+
+    related_items: [
+      {
+        header: { text: Extras.productCardHeaderName, href: "#" },
+
+        products: [
+          //Related products here
+
+          {
+            id: 2,
+            name: "Timberlin",
+            slug: "timberlin",
+            recent_price: 70,
+            discount_price: 90,
+            main_price: 70,
+            image: "pexels-photo-1317712.jpeg",
+            currency_symbol: {
+              naira: Extras.currency_sign.naira,
+              dollar: Extras.currency_sign.dollar,
+            },
+
+            related_items: [
+              {
+                header: { text: Extras.productCardHeaderName, href: "#" },
+                products: [],
+              },
+            ],
+
+            getDiscount() {
+              const getDiscount =
+                (this.recent_price / 100) * this.discount_price;
+
+              this.main_price = Math.floor(this.recent_price - getDiscount);
+            },
+          },
+        ],
+      },
+    ],
 
     getDiscount() {
       const getDiscount = (this.recent_price / 100) * this.discount_price;
@@ -438,9 +1237,47 @@ const kidProducts = [
     main_price: 70,
     image: "pexels-photo-3526923.jpeg",
     currency_symbol: {
-      naira: currency_sign.naira,
-      dollar: currency_sign.dollar,
+      naira: Extras.currency_sign.naira,
+      dollar: Extras.currency_sign.dollar,
     },
+
+    related_items: [
+      {
+        header: { text: Extras.productCardHeaderName, href: "#" },
+
+        products: [
+          //Related products here
+
+          {
+            id: 2,
+            name: "Timberlin",
+            slug: "timberlin",
+            recent_price: 70,
+            discount_price: 90,
+            main_price: 70,
+            image: "pexels-photo-1317712.jpeg",
+            currency_symbol: {
+              naira: Extras.currency_sign.naira,
+              dollar: Extras.currency_sign.dollar,
+            },
+
+            related_items: [
+              {
+                header: { text: Extras.productCardHeaderName, href: "#" },
+                products: [],
+              },
+            ],
+
+            getDiscount() {
+              const getDiscount =
+                (this.recent_price / 100) * this.discount_price;
+
+              this.main_price = Math.floor(this.recent_price - getDiscount);
+            },
+          },
+        ],
+      },
+    ],
 
     getDiscount() {
       const getDiscount = (this.recent_price / 100) * this.discount_price;
@@ -458,9 +1295,47 @@ const kidProducts = [
     main_price: 100,
     image: "pexels-photo-2466756(1).jpeg",
     currency_symbol: {
-      naira: currency_sign.naira,
-      dollar: currency_sign.dollar,
+      naira: Extras.currency_sign.naira,
+      dollar: Extras.currency_sign.dollar,
     },
+
+    related_items: [
+      {
+        header: { text: Extras.productCardHeaderName, href: "#" },
+
+        products: [
+          //Related products here
+
+          {
+            id: 2,
+            name: "Timberlin",
+            slug: "timberlin",
+            recent_price: 70,
+            discount_price: 90,
+            main_price: 70,
+            image: "pexels-photo-1317712.jpeg",
+            currency_symbol: {
+              naira: Extras.currency_sign.naira,
+              dollar: Extras.currency_sign.dollar,
+            },
+
+            related_items: [
+              {
+                header: { text: Extras.productCardHeaderName, href: "#" },
+                products: [],
+              },
+            ],
+
+            getDiscount() {
+              const getDiscount =
+                (this.recent_price / 100) * this.discount_price;
+
+              this.main_price = Math.floor(this.recent_price - getDiscount);
+            },
+          },
+        ],
+      },
+    ],
 
     getDiscount() {
       const getDiscount = (this.recent_price / 100) * this.discount_price;
@@ -478,9 +1353,47 @@ const kidProducts = [
     main_price: 80,
     image: "pexels-photo-952214.jpeg",
     currency_symbol: {
-      naira: currency_sign.naira,
-      dollar: currency_sign.dollar,
+      naira: Extras.currency_sign.naira,
+      dollar: Extras.currency_sign.dollar,
     },
+
+    related_items: [
+      {
+        header: { text: Extras.productCardHeaderName, href: "#" },
+
+        products: [
+          //Related products here
+
+          {
+            id: 2,
+            name: "Timberlin",
+            slug: "timberlin",
+            recent_price: 70,
+            discount_price: 90,
+            main_price: 70,
+            image: "pexels-photo-1317712.jpeg",
+            currency_symbol: {
+              naira: Extras.currency_sign.naira,
+              dollar: Extras.currency_sign.dollar,
+            },
+
+            related_items: [
+              {
+                header: { text: Extras.productCardHeaderName, href: "#" },
+                products: [],
+              },
+            ],
+
+            getDiscount() {
+              const getDiscount =
+                (this.recent_price / 100) * this.discount_price;
+
+              this.main_price = Math.floor(this.recent_price - getDiscount);
+            },
+          },
+        ],
+      },
+    ],
 
     getDiscount() {
       const getDiscount = (this.recent_price / 100) * this.discount_price;

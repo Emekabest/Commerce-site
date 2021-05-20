@@ -22,10 +22,6 @@ const HomeScreen = {
       },
     ];
 
-    // sections.forEach((section) => {
-    //   mainArea_main.innerHTML += ProductCards.getHTMLString(section);
-    // });
-
     for (let i = 0; i < sections.length; i++) {
       mainArea_main.innerHTML += ProductCards.getHTMLString(sections[i]);
     }

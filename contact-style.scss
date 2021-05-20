@@ -10,6 +10,12 @@
   }
 }
 
+@mixin tab2 {
+  @media screen and (max-width: 1196px) {
+    @content;
+  }
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -674,17 +680,16 @@ body {
   flex-shrink: max($numbers: 10);
 }
 
-.contact-container{
+.contact-container {
   margin-top: 65px;
   width: 100%;
-  
 }
 
-.contact-box{
+.contact-box {
   background-image: url(./image/pexels-photo-2922301.jpeg);
   justify-content: center;
   width: 100%;
-  background-repeat: no-repeat; 
+  background-repeat: no-repeat;
   // background-attachment: scroll;
   background-position: center;
   background-size: cover;
@@ -693,13 +698,13 @@ body {
   height: 60vh;
 }
 
-.contact-box-msg{
+.contact-box-msg {
   text-align: center;
   color: white;
   font-family: Arial, Helvetica, sans-serif;
 }
 
-.contact-guide{
+.contact-guide {
   display: flex;
   // grid-template-columns: 350px 350px;
   justify-content: center;
@@ -711,7 +716,7 @@ body {
   // position: fixed;
 }
 
-.contact-box-guide-call{
+.contact-box-guide-call {
   background-color: white;
   box-shadow: 3px 3px 3px 3px rgb(184, 183, 183);
   // position: absolute;
@@ -726,7 +731,7 @@ body {
   // position: absolute;
 }
 
-.contact-box-guide-box{
+.contact-box-guide-box {
   position: absolute;
   display: flex;
   justify-content: center;
@@ -736,19 +741,21 @@ body {
   // height: 30vh;
 }
 
-.phone{
+.phone {
   font-size: 30px;
 }
 
-.contact-box-guide-call-p{
+.contact-box-guide-call-p {
   line-height: 1.5em;
 }
 
-.phone, .contact-box-guide-call-h3, .contact-box-guide-call-p{
+.phone,
+.contact-box-guide-call-h3,
+.contact-box-guide-call-p {
   padding: 10px 0;
 }
 
-.contact-box-guide-call-a-1{
+.contact-box-guide-call-a-1 {
   background-color: red;
   padding: 10px 15px;
   width: auto;
@@ -758,4 +765,3 @@ body {
   font-weight: bolder;
   border-radius: 3px;
 }
-

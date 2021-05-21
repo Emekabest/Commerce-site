@@ -1,6 +1,10 @@
 import { allProducts } from "./data.js";
+import ProductCards from "./ProductsCards.js";
 
 const mainArea_main = document.querySelector(".main-area");
+const mainAreaRelatedcontent_div = document.querySelector(
+  ".main-area_related-content"
+);
 
 const currency_sign = {
   naira: "&#8358",
@@ -43,6 +47,10 @@ class ProductScreen {
                        <img src="./image/${this.product.image}" alt="${this.product.name}" />
 
                     </div>
+                    <div class="left-barTopimg">
+                       <img src="./image/${this.product.image}" alt="${this.product.name}" />
+
+                    </div>
                   </div>
                   <div class="left-barButtom">
 
@@ -51,6 +59,41 @@ class ProductScreen {
                       </div>
                   </div>
                 </section>
+
+
+
+
+
+ <section class="left-bar2">
+                  <div class="left-bar2Top">
+                    <div class="left-bar2Topimg">
+                      <img src="./image/${this.product.image}" alt="${this.product.name}" />
+                    </div>
+                    <div class="left-bar2Topimg">
+                      <img src="./image/${this.product.image}" alt="${this.product.name}" />
+
+                    </div>
+                    <div class="left-bar2Topimg">
+                       <img src="./image/${this.product.image}" alt="${this.product.name}" />                                               
+
+                    </div>
+                    <div class="left-bar2Topimg">
+                       <img src="./image/${this.product.image}" alt="${this.product.name}" />
+
+                    </div>
+                 
+                      <div class="left-bar2Topimg left-bar2-buttomimg">
+
+                     <img src="./image/${this.product.image}" alt="${this.product.name}" />
+                      </div>
+
+                    </div>
+                </section>
+
+
+
+      
+
                 <section class="right-bar">
                   <div class="right-barContent">
                     <div class="right-barContent_name-tag">
@@ -93,7 +136,70 @@ class ProductScreen {
                     </div>
                   </div>
                 </section>
-              </div> `;
+
+
+    <div class="right-bar2">
+                  <div class="right-bar2Content">
+                <div class = "right-bar2Content-left">
+                    <div class="right-bar2Content-left_name-tag">
+                      <h1 style="color: #003d59">${this.product.name}</h1>
+                    </div>
+
+                    <div class="right-bar2Content-left_Price-tag">
+                     <span>
+                        <h1 style="  color: #003d59">Discount: ${this.product.discount_price}%</h1>
+                      </span>
+                      <span>
+                        <h1 style="color:#540a0a; text-decoration:line-through">Price: ${this.product.currency_symbol.naira} ${this.product.recent_price}</h1>
+                      </span>
+                      <span>
+                        <h1 style="  color: #003d59">Price: ${this.product.currency_symbol.naira} ${this.product.main_price}</h1>
+                      </span>
+                    </div>
+
+                    <div class="right-bar2Content-left_Product-details">
+                      <div class="right-bar2Content-left_Product-details_image-tag">
+                        <div class="right-bar2Content-left_image-tag-inner">
+                          <div class="right-bar2Content-left_image">
+                            <img src="./image/${this.product.image}" alt="${this.product.name}" />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div class = right-bar2Content-right>
+                    <div class="right-bar2Content-right_measureMent-box">
+                      MeasureMent Box
+                    </div>
+
+                    <div class="right-bar2Content-right_description-box">
+                      <article>Description-Tag</article>
+                    </div>
+              </div>
+              
+              </div>
+              <div class="right-bar2Content-right_addButton">
+                <a href="#"> <button>ADD <i class="fas fa-cart-plus"></i></button> </a>
+              </div>
+
+                </div>
+
+                </div>
+
+
+
+
+
+                 `;
+
+    this.product.related_items.forEach((related_itemsCard) => {
+      console.log(related_itemsCard);
+
+      mainAreaRelatedcontent_div.innerHTML = ProductCards.getHTMLString(
+        related_itemsCard
+      );
+    });
   }
 
   fetchProduct() {

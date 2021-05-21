@@ -710,14 +710,54 @@ body {
   }
 }
 
+@media screen and (max-width: 653px) {
+  .left-bar2Topimg {
+    width: 200px;
+    height: 200px;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .left-bar2Topimg {
+    width: 165px;
+    height: 165px;
+  }
+}
+
 @media screen and (max-width: 980px) {
   .left-bar2Top {
     width: 85vw;
+    margin-bottom: 45px;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .left-bar2Top {
+    margin-bottom: 15px;
+  }
+}
+
+.left-bar2-buttomimg {
+  width: 500px;
+  height: 250px;
+}
+
+@media screen and (max-width: 653px) {
+  .left-bar2-buttomimg {
+    width: 350px;
+    height: 200px;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .left-bar2-buttomimg {
+    width: 250px;
+    height: 165px;
   }
 }
 
 .left-bar2Buttomimage {
-  height: 15em;
+  height: 0em;
   width: 60rem;
 }
 
@@ -752,6 +792,15 @@ body {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+  }
+  .left-bar2 ::-webkit-scrollbar {
+    height: 7px;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .left-bar2 ::-webkit-scrollbar {
+    height: 4px;
   }
 }
 
@@ -922,8 +971,124 @@ body {
   .right-bar2 {
     display: block;
     background-color: #fafafa;
-    height: 260px;
     width: 90%;
+  }
+  .right-bar2Content {
+    padding: 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .right-bar2Content-left {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 40vw;
+            flex: 0 1 40vw;
+  }
+  .right-bar2Content-left_name-tag h1 {
+    font-size: 25px;
+    font-family: "Reggae One", cursive;
+  }
+  .right-bar2Content-left_Price-tag span {
+    margin: 10px;
+  }
+  .right-bar2Content-left_Price-tag span h1 {
+    font-size: 17px;
+  }
+  .right-bar2Content-left_image {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 10px;
+  }
+  .right-bar2Content-left_image img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: contain;
+       object-position: contain;
+  }
+  .right-bar2Content-right {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+  }
+  .right-bar2Content-right_measureMent-box {
+    text-align: center;
+    border: 1px solid #0000005d;
+    height: 90px;
+    margin-bottom: 10px;
+    min-width: 250px;
+  }
+}
+
+@media screen and (max-width: 653px) and (max-width: 420px) {
+  .right-bar2Content-right_measureMent-box {
+    min-width: 200px;
+  }
+}
+
+@media screen and (max-width: 653px) {
+  .right-bar2Content-right_description-box {
+    text-align: center;
+    border: 1px solid #0000005d;
+    height: 90px;
+    margin-bottom: 10px;
+    min-width: 250px;
+  }
+}
+
+@media screen and (max-width: 653px) and (max-width: 420px) {
+  .right-bar2Content-right_description-box {
+    min-width: 200px;
+  }
+}
+
+@media screen and (max-width: 653px) {
+  .right-bar2Content-right_addButton {
+    margin: 10px 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .right-bar2Content-right_addButton a {
+    display: block;
+    width: 300px;
+  }
+  .right-bar2Content-right_addButton a button {
+    width: 100%;
+    height: 33px;
+    border-radius: 15px;
+    background-color: #437af0;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    color: #fff;
+    font-size: 14px;
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    font-weight: bold;
+  }
+}
+
+@media screen and (max-width: 653px) and (max-width: 420px) {
+  .right-bar2Content-right_addButton a button {
+    height: 25px;
+  }
+}
+
+@media screen and (max-width: 653px) {
+  .right-bar2Content-right_addButton a button:active {
+    background-color: #265aca;
+  }
+}
+
+@media screen and (max-width: 653px) and (max-width: 420px) {
+  .right-bar2Content-right_addButton a {
+    width: 120px;
   }
 }
 

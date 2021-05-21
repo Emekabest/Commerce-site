@@ -82,7 +82,8 @@ class ProductScreen {
 
                     </div>
                  
-                     <div class="left-barButtomimage">
+                      <div class="left-bar2Topimg left-bar2-buttomimg">
+
                      <img src="./image/${this.product.image}" alt="${this.product.name}" />
                       </div>
 
@@ -137,14 +138,14 @@ class ProductScreen {
                 </section>
 
 
- <section class="right-bar2">
+    <div class="right-bar2">
                   <div class="right-bar2Content">
-                <div>
-                    <div class="right-bar2Content_name-tag">
+                <div class = "right-bar2Content-left">
+                    <div class="right-bar2Content-left_name-tag">
                       <h1 style="color: #003d59">${this.product.name}</h1>
                     </div>
 
-                    <div class="right-bar2ContentPrice-tag">
+                    <div class="right-bar2Content-left_Price-tag">
                      <span>
                         <h1 style="  color: #003d59">Discount: ${this.product.discount_price}%</h1>
                       </span>
@@ -156,32 +157,33 @@ class ProductScreen {
                       </span>
                     </div>
 
-                    <div class="right-bar2ContentProduct-details">
-                      <div class="right-bar2ContentProduct-details_image-tag">
-                        <div class="right-bar2Content_image-tag-inner">
-                          <div class="right-bar2Content_image">
-                      
-
+                    <div class="right-bar2Content-left_Product-details">
+                      <div class="right-bar2Content-left_Product-details_image-tag">
+                        <div class="right-bar2Content-left_image-tag-inner">
+                          <div class="right-bar2Content-left_image">
+                            <img src="./image/${this.product.image}" alt="${this.product.name}" />
                           </div>
                         </div>
                       </div>
                     </div>
                   </div>
                   
-                  <div>
-                    <div class="right-bar2Content_measureMent-box">
+                  <div class = right-bar2Content-right>
+                    <div class="right-bar2Content-right_measureMent-box">
                       MeasureMent Box
                     </div>
 
-                    <div class="right-bar2Content_description-box">
+                    <div class="right-bar2Content-right_description-box">
                       <article>Description-Tag</article>
                     </div>
               </div>
-                    <div class="right-bar2Content_addButton">
-                      <a href="#"> <button>ADD <i class="fas fa-cart-plus"></i></button> </a>
-                    </div>
-                  </div>
-                </section>
+              
+              </div>
+              <div class="right-bar2Content-right_addButton">
+                <a href="#"> <button>ADD <i class="fas fa-cart-plus"></i></button> </a>
+              </div>
+
+                </div>
 
                 </div>
 

@@ -563,24 +563,24 @@ body {
     display: flex;
     margin-bottom: 70px;
     overflow-x: auto;
-  }
 
-  &Topimg {
-    margin: 12px;
-    flex-shrink: 0;
-    width: 275px;
-    height: 275px;
+    &img {
+      margin: 12px;
+      flex-shrink: 0;
+      width: 275px;
+      height: 275px;
 
-    & img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      object-position: contain;
-    }
+      & img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: contain;
+      }
 
-    @include tabSize1030 {
-      width: 240px;
-      height: 240px;
+      @include tabSize1030 {
+        width: 240px;
+        height: 240px;
+      }
     }
   }
 
@@ -646,20 +646,48 @@ body {
 
       @include tabSize980 {
         flex-shrink: 0;
+      }
 
-        // width: 55rem;
+      @include tabSize653 {
+        width: 200px;
+        height: 200px;
+      }
+
+      @include phone {
+        width: 165px;
+        height: 165px;
       }
     }
 
     @include tabSize980 {
       width: 85vw;
+      margin-bottom: 45px;
+    }
+
+    @include phone {
+      margin-bottom: 15px;
+    }
+  }
+
+  &-buttomimg {
+    width: 500px;
+    height: 250px;
+
+    @include tabSize653 {
+      width: 350px;
+      height: 200px;
+    }
+
+    @include phone {
+      width: 250px;
+      height: 165px;
     }
   }
 
   &Buttom {
     &image {
       // border: 1px solid #000;
-      height: 15em;
+      height: 0em;
       width: 60rem;
 
       img {
@@ -686,6 +714,16 @@ body {
   @include tabSize980 {
     display: block;
     flex-direction: row;
+
+    ::-webkit-scrollbar {
+      height: 7px;
+    }
+  }
+
+  @include phone {
+    ::-webkit-scrollbar {
+      height: 4px;
+    }
   }
 }
 
@@ -833,7 +871,6 @@ body {
         width: 100%;
         height: 40px;
         border-radius: 15px;
-
         background-color: rgb(67, 122, 240);
         outline: none;
         border: none;
@@ -852,8 +889,114 @@ body {
   @include tabSize653 {
     display: block;
     background-color: #fafafa;
-    height: 260px;
+    // height: 260px;
     width: 90%;
+
+    &Content {
+      padding: 10px;
+      display: flex;
+      flex-wrap: wrap;
+
+      &-left {
+        // width: 100px;
+        // flex: 1;
+        flex: 0 1 40vw;
+
+        &_name-tag h1 {
+          font-size: 25px;
+          font-family: "Reggae One", cursive;
+        }
+
+        &_Price-tag {
+          & span {
+            margin: 10px;
+
+            & h1 {
+              font-size: 17px;
+            }
+          }
+        }
+
+        &_image {
+          // border: 1px solid #000;
+          width: 80px;
+          height: 80px;
+          margin-bottom: 10px;
+
+          & img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: contain;
+          }
+        }
+      }
+
+      &-right {
+        flex: 1;
+
+        &_measureMent-box {
+          text-align: center;
+          border: 1px solid #0000005d;
+          height: 90px;
+          margin-bottom: 10px;
+          min-width: 250px;
+
+          @include phone {
+            min-width: 200px;
+          }
+        }
+
+        &_description-box {
+          text-align: center;
+          border: 1px solid #0000005d;
+          height: 90px;
+          margin-bottom: 10px;
+          min-width: 250px;
+
+          @include phone {
+            min-width: 200px;
+          }
+        }
+
+        &_addButton {
+          margin: 10px 0;
+          display: flex;
+          justify-content: center;
+
+          & a {
+            display: block;
+            width: 300px;
+
+            & button {
+              width: 100%;
+              height: 33px;
+              border-radius: 15px;
+              background-color: rgb(67, 122, 240);
+              outline: none;
+              border: none;
+              cursor: pointer;
+              color: #fff;
+              font-size: 14px;
+              font-family: Cambria, Cochin, Georgia, Times, "Times New Roman",
+                serif;
+              font-weight: bold;
+
+              @include phone {
+                height: 25px;
+              }
+            }
+            & button:active {
+              background-color: rgb(38, 90, 202);
+            }
+
+            @include phone {
+              width: 120px;
+            }
+          }
+        }
+      }
+    }
   }
 }
 

@@ -735,6 +735,7 @@ body {
   box-shadow: 3px 3px 3px 3px rgb(184, 183, 183);
   width: 28rem;
   display: flex;
+  
   align-items: center;
   border-radius: 5px;
   text-align: center;
@@ -746,8 +747,11 @@ body {
   position: absolute;
   display: flex;
   justify-content: center;
+  // justify-content: space-around;
+  margin: 0 20px;
+  // background-color: red;
   bottom: 15px;
-  width: 100%;
+  width: 95%;
 }
 
 .phone {

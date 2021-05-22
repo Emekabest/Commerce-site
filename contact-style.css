@@ -836,10 +836,16 @@ body {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
+<<<<<<< HEAD
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 20px;
+=======
   -ms-flex-pack: center;
   justify-content: center;
+>>>>>>> b170981b1e9ebdc9f8bd4007d792b29fe5ae0aa6
   bottom: 15px;
-  width: 100%;
+  width: 95%;
 }
 
 .phone {

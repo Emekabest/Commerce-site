@@ -1,4 +1,5 @@
 import { allProducts } from "./data.js";
+import { LocalStorage } from "./localStorage.js";
 import ProductCards from "./ProductsCards.js";
 
 const mainArea_main = document.querySelector(".main-area");
@@ -10,6 +11,8 @@ const currency_sign = {
   naira: "&#8358",
   dollar: "&#36",
 };
+
+const cartsContents = [];
 
 class ProductScreen {
   constructor() {
@@ -132,7 +135,7 @@ class ProductScreen {
                     </div>
 
                     <div class="right-barContent_addButton">
-                      <a href="#"> <button>ADD <i class="fas fa-cart-plus"></i></button> </a>
+                      <a href="#" class = addtocart-btn > <button>ADD <i class="fas fa-cart-plus"></i></button> </a>
                     </div>
                   </div>
                 </section>
@@ -209,10 +212,31 @@ class ProductScreen {
     this.product = product;
   }
 
+  addtoCart() {
+    const addtocartBtn_a = document.querySelector(".addtocart-btn");
+
+    addtocartBtn_a.addEventListener("click", () => {
+      if (cartsContents.length > 0) {
+        console.log("m here");
+        const getnewProducts = cartsContents.find((cartitem) => {
+          return this.product.slug != cartitem.slug;
+        });
+        console.log(getnewProducts);
+      } else {
+        console.log("b here");
+        console.log(this.product);
+        cartsContents.push(this.product);
+      }
+
+      console.log(cartsContents);
+    });
+  }
+
   render() {
     this.getSlug();
     this.fetchProduct();
     this.display();
+    this.addtoCart();
   }
 }
 

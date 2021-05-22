@@ -684,14 +684,13 @@ body {
   margin-top: 65px;
   width: 100%;
   font-family: Arial, Helvetica, sans-serif;
-  
 }
 
-.contact-box{
+.contact-box {
   background-image: url(./image/customer-care.jpg);
   justify-content: center;
   width: 100%;
-  background-repeat: no-repeat; 
+  background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   display: flex;
@@ -706,25 +705,24 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-.contact-box-msg-h1{
+.contact-box-msg-h1 {
   color: white;
   font-family: fantasy;
-
 }
 
-.contact-box-msg-p{
+.contact-box-msg-p {
   color: white;
   font-family: fantasy;
   color: white;
-
 }
 
-.contact-box-msg-h1, .contact-box-msg-p{
-  text-shadow:5px 5px 5px  black;
+.contact-box-msg-h1,
+.contact-box-msg-p {
+  text-shadow: 5px 5px 5px black;
   font-family: cursive;
 }
 
-.contact-guide{
+.contact-guide {
   display: flex;
   justify-content: center;
   align-content: center;
@@ -760,7 +758,9 @@ body {
   line-height: 1.5em;
 }
 
-.phone, .contact-box-guide-call-h3, .contact-box-guide-call-p{
+.phone,
+.contact-box-guide-call-h3,
+.contact-box-guide-call-p {
   padding: 5px 0;
 }
 
@@ -777,56 +777,53 @@ body {
   border-radius: 3px;
 }
 
-.contact-box-guide-call-a-1:hover{
+.contact-box-guide-call-a-1:hover {
   background-color: rgb(252, 54, 54);
-  
 }
 
-@media screen and (max-width:530px) {
-  .contact-box-guide-call-box{
+@media screen and (max-width: 530px) {
+  .contact-box-guide-call-box {
     // font-size: 15px;
     height: auto;
     padding: 0px 13px;
   }
 
-  .contact-box-guide-box{
+  .contact-box-guide-box {
     bottom: 80px;
   }
 
-  .contact-box-guide-call{
+  .contact-box-guide-call {
     height: 190px;
   }
 
-  .contact-box-guide-call-h3, .phone, .contact-box-guide-call-p{
+  .contact-box-guide-call-h3,
+  .phone,
+  .contact-box-guide-call-p {
     font-size: 12px;
   }
-  
-  .contact-box-guide-call-a-1{
+
+  .contact-box-guide-call-a-1 {
     padding: 5px 10px;
   }
 }
 
-@media screen and (max-width:352px) {
-  
-  
-  
-  .contact-box-guide-call-a-1{
+@media screen and (max-width: 352px) {
+  .contact-box-guide-call-a-1 {
     padding: 3px 6px;
     font-size: 9px;
   }
-  
-  .contact-box-guide-call-h3, .phone, .contact-box-guide-call-h3{
+
+  .contact-box-guide-call-h3,
+  .phone,
+  .contact-box-guide-call-h3 {
     padding: 0px;
   }
 
-  .contact-box-guide-call-a{
+  .contact-box-guide-call-a {
     font-size: 12px;
   }
 
-  .contact-box-guide-box{
+  .contact-box-guide-box {
     bottom: 30px;
   }
-
-
 }
-

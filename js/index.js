@@ -1,3 +1,5 @@
+import { LocalStorage } from "./localStorage.js";
+
 const closeBtn_el = document.querySelector(".nav-close-btn");
 const openBtn_el = document.querySelector(".nav-open-btn");
 const navBar_el = document.querySelector(".nav");
@@ -26,3 +28,6 @@ productMainScreen_div.style.paddingTop = header_height - 26 + "px";
 // console.log(productscreen_height);
 
 // productMainScreen_div.style.height = productscreen_height + "px";
+
+LocalStorage.setItem();
+console.log(LocalStorage.getItem());

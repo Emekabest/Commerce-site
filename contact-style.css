@@ -42,8 +42,8 @@ body {
 
 .right-container {
   -webkit-box-flex: 1;
-      -ms-flex: 1 1 auto;
-          flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
   height: 100vh;
   overflow-y: scroll;
 }
@@ -56,8 +56,8 @@ body {
 
 .nav {
   -webkit-box-flex: 0;
-      -ms-flex: 0 0 300px;
-          flex: 0 0 300px;
+  -ms-flex: 0 0 300px;
+  flex: 0 0 300px;
   height: 100vh;
   overflow-y: auto;
   background-color: #1c1c1c;
@@ -112,14 +112,14 @@ body {
     width: 100%;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
   }
   .nav.open {
     display: -webkit-box;
@@ -164,21 +164,21 @@ body {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   padding: 15px;
 }
 
 .content-headerbox-productName {
   margin-right: 7vw;
   -webkit-box-flex: 0.1;
-      -ms-flex: 0.1;
-          flex: 0.1;
+  -ms-flex: 0.1;
+  flex: 0.1;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -194,18 +194,19 @@ body {
 }
 
 .content-headerbox-productName_name h1 a {
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
   color: #000;
 }
 
 @media screen and (max-width: 930px) {
   .content-headerbox-productName {
     -webkit-box-flex: 1;
-        -ms-flex: 1;
-            flex: 1;
+    -ms-flex: 1;
+    flex: 1;
     -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: end;
+    -ms-flex-pack: end;
+    justify-content: end;
   }
 }
 
@@ -227,10 +228,10 @@ body {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 .content-headerbox-right_menu-list li {
@@ -266,7 +267,7 @@ body {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
 .content-headerbox-right-register-login-user-txt {
@@ -381,8 +382,8 @@ body {
     padding: 10px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
   }
 }
 
@@ -401,8 +402,9 @@ body {
   background-color: #fdfdfd;
   width: 95%;
   border-radius: 2.5px;
-  -webkit-box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.07), 0px 0px 30px rgba(0, 0, 0, 0.07);
-          box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.07), 0px 0px 30px rgba(0, 0, 0, 0.07);
+  -webkit-box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.07),
+    0px 0px 30px rgba(0, 0, 0, 0.07);
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.07), 0px 0px 30px rgba(0, 0, 0, 0.07);
   text-align: justify;
   padding: 0 5px;
   display: -webkit-box;
@@ -431,42 +433,57 @@ body {
   border-radius: 10px;
 }
 
-.container-sales-container .container-sales-boxes .container-sales .content-sales-img-wrapper {
+.container-sales-container
+  .container-sales-boxes
+  .container-sales
+  .content-sales-img-wrapper {
   overflow: hidden;
   width: 250px;
   height: 280px;
 }
 
 @media screen and (max-width: 420px) {
-  .container-sales-container .container-sales-boxes .container-sales .content-sales-img-wrapper {
+  .container-sales-container
+    .container-sales-boxes
+    .container-sales
+    .content-sales-img-wrapper {
     width: 200px;
     height: 210px;
   }
 }
 
-.container-sales-container .container-sales-boxes .container-sales .content-sales-img-wrapper .content-sales-img {
+.container-sales-container
+  .container-sales-boxes
+  .container-sales
+  .content-sales-img-wrapper
+  .content-sales-img {
   width: 100%;
   height: 100%;
   -webkit-transition: 0.15s;
   transition: 0.15s;
   border-radius: 8px;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   -o-object-position: center;
-     object-position: center;
+  object-position: center;
 }
 
 .container-sales-container .container-sales-boxes .container-sales:hover {
   cursor: pointer;
-  -webkit-box-shadow: 0px 0px 10px rgba(10, 10, 10, 0.1), 0px 0px 30px rgba(33, 33, 33, 0.1);
-          box-shadow: 0px 0px 10px rgba(10, 10, 10, 0.1), 0px 0px 30px rgba(33, 33, 33, 0.1);
+  -webkit-box-shadow: 0px 0px 10px rgba(10, 10, 10, 0.1),
+    0px 0px 30px rgba(33, 33, 33, 0.1);
+  box-shadow: 0px 0px 10px rgba(10, 10, 10, 0.1),
+    0px 0px 30px rgba(33, 33, 33, 0.1);
   -webkit-transform: scale(0.98) translateY(-2%);
-          transform: scale(0.98) translateY(-2%);
+  transform: scale(0.98) translateY(-2%);
 }
 
-.container-sales-container .container-sales-boxes .container-sales:hover .content-sales-img {
+.container-sales-container
+  .container-sales-boxes
+  .container-sales:hover
+  .content-sales-img {
   -webkit-transform: scale(1.05);
-          transform: scale(1.05);
+  transform: scale(1.05);
 }
 
 @media screen and (max-width: 420px) {
@@ -480,8 +497,8 @@ body {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 .content-price-discount {
@@ -517,11 +534,11 @@ body {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   padding: 20px 10px;
   border-radius: 2px;
   color: #333;
@@ -597,8 +614,8 @@ body {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
 }
 
 .left-barTop {
@@ -612,7 +629,7 @@ body {
 
 .left-barTopimg {
   -ms-flex-negative: 0;
-      flex-shrink: 0;
+  flex-shrink: 0;
   margin: 5px;
   width: 300px;
   height: 300px;
@@ -622,9 +639,9 @@ body {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   -o-object-position: contain;
-     object-position: contain;
+  object-position: contain;
 }
 
 .left-barButtomimage {
@@ -636,9 +653,9 @@ body {
   height: 100%;
   width: 100%;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   -o-object-position: center;
-     object-position: center;
+  object-position: center;
 }
 
 .right-bar {
@@ -646,8 +663,8 @@ body {
   padding: 50px 10px;
   width: 500px;
   -webkit-box-flex: end;
-      -ms-flex: end;
-          flex: end;
+  -ms-flex: end;
+  flex: end;
 }
 
 .right-barContent_measureMent-box {
@@ -687,9 +704,9 @@ body {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   -o-object-position: contain;
-     object-position: contain;
+  object-position: contain;
 }
 
 .right-barContentProduct-details {
@@ -727,12 +744,12 @@ body {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   -ms-flex-negative: 10;
-      flex-shrink: 10;
+  flex-shrink: 10;
 }
 
 .contact-container {
@@ -744,8 +761,8 @@ body {
 .contact-box {
   background-image: url(./image/customer-care.jpg);
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   width: 100%;
   background-repeat: no-repeat;
   background-position: center;
@@ -754,8 +771,8 @@ body {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   height: 60vh;
 }
 
@@ -788,10 +805,10 @@ body {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -ms-flex-line-pack: center;
-      align-content: center;
+  align-content: center;
   height: 40vh;
   background-color: white;
 }
@@ -799,14 +816,14 @@ body {
 .contact-box-guide-call {
   background-color: white;
   -webkit-box-shadow: 3px 3px 3px 3px #b8b7b7;
-          box-shadow: 3px 3px 3px 3px #b8b7b7;
+  box-shadow: 3px 3px 3px 3px #b8b7b7;
   width: 28rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   border-radius: 5px;
   text-align: center;
   height: 250px;
@@ -819,8 +836,8 @@ body {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   bottom: 15px;
   width: 100%;
 }

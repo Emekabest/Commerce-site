@@ -683,16 +683,6 @@ body {
 .contact-container {
   margin-top: 65px;
   width: 100%;
-<<<<<<< HEAD:contact-style.scss
-}
-
-.contact-box {
-  background-image: url(./image/pexels-photo-2922301.jpeg);
-  justify-content: center;
-  width: 100%;
-  background-repeat: no-repeat;
-  // background-attachment: scroll;
-=======
   font-family: Arial, Helvetica, sans-serif;
   
 }
@@ -702,7 +692,6 @@ body {
   justify-content: center;
   width: 100%;
   background-repeat: no-repeat; 
->>>>>>> d0a0496a942007152243047941533cd247630ef2:style.scss
   background-position: center;
   background-size: cover;
   display: flex;
@@ -717,9 +706,6 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-<<<<<<< HEAD:contact-style.scss
-.contact-guide {
-=======
 .contact-box-msg-h1{
   color: white;
   font-family: fantasy;
@@ -739,7 +725,6 @@ body {
 }
 
 .contact-guide{
->>>>>>> d0a0496a942007152243047941533cd247630ef2:style.scss
   display: flex;
   justify-content: center;
   align-content: center;
@@ -775,15 +760,8 @@ body {
   line-height: 1.5em;
 }
 
-<<<<<<< HEAD:contact-style.scss
-.phone,
-.contact-box-guide-call-h3,
-.contact-box-guide-call-p {
-  padding: 10px 0;
-=======
 .phone, .contact-box-guide-call-h3, .contact-box-guide-call-p{
   padding: 5px 0;
->>>>>>> d0a0496a942007152243047941533cd247630ef2:style.scss
 }
 
 .contact-box-guide-call-a-1 {
@@ -798,8 +776,6 @@ body {
   font-weight: bolder;
   border-radius: 3px;
 }
-<<<<<<< HEAD:contact-style.scss
-=======
 
 .contact-box-guide-call-a-1:hover{
   background-color: rgb(252, 54, 54);
@@ -854,4 +830,3 @@ body {
 
 }
 
->>>>>>> d0a0496a942007152243047941533cd247630ef2:style.scss

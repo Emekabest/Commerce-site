@@ -6,7 +6,7 @@ const mainArea_main = document.querySelector(".main-area");
 const HomeScreen = {
   //Method.....
 
-  render() {
+  render: () => {
     const sections = [
       {
         header: { text: "Man Stuff", href: "#" },

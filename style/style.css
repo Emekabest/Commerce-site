@@ -1108,4 +1108,152 @@ body {
 .productMain-content .main-area_related-content {
   margin-top: 50px;
 }
+
+.footer {
+  background-color: #2b2a2a;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 50vh;
+}
+
+.footer-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 90%;
+  height: auto;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.label-logo-name-h3 {
+  color: #e0dddd;
+}
+
+.label-logo-media {
+  margin: 8px 0;
+}
+
+.mediafont {
+  display: inline-block;
+  color: #e0dddd;
+}
+
+.customer-care-support-h5 {
+  color: #777676;
+}
+
+.customer-care-li {
+  padding: 8px 2px;
+  color: #e0dddd;
+  font-weight: bold;
+}
+
+.customer-care-li:hover {
+  color: #676969;
+  cursor: pointer;
+}
+
+.about-name-h5 {
+  color: #777676;
+}
+
+.about-li {
+  padding: 8px 0;
+  color: #e0dddd;
+  font-weight: bold;
+}
+
+.about-li:hover {
+  color: #676969;
+  cursor: pointer;
+}
+
+.latestfont {
+  color: #eee8e8;
+  font-weight: 700;
+  line-height: 1.5em;
+}
+
+.footer-latest-btn-div {
+  margin: 30px 0;
+}
+
+.footer-latest-btn {
+  width: 150px;
+  height: 50px;
+  background-color: #d12525;
+  outline: none;
+  border-radius: 3px;
+  border: none;
+  color: #eee8e8;
+  font-weight: bolder;
+}
+
+.footer-latest-btn:hover {
+  background-color: tomato;
+}
+
+.copyrigth-box {
+  width: 100%;
+  background-color: whitesmoke;
+  text-align: center;
+}
+
+@media screen and (max-width: 772px) {
+  .footer {
+    height: 35vh;
+  }
+  .label, .customer-care, .about, .footer-latestregister {
+    margin: 0 20px 0 0;
+  }
+  .label-logo-name {
+    font-size: 9px;
+  }
+  .customer-care {
+    font-size: 11px;
+  }
+  .about {
+    font-size: 11px;
+  }
+  .latestfont {
+    font-size: 11px;
+  }
+  .footer-latest-btn {
+    width: 100px;
+    height: 30px;
+  }
+}
+
+@media screen and (max-width: 459px) {
+  .label, .customer-care, .about, .footer-latestregister {
+    margin: 0 20px 0 0;
+  }
+  .label-logo-name {
+    font-size: 8px;
+  }
+  .customer-care {
+    font-size: 10px;
+  }
+  .about {
+    font-size: 10px;
+  }
+  .latestfont {
+    font-size: 8px;
+  }
+  .footer-latest-btn {
+    width: 100px;
+    height: 30px;
+  }
+}
 /*# sourceMappingURL=style.css.map */

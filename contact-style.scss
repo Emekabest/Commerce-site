@@ -755,7 +755,7 @@ body {
 }
 
 .phone {
-  font-size: 30px;
+  font-size: 40px;
 }
 
 .contact-box-guide-call-p {
@@ -769,8 +769,8 @@ body {
 }
 
 .contact-box-guide-call-a-1 {
-  background-color: red;
-  padding: 10px 15px;
+  background-color: rgb(236, 40, 40);
+  padding: 8px 15px;
   width: auto;
   height: auto;
   outline: none;
@@ -782,7 +782,11 @@ body {
 }
 
 .contact-box-guide-call-a-1:hover {
-  background-color: rgb(252, 54, 54);
+  background-color: rgb(250, 77, 46);
+}
+
+.contact-box-guide-call-a {
+  font-size: 14px;
 }
 
 @media screen and (max-width: 530px) {
@@ -790,6 +794,10 @@ body {
     // font-size: 15px;
     height: auto;
     padding: 0px 13px;
+  }
+
+  .contact-guide{
+    height: 30vh;
   }
 
   .contact-box-guide-box {
@@ -800,8 +808,11 @@ body {
     height: 190px;
   }
 
+  .phone {
+    font-size: 30px;
+  }
+
   .contact-box-guide-call-h3,
-  .phone,
   .contact-box-guide-call-p {
     font-size: 12px;
   }
@@ -811,20 +822,23 @@ body {
   }
 }
 
-@media screen and (max-width: 352px) {
+@media screen and (max-width: 397px) {
   .contact-box-guide-call-a-1 {
     padding: 3px 6px;
     font-size: 9px;
   }
 
   .contact-box-guide-call-h3,
-  .phone,
   .contact-box-guide-call-h3 {
     padding: 0px;
   }
 
   .contact-box-guide-call-a {
     font-size: 12px;
+  }
+
+  .phone {
+    font-size: 20px;
   }
 
   .contact-box-guide-box {

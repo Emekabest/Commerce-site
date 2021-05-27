@@ -44,7 +44,6 @@ body {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 auto;
           flex: 1 1 auto;
-  height: 100vh;
   overflow-y: scroll;
 }
 
@@ -84,7 +83,6 @@ body {
 
 @media screen and (max-width: 420px) {
   .nav-open-btn {
-    position: absolute;
     left: 10px;
     top: 40%;
   }
@@ -293,7 +291,7 @@ body {
   .content-headerbox-right-register-login-user-fa i {
     text-align: center;
     display: block;
-    font-size: 15px;
+    font-size: 12.5px;
   }
 }
 
@@ -333,7 +331,7 @@ body {
   .content-headerbox-right-register-signUp-user-fa i {
     text-align: center;
     display: block;
-    font-size: 15px;
+    font-size: 12.5px;
   }
 }
 
@@ -379,10 +377,6 @@ body {
 @media screen and (max-width: 420px) {
   .content-headerbox {
     padding: 10px;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
   }
 }
 
@@ -827,9 +821,19 @@ body {
   text-align: center;
 }
 
-.right-barContentPrice-tag span {
+.right-barContentPrice-tag-main {
+  padding-top: 10px;
   font-family: cambria;
-  font-size: 12.5px;
+  font-size: 13px;
+  margin: 10px 0;
+  display: block;
+}
+
+.right-barContentPrice-tag-recent {
+  padding-top: 10px;
+  font-family: cambria;
+  font-size: 11.6px;
+  opacity: 0.69;
   margin: 10px 0;
   display: block;
 }
@@ -909,9 +913,20 @@ body {
   text-align: center;
 }
 
-.right-bar2ContentPrice-tag span {
+.right-bar2Content-left_Price-tag-main {
+  padding-top: 10px;
   font-family: cambria;
-  font-size: 12.5px;
+  margin: 10px 0;
+  display: block;
+  font-size: 1px;
+  color: #003d59;
+}
+
+.right-bar2Content-left_Price-tag-recent {
+  padding-top: 10px;
+  font-family: cambria;
+  font-size: 11.6px;
+  opacity: 0.69;
   margin: 10px 0;
   display: block;
 }
@@ -990,11 +1005,17 @@ body {
     font-size: 25px;
     font-family: "Reggae One", cursive;
   }
-  .right-bar2Content-left_Price-tag span {
+  .right-bar2Content-left_Price-tag-discount {
     margin: 10px;
   }
-  .right-bar2Content-left_Price-tag span h1 {
+  .right-bar2Content-left_Price-tag-discount h1 {
     font-size: 17px;
+  }
+  .right-bar2Content-left_Price-tag-main h1 {
+    font-size: 19px;
+  }
+  .right-bar2Content-left_Price-tag-recent h1 {
+    font-size: 15px;
   }
   .right-bar2Content-left_image {
     width: 80px;

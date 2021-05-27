@@ -78,7 +78,7 @@ body {
 
 .right-container {
   flex: 1 1 auto;
-  height: 100vh;
+  // height: 100vh;
   overflow-y: scroll;
 
   &_content-container {
@@ -111,7 +111,7 @@ body {
     }
 
     @include phone {
-      position: absolute;
+      // position: absolute;
       left: 10px;
       top: 40%;
     }
@@ -282,7 +282,7 @@ body {
             @include phone {
               text-align: center;
               display: block;
-              font-size: 15px;
+              font-size: 12.5px;
               // padding: 0px 25px;
             }
           }
@@ -322,7 +322,7 @@ body {
             @include phone {
               text-align: center;
               display: block;
-              font-size: 15px;
+              font-size: 12.5px;
               // padding: 0px 25px;
             }
           }
@@ -369,7 +369,7 @@ body {
 
   @include phone {
     padding: 10px;
-    flex-direction: column;
+    // flex-direction: column;
   }
 }
 
@@ -748,9 +748,20 @@ body {
   }
 
   &ContentPrice-tag {
-    & span {
+    &-main {
+      padding-top: 10px;
       font-family: cambria;
-      font-size: 12.5px;
+      font-size: 13px;
+      margin: 10px 0;
+      display: block;
+    }
+
+    &-recent {
+      // background-color: #222;
+      padding-top: 10px;
+      font-family: cambria;
+      font-size: 11.6px;
+      opacity: 0.69;
       margin: 10px 0;
       display: block;
     }
@@ -791,7 +802,6 @@ body {
         width: 100%;
         height: 40px;
         border-radius: 15px;
-
         background-color: #6ca6dd;
 
         outline: none;
@@ -811,6 +821,7 @@ body {
     display: none;
   }
 }
+
 .right-bar2 {
   display: none;
 
@@ -828,10 +839,26 @@ body {
     text-align: center;
   }
 
-  &ContentPrice-tag {
-    & span {
+  &Content-left_Price-tag {
+    &-main {
+      padding-top: 10px;
       font-family: cambria;
-      font-size: 12.5px;
+      margin: 10px 0;
+      display: block;
+      font-size: 1px;
+      color: #003d59;
+
+      & h1 {
+        // color: #5c95ca;
+      }
+    }
+
+    &-recent {
+      // background-color: #222;
+      padding-top: 10px;
+      font-family: cambria;
+      font-size: 11.6px;
+      opacity: 0.69;
       margin: 10px 0;
       display: block;
     }
@@ -840,12 +867,10 @@ body {
   &Content_name-tag {
     margin-bottom: 30px;
     font-size: 20px;
-
     font-family: "Reggae One", cursive;
   }
 
   &Content_image {
-    // border: 1px solid #000;
     width: 150px;
     height: 150px;
     margin-bottom: 10px;
@@ -881,6 +906,7 @@ body {
         font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
         font-weight: bold;
       }
+
       & button:active {
         background-color: #5e96ca;
       }
@@ -909,11 +935,23 @@ body {
         }
 
         &_Price-tag {
-          & span {
+          &-discount {
             margin: 10px;
 
             & h1 {
               font-size: 17px;
+            }
+          }
+
+          &-main {
+            & h1 {
+              font-size: 19px;
+            }
+          }
+
+          &-recent {
+            & h1 {
+              font-size: 15px;
             }
           }
         }

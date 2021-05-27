@@ -105,13 +105,13 @@ class ProductScreen {
 
                     <div class="right-barContentPrice-tag">
                      <span>
-                        <h1 style="  color: #003d59">Discount: ${this.product.discount_price}%</h1>
+                        <h1 style="color: #003d59">Discount: ${this.product.discount_price}%</h1>
                       </span>
-                      <span>
-                        <h1 style="color:#540a0a; text-decoration:line-through">Price: ${this.product.currency_symbol.naira} ${this.product.recent_price}</h1>
+                      <span class="right-barContentPrice-tag-recent">
+                        <h1  style="color:#540a0a; text-decoration:line-through">Price: ${this.product.currency_symbol.naira} ${this.product.recent_price}</h1>
                       </span>
-                      <span>
-                        <h1 style="  color: #003d59">Price: ${this.product.currency_symbol.naira} ${this.product.main_price}</h1>
+                      <span class="right-barContentPrice-tag-main">
+                        <h1  style="color: #003d59">Price: ${this.product.currency_symbol.naira} ${this.product.main_price}</h1>
                       </span>
                     </div>
 
@@ -140,7 +140,6 @@ class ProductScreen {
                   </div>
                 </section>
 
-
     <div class="right-bar2">
                   <div class="right-bar2Content">
                 <div class = "right-bar2Content-left">
@@ -149,15 +148,17 @@ class ProductScreen {
                     </div>
 
                     <div class="right-bar2Content-left_Price-tag">
-                     <span>
+                     <span class= "right-bar2Content-left_Price-tag-discount" >
                         <h1 style="  color: #003d59">Discount: ${this.product.discount_price}%</h1>
                       </span>
-                      <span>
+                      <span class = "right-bar2Content-left_Price-tag-recent">
                         <h1 style="color:#540a0a; text-decoration:line-through">Price: ${this.product.currency_symbol.naira} ${this.product.recent_price}</h1>
                       </span>
-                      <span>
-                        <h1 style="  color: #003d59">Price: ${this.product.currency_symbol.naira} ${this.product.main_price}</h1>
+
+                      <span class = "right-bar2Content-left_Price-tag-main">
+                        <h1>Price: ${this.product.currency_symbol.naira} ${this.product.main_price} </h1>
                       </span>
+
                     </div>
 
                     <div class="right-bar2Content-left_Product-details">
@@ -189,19 +190,13 @@ class ProductScreen {
                 </div>
 
                 </div>
-
-
-
-
-
                  `;
 
     this.product.related_items.forEach((related_itemsCard) => {
       console.log(related_itemsCard);
 
-      mainAreaRelatedcontent_div.innerHTML = ProductCards.getHTMLString(
-        related_itemsCard
-      );
+      mainAreaRelatedcontent_div.innerHTML =
+        ProductCards.getHTMLString(related_itemsCard);
     });
   }
 

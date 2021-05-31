@@ -1093,9 +1093,16 @@ body {
   padding:8px 2px;
   color: #e0dddd;
   font-weight: bold;
+  
 }
 
-.customer-care-li:hover{
+.customer-care-li a{
+  color: #e0dddd;
+  transition: color 0.5s;
+
+}
+
+.customer-care-li a:hover{
   color: #676969;
   cursor: pointer;
 }
@@ -1108,6 +1115,7 @@ body {
   padding:8px 0;
   color: #e0dddd;
   font-weight: bold;
+  transition: color 0.5s;
 }
 
 .about-li:hover{
@@ -1134,6 +1142,7 @@ body {
   border: none;
   color: #eee8e8;
   font-weight: bolder;
+  transition: background-color 0.5s;
 }
 
 .footer-latest-btn:hover{

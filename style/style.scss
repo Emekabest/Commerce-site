@@ -1066,7 +1066,6 @@ body {
 .footer-container{
   display: flex;
   width: 90%;
-  // border-bottom: 1px solid #464545;
   height: auto;
   justify-content: space-between;
   justify-content: space-around;
@@ -1187,6 +1186,10 @@ body {
 
   .label-logo-name{
     font-size: 8px;
+  }
+
+  .copyright-box-txt{
+    font-size: 10px;
   }
 
   .customer-care{

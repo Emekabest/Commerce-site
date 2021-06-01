@@ -294,7 +294,7 @@ const allProducts = [
       this.main_price = Math.floor(this.recent_price - getDiscount);
     },
   },
-
+  
   {
     id: 2,
     name: "Plane Polo Top",

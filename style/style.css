@@ -1180,7 +1180,13 @@ body {
   font-weight: bold;
 }
 
-.customer-care-li:hover {
+.customer-care-li a {
+  color: #e0dddd;
+  -webkit-transition: color 0.5s;
+  transition: color 0.5s;
+}
+
+.customer-care-li a:hover {
   color: #676969;
   cursor: pointer;
 }
@@ -1193,6 +1199,8 @@ body {
   padding: 8px 0;
   color: #e0dddd;
   font-weight: bold;
+  -webkit-transition: color 0.5s;
+  transition: color 0.5s;
 }
 
 .about-li:hover {
@@ -1219,6 +1227,8 @@ body {
   border: none;
   color: #eee8e8;
   font-weight: bolder;
+  -webkit-transition: background-color 0.5s;
+  transition: background-color 0.5s;
 }
 
 .footer-latest-btn:hover {
@@ -1262,6 +1272,9 @@ body {
   }
   .label-logo-name {
     font-size: 8px;
+  }
+  .copyright-box-txt {
+    font-size: 10px;
   }
   .customer-care {
     font-size: 10px;

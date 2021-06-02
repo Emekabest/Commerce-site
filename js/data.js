@@ -3,13 +3,14 @@ const Extras = {
     naira: "&#8358",
     dollar: "&#36",
   },
-  productCardHeaderName: "Related items",
+  productCard_relatedHeaderName: "Related items",
 };
 
 const allProducts = [
   {
     id: 1,
     name: "Bigman cloths",
+    ratings: 3,
     slug: "bigman-cloths",
     recent_price: 20000,
     discount_price: 20,
@@ -21,7 +22,7 @@ const allProducts = [
     },
     related_items: [
       {
-        header: { text: Extras.productCardHeaderName, href: "#" },
+        header: { text: Extras.productCard_relatedHeaderName, href: "#" },
 
         products: [
           //Related products here
@@ -29,6 +30,7 @@ const allProducts = [
           {
             id: 2,
             name: "Timberlin",
+            ratings: 3,
             slug: "timberlin",
             recent_price: 70,
             discount_price: 90,
@@ -41,7 +43,10 @@ const allProducts = [
 
             related_items: [
               {
-                header: { text: Extras.productCardHeaderName, href: "#" },
+                header: {
+                  text: Extras.productCard_relatedHeaderName,
+                  href: "#",
+                },
                 products: [],
               },
             ],
@@ -66,6 +71,7 @@ const allProducts = [
   {
     id: 2,
     name: "Shakky",
+    ratings: 3,
     slug: "shakky",
     recent_price: 70,
     discount_price: 90,
@@ -78,7 +84,7 @@ const allProducts = [
 
     related_items: [
       {
-        header: { text: Extras.productCardHeaderName, href: "#" },
+        header: { text: Extras.productCard_relatedHeaderName, href: "#" },
 
         products: [
           //Related products here
@@ -86,6 +92,7 @@ const allProducts = [
           {
             id: 2,
             name: "Timberlin",
+            ratings: 3,
             slug: "timberlin",
             recent_price: 70,
             discount_price: 90,
@@ -98,7 +105,10 @@ const allProducts = [
 
             related_items: [
               {
-                header: { text: Extras.productCardHeaderName, href: "#" },
+                header: {
+                  text: Extras.productCard_relatedHeaderName,
+                  href: "#",
+                },
                 products: [],
               },
             ],
@@ -124,6 +134,7 @@ const allProducts = [
   {
     id: 3,
     name: "Kins quatty wears",
+    ratings: 3,
     slug: "kins-quatty-wears",
     recent_price: 100,
     discount_price: 140,
@@ -136,7 +147,7 @@ const allProducts = [
 
     related_items: [
       {
-        header: { text: Extras.productCardHeaderName, href: "#" },
+        header: { text: Extras.productCard_relatedHeaderName, href: "#" },
 
         products: [
           //Related products here
@@ -144,6 +155,7 @@ const allProducts = [
           {
             id: 2,
             name: "Timberlin",
+            ratings: 3,
             slug: "timberlin",
             recent_price: 70,
             discount_price: 90,
@@ -156,7 +168,10 @@ const allProducts = [
 
             related_items: [
               {
-                header: { text: Extras.productCardHeaderName, href: "#" },
+                header: {
+                  text: Extras.productCard_relatedHeaderName,
+                  href: "#",
+                },
                 products: [],
               },
             ],
@@ -182,6 +197,7 @@ const allProducts = [
   {
     id: 4,
     name: "Broad arms",
+    ratings: 3,
     slug: "broad-arms",
     recent_price: 80,
     discount_price: 90,
@@ -194,7 +210,7 @@ const allProducts = [
 
     related_items: [
       {
-        header: { text: Extras.productCardHeaderName, href: "#" },
+        header: { text: Extras.productCard_relatedHeaderName, href: "#" },
 
         products: [
           //Related products here
@@ -202,6 +218,7 @@ const allProducts = [
           {
             id: 2,
             name: "Timberlin",
+            ratings: 3,
             slug: "timberlin",
             recent_price: 70,
             discount_price: 90,
@@ -214,7 +231,10 @@ const allProducts = [
 
             related_items: [
               {
-                header: { text: Extras.productCardHeaderName, href: "#" },
+                header: {
+                  text: Extras.productCard_relatedHeaderName,
+                  href: "#",
+                },
                 products: [],
               },
             ],
@@ -240,6 +260,7 @@ const allProducts = [
   {
     id: 1,
     name: "White glide",
+    ratings: 3,
     slug: "white-glide",
     recent_price: 40,
     discount_price: 60,
@@ -252,7 +273,7 @@ const allProducts = [
 
     related_items: [
       {
-        header: { text: Extras.productCardHeaderName, href: "#" },
+        header: { text: Extras.productCard_relatedHeaderName, href: "#" },
 
         products: [
           //Related products here
@@ -260,6 +281,7 @@ const allProducts = [
           {
             id: 2,
             name: "Timberlin",
+            ratings: 3,
             slug: "timberlin",
             recent_price: 70,
             discount_price: 90,
@@ -272,7 +294,10 @@ const allProducts = [
 
             related_items: [
               {
-                header: { text: Extras.productCardHeaderName, href: "#" },
+                header: {
+                  text: Extras.productCard_relatedHeaderName,
+                  href: "#",
+                },
                 products: [],
               },
             ],
@@ -294,10 +319,11 @@ const allProducts = [
       this.main_price = Math.floor(this.recent_price - getDiscount);
     },
   },
-  
+
   {
     id: 2,
     name: "Plane Polo Top",
+    ratings: 3,
     slug: "plane-polo-top",
     recent_price: 70,
     discount_price: 90,
@@ -310,7 +336,7 @@ const allProducts = [
 
     related_items: [
       {
-        header: { text: Extras.productCardHeaderName, href: "#" },
+        header: { text: Extras.productCard_relatedHeaderName, href: "#" },
 
         products: [
           //Related products here
@@ -318,6 +344,7 @@ const allProducts = [
           {
             id: 2,
             name: "Timberlin",
+            ratings: 3,
             slug: "timberlin",
             recent_price: 70,
             discount_price: 90,
@@ -330,7 +357,10 @@ const allProducts = [
 
             related_items: [
               {
-                header: { text: Extras.productCardHeaderName, href: "#" },
+                header: {
+                  text: Extras.productCard_relatedHeaderName,
+                  href: "#",
+                },
                 products: [],
               },
             ],
@@ -356,6 +386,7 @@ const allProducts = [
   {
     id: 3,
     name: "Net knit",
+    ratings: 3,
     slug: "net-knit",
     recent_price: 100,
     discount_price: 140,
@@ -368,7 +399,7 @@ const allProducts = [
 
     related_items: [
       {
-        header: { text: Extras.productCardHeaderName, href: "#" },
+        header: { text: Extras.productCard_relatedHeaderName, href: "#" },
 
         products: [
           //Related products here
@@ -376,6 +407,7 @@ const allProducts = [
           {
             id: 2,
             name: "Timberlin",
+            ratings: 3,
             slug: "timberlin",
             recent_price: 70,
             discount_price: 90,
@@ -388,7 +420,10 @@ const allProducts = [
 
             related_items: [
               {
-                header: { text: Extras.productCardHeaderName, href: "#" },
+                header: {
+                  text: Extras.productCard_relatedHeaderName,
+                  href: "#",
+                },
                 products: [],
               },
             ],
@@ -414,6 +449,7 @@ const allProducts = [
   {
     id: 4,
     name: "Yellow tikky",
+    ratings: 3,
     slug: "yellow-tikky",
     recent_price: 80,
     discount_price: 90,
@@ -426,7 +462,7 @@ const allProducts = [
 
     related_items: [
       {
-        header: { text: Extras.productCardHeaderName, href: "#" },
+        header: { text: Extras.productCard_relatedHeaderName, href: "#" },
 
         products: [
           //Related products here
@@ -434,6 +470,7 @@ const allProducts = [
           {
             id: 2,
             name: "Timberlin",
+            ratings: 3,
             slug: "timberlin",
             recent_price: 70,
             discount_price: 90,
@@ -446,7 +483,10 @@ const allProducts = [
 
             related_items: [
               {
-                header: { text: Extras.productCardHeaderName, href: "#" },
+                header: {
+                  text: Extras.productCard_relatedHeaderName,
+                  href: "#",
+                },
                 products: [],
               },
             ],
@@ -471,6 +511,7 @@ const allProducts = [
   {
     id: 1,
     name: "Armless ",
+    ratings: 3,
     slug: "armless",
     recent_price: 40,
     discount_price: 60,
@@ -483,7 +524,7 @@ const allProducts = [
 
     related_items: [
       {
-        header: { text: Extras.productCardHeaderName, href: "#" },
+        header: { text: Extras.productCard_relatedHeaderName, href: "#" },
 
         products: [
           //Related products here
@@ -491,6 +532,7 @@ const allProducts = [
           {
             id: 2,
             name: "Timberlin",
+            ratings: 3,
             slug: "timberlin",
             recent_price: 70,
             discount_price: 90,
@@ -503,7 +545,10 @@ const allProducts = [
 
             related_items: [
               {
-                header: { text: Extras.productCardHeaderName, href: "#" },
+                header: {
+                  text: Extras.productCard_relatedHeaderName,
+                  href: "#",
+                },
                 products: [],
               },
             ],
@@ -529,6 +574,7 @@ const allProducts = [
   {
     id: 2,
     name: "Corbs",
+    ratings: 3,
     slug: "corbs",
     recent_price: 70,
     discount_price: 90,
@@ -541,7 +587,7 @@ const allProducts = [
 
     related_items: [
       {
-        header: { text: Extras.productCardHeaderName, href: "#" },
+        header: { text: Extras.productCard_relatedHeaderName, href: "#" },
 
         products: [
           //Related products here
@@ -549,6 +595,7 @@ const allProducts = [
           {
             id: 2,
             name: "Timberlin",
+            ratings: 3,
             slug: "timberlin",
             recent_price: 70,
             discount_price: 90,
@@ -561,7 +608,10 @@ const allProducts = [
 
             related_items: [
               {
-                header: { text: Extras.productCardHeaderName, href: "#" },
+                header: {
+                  text: Extras.productCard_relatedHeaderName,
+                  href: "#",
+                },
                 products: [],
               },
             ],
@@ -587,6 +637,7 @@ const allProducts = [
   {
     id: 3,
     name: "Neck rolls",
+    ratings: 3,
     slug: "neck-rolls",
     recent_price: 100,
     discount_price: 140,
@@ -599,7 +650,7 @@ const allProducts = [
 
     related_items: [
       {
-        header: { text: Extras.productCardHeaderName, href: "#" },
+        header: { text: Extras.productCard_relatedHeaderName, href: "#" },
 
         products: [
           //Related products here
@@ -607,6 +658,7 @@ const allProducts = [
           {
             id: 2,
             name: "Timberlin",
+            ratings: 3,
             slug: "timberlin",
             recent_price: 70,
             discount_price: 90,
@@ -619,7 +671,10 @@ const allProducts = [
 
             related_items: [
               {
-                header: { text: Extras.productCardHeaderName, href: "#" },
+                header: {
+                  text: Extras.productCard_relatedHeaderName,
+                  href: "#",
+                },
                 products: [],
               },
             ],
@@ -645,6 +700,7 @@ const allProducts = [
   {
     id: 4,
     name: "Suit brandy",
+    ratings: 3,
     slug: "suit-brandy",
     recent_price: 80,
     discount_price: 90,
@@ -657,7 +713,7 @@ const allProducts = [
 
     related_items: [
       {
-        header: { text: Extras.productCardHeaderName, href: "#" },
+        header: { text: Extras.productCard_relatedHeaderName, href: "#" },
 
         products: [
           //Related products here
@@ -665,6 +721,7 @@ const allProducts = [
           {
             id: 2,
             name: "Timberlin",
+            ratings: 3,
             slug: "timberlin",
             recent_price: 70,
             discount_price: 90,
@@ -677,7 +734,10 @@ const allProducts = [
 
             related_items: [
               {
-                header: { text: Extras.productCardHeaderName, href: "#" },
+                header: {
+                  text: Extras.productCard_relatedHeaderName,
+                  href: "#",
+                },
                 products: [],
               },
             ],
@@ -705,6 +765,7 @@ const manStuffProducts = [
   {
     id: 1,
     name: "Bigman cloths",
+    ratings: 4,
     slug: "bigman-cloths",
     recent_price: 20000,
     discount_price: 20,
@@ -717,7 +778,7 @@ const manStuffProducts = [
 
     related_items: [
       {
-        header: { text: Extras.productCardHeaderName, href: "#" },
+        header: { text: Extras.productCard_relatedHeaderName, href: "#" },
 
         products: [
           //Related products here
@@ -725,6 +786,7 @@ const manStuffProducts = [
           {
             id: 2,
             name: "Timberlin",
+            ratings: 2.4,
             slug: "timberlin",
             recent_price: 70,
             discount_price: 90,
@@ -737,7 +799,10 @@ const manStuffProducts = [
 
             related_items: [
               {
-                header: { text: Extras.productCardHeaderName, href: "#" },
+                header: {
+                  text: Extras.productCard_relatedHeaderName,
+                  href: "#",
+                },
                 products: [],
               },
             ],
@@ -763,6 +828,7 @@ const manStuffProducts = [
   {
     id: 2,
     name: "Shakky",
+    ratings: 4.6,
     slug: "shakky",
     recent_price: 70,
     discount_price: 90,
@@ -775,7 +841,7 @@ const manStuffProducts = [
 
     related_items: [
       {
-        header: { text: Extras.productCardHeaderName, href: "#" },
+        header: { text: Extras.productCard_relatedHeaderName, href: "#" },
 
         products: [
           //Related products here
@@ -783,6 +849,7 @@ const manStuffProducts = [
           {
             id: 2,
             name: "Timberlin",
+            ratings: 3,
             slug: "timberlin",
             recent_price: 70,
             discount_price: 90,
@@ -795,7 +862,10 @@ const manStuffProducts = [
 
             related_items: [
               {
-                header: { text: Extras.productCardHeaderName, href: "#" },
+                header: {
+                  text: Extras.productCard_relatedHeaderName,
+                  href: "#",
+                },
                 products: [],
               },
             ],
@@ -821,6 +891,7 @@ const manStuffProducts = [
   {
     id: 3,
     name: "Kins quatty wears",
+    ratings: 3,
     slug: "kins-quatty-wears",
     recent_price: 100,
     discount_price: 140,
@@ -833,7 +904,7 @@ const manStuffProducts = [
 
     related_items: [
       {
-        header: { text: Extras.productCardHeaderName, href: "#" },
+        header: { text: Extras.productCard_relatedHeaderName, href: "#" },
 
         products: [
           //Related products here
@@ -841,6 +912,7 @@ const manStuffProducts = [
           {
             id: 2,
             name: "Timberlin",
+            ratings: 3,
             slug: "timberlin",
             recent_price: 70,
             discount_price: 90,
@@ -853,7 +925,10 @@ const manStuffProducts = [
 
             related_items: [
               {
-                header: { text: Extras.productCardHeaderName, href: "#" },
+                header: {
+                  text: Extras.productCard_relatedHeaderName,
+                  href: "#",
+                },
                 products: [],
               },
             ],
@@ -879,6 +954,7 @@ const manStuffProducts = [
   {
     id: 4,
     name: "Broad arms",
+    ratings: 3,
     slug: "broad-arms",
     recent_price: 80,
     discount_price: 90,
@@ -891,7 +967,7 @@ const manStuffProducts = [
 
     related_items: [
       {
-        header: { text: Extras.productCardHeaderName, href: "#" },
+        header: { text: Extras.productCard_relatedHeaderName, href: "#" },
 
         products: [
           //Related products here
@@ -899,6 +975,7 @@ const manStuffProducts = [
           {
             id: 2,
             name: "Timberlin",
+            ratings: 3,
             slug: "timberlin",
             recent_price: 70,
             discount_price: 90,
@@ -911,7 +988,10 @@ const manStuffProducts = [
 
             related_items: [
               {
-                header: { text: Extras.productCardHeaderName, href: "#" },
+                header: {
+                  text: Extras.productCard_relatedHeaderName,
+                  href: "#",
+                },
                 products: [],
               },
             ],
@@ -939,6 +1019,7 @@ const skirtProducts = [
   {
     id: 1,
     name: "White glide",
+    ratings: 3,
     slug: "white-glide",
     recent_price: 40,
     discount_price: 60,
@@ -951,7 +1032,7 @@ const skirtProducts = [
 
     related_items: [
       {
-        header: { text: Extras.productCardHeaderName, href: "#" },
+        header: { text: Extras.productCard_relatedHeaderName, href: "#" },
 
         products: [
           //Related products here
@@ -959,6 +1040,7 @@ const skirtProducts = [
           {
             id: 2,
             name: "Timberlin",
+            ratings: 3,
             slug: "timberlin",
             recent_price: 70,
             discount_price: 90,
@@ -971,7 +1053,10 @@ const skirtProducts = [
 
             related_items: [
               {
-                header: { text: Extras.productCardHeaderName, href: "#" },
+                header: {
+                  text: Extras.productCard_relatedHeaderName,
+                  href: "#",
+                },
                 products: [],
               },
             ],
@@ -997,6 +1082,7 @@ const skirtProducts = [
   {
     id: 2,
     name: "Plane Polo Top",
+    ratings: 3,
     slug: "plane-polo-top",
     recent_price: 70,
     discount_price: 90,
@@ -1009,7 +1095,7 @@ const skirtProducts = [
 
     related_items: [
       {
-        header: { text: Extras.productCardHeaderName, href: "#" },
+        header: { text: Extras.productCard_relatedHeaderName, href: "#" },
 
         products: [
           //Related products here
@@ -1017,6 +1103,7 @@ const skirtProducts = [
           {
             id: 2,
             name: "Timberlin",
+            ratings: 3,
             slug: "timberlin",
             recent_price: 70,
             discount_price: 90,
@@ -1029,7 +1116,10 @@ const skirtProducts = [
 
             related_items: [
               {
-                header: { text: Extras.productCardHeaderName, href: "#" },
+                header: {
+                  text: Extras.productCard_relatedHeaderName,
+                  href: "#",
+                },
                 products: [],
               },
             ],
@@ -1055,6 +1145,7 @@ const skirtProducts = [
   {
     id: 3,
     name: "Net knit",
+    ratings: 3,
     slug: "net-knit",
     recent_price: 100,
     discount_price: 140,
@@ -1067,7 +1158,7 @@ const skirtProducts = [
 
     related_items: [
       {
-        header: { text: Extras.productCardHeaderName, href: "#" },
+        header: { text: Extras.productCard_relatedHeaderName, href: "#" },
 
         products: [
           //Related products here
@@ -1075,6 +1166,7 @@ const skirtProducts = [
           {
             id: 2,
             name: "Timberlin",
+            ratings: 3,
             slug: "timberlin",
             recent_price: 70,
             discount_price: 90,
@@ -1087,7 +1179,10 @@ const skirtProducts = [
 
             related_items: [
               {
-                header: { text: Extras.productCardHeaderName, href: "#" },
+                header: {
+                  text: Extras.productCard_relatedHeaderName,
+                  href: "#",
+                },
                 products: [],
               },
             ],
@@ -1113,6 +1208,7 @@ const skirtProducts = [
   {
     id: 4,
     name: "Yellow tikky",
+    ratings: 3,
     slug: "yellow-tikky",
     recent_price: 80,
     discount_price: 90,
@@ -1125,7 +1221,7 @@ const skirtProducts = [
 
     related_items: [
       {
-        header: { text: Extras.productCardHeaderName, href: "#" },
+        header: { text: Extras.productCard_relatedHeaderName, href: "#" },
 
         products: [
           //Related products here
@@ -1133,6 +1229,7 @@ const skirtProducts = [
           {
             id: 2,
             name: "Timberlin",
+            ratings: 3,
             slug: "timberlin",
             recent_price: 70,
             discount_price: 90,
@@ -1145,7 +1242,10 @@ const skirtProducts = [
 
             related_items: [
               {
-                header: { text: Extras.productCardHeaderName, href: "#" },
+                header: {
+                  text: Extras.productCard_relatedHeaderName,
+                  href: "#",
+                },
                 products: [],
               },
             ],
@@ -1173,6 +1273,7 @@ const kidProducts = [
   {
     id: 1,
     name: "Armless ",
+    ratings: 3,
     slug: "armless",
     recent_price: 40,
     discount_price: 60,
@@ -1185,7 +1286,7 @@ const kidProducts = [
 
     related_items: [
       {
-        header: { text: Extras.productCardHeaderName, href: "#" },
+        header: { text: Extras.productCard_relatedHeaderName, href: "#" },
 
         products: [
           //Related products here
@@ -1193,6 +1294,7 @@ const kidProducts = [
           {
             id: 2,
             name: "Timberlin",
+            ratings: 3,
             slug: "timberlin",
             recent_price: 70,
             discount_price: 90,
@@ -1205,7 +1307,10 @@ const kidProducts = [
 
             related_items: [
               {
-                header: { text: Extras.productCardHeaderName, href: "#" },
+                header: {
+                  text: Extras.productCard_relatedHeaderName,
+                  href: "#",
+                },
                 products: [],
               },
             ],
@@ -1231,6 +1336,7 @@ const kidProducts = [
   {
     id: 2,
     name: "Corbs",
+    ratings: 3,
     slug: "corbs",
     recent_price: 70,
     discount_price: 90,
@@ -1243,7 +1349,7 @@ const kidProducts = [
 
     related_items: [
       {
-        header: { text: Extras.productCardHeaderName, href: "#" },
+        header: { text: Extras.productCard_relatedHeaderName, href: "#" },
 
         products: [
           //Related products here
@@ -1251,6 +1357,7 @@ const kidProducts = [
           {
             id: 2,
             name: "Timberlin",
+            ratings: 3,
             slug: "timberlin",
             recent_price: 70,
             discount_price: 90,
@@ -1263,7 +1370,10 @@ const kidProducts = [
 
             related_items: [
               {
-                header: { text: Extras.productCardHeaderName, href: "#" },
+                header: {
+                  text: Extras.productCard_relatedHeaderName,
+                  href: "#",
+                },
                 products: [],
               },
             ],
@@ -1289,6 +1399,7 @@ const kidProducts = [
   {
     id: 3,
     name: "Neck rolls",
+    ratings: 3,
     slug: "neck-rolls",
     recent_price: 100,
     discount_price: 140,
@@ -1301,7 +1412,7 @@ const kidProducts = [
 
     related_items: [
       {
-        header: { text: Extras.productCardHeaderName, href: "#" },
+        header: { text: Extras.productCard_relatedHeaderName, href: "#" },
 
         products: [
           //Related products here
@@ -1309,6 +1420,7 @@ const kidProducts = [
           {
             id: 2,
             name: "Timberlin",
+            ratings: 3,
             slug: "timberlin",
             recent_price: 70,
             discount_price: 90,
@@ -1321,7 +1433,10 @@ const kidProducts = [
 
             related_items: [
               {
-                header: { text: Extras.productCardHeaderName, href: "#" },
+                header: {
+                  text: Extras.productCard_relatedHeaderName,
+                  href: "#",
+                },
                 products: [],
               },
             ],
@@ -1347,6 +1462,7 @@ const kidProducts = [
   {
     id: 4,
     name: "Suit brandy",
+    ratings: 3,
     slug: "suit-brandy",
     recent_price: 80,
     discount_price: 90,
@@ -1359,7 +1475,7 @@ const kidProducts = [
 
     related_items: [
       {
-        header: { text: Extras.productCardHeaderName, href: "#" },
+        header: { text: Extras.productCard_relatedHeaderName, href: "#" },
 
         products: [
           //Related products here
@@ -1367,6 +1483,7 @@ const kidProducts = [
           {
             id: 2,
             name: "Timberlin",
+            ratings: 3,
             slug: "timberlin",
             recent_price: 70,
             discount_price: 90,
@@ -1379,7 +1496,10 @@ const kidProducts = [
 
             related_items: [
               {
-                header: { text: Extras.productCardHeaderName, href: "#" },
+                header: {
+                  text: Extras.productCard_relatedHeaderName,
+                  href: "#",
+                },
                 products: [],
               },
             ],

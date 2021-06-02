@@ -1,0 +1,61 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  text-decoration: none;
+}
+
+body {
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.main-container {
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  height: 100vh;
+}
+
+.main-container-login-container {
+  width: 400px;
+  -webkit-box-shadow: 0px 0px 5px rgba(197, 197, 197, 0.816);
+          box-shadow: 0px 0px 5px rgba(197, 197, 197, 0.816);
+  padding: 30px;
+}
+
+.main-container-login-containerInner .main-input {
+  margin: 20px 0;
+}
+
+.main-container-login-containerInner .main-input input {
+  height: 40px;
+  width: -webkit-fill-available;
+  padding: 5px;
+  font-size: 16.5px;
+  border-radius: 6.5px;
+  outline: none;
+  border: 1px solid #33333327;
+}
+
+.main-container-login-containerInner .main-input input:active {
+  background-color: #6ca6dd;
+  color: #fff;
+}
+
+.main-container-login-containerInner .main-input input:focus {
+  -webkit-box-shadow: 0px 0px 5px #6ca6dd5f;
+          box-shadow: 0px 0px 5px #6ca6dd5f;
+}
+
+.main-container-login-container .form-btn button {
+  cursor: pointer;
+  font-size: 15px;
+  height: 32px;
+  width: 100%;
+  background-color: #6ca6dd;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  text-shadow: 0px 0px 3px black;
+}
+/*# sourceMappingURL=signUp.css.map */

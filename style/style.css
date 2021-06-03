@@ -1197,13 +1197,16 @@ body {
 
 .about-li {
   padding: 8px 0;
-  color: #e0dddd;
   font-weight: bold;
+}
+
+.about-li a {
+  color: #e0dddd;
   -webkit-transition: color 0.5s;
   transition: color 0.5s;
 }
 
-.about-li:hover {
+.about-li a:hover {
   color: #676969;
   cursor: pointer;
 }

@@ -1113,12 +1113,16 @@ body {
 
 .about-li{
   padding:8px 0;
-  color: #e0dddd;
   font-weight: bold;
-  transition: color 0.5s;
 }
 
-.about-li:hover{
+.about-li a{
+  color: #e0dddd;
+  transition: color 0.5s;
+
+}
+
+.about-li a:hover{
   color: #676969;
   cursor: pointer;
 }
@@ -1136,7 +1140,7 @@ body {
 .footer-latest-btn{
   width: 150px;
   height: 50px;
-  background-color: rgb(209, 37, 37);
+  background-color: rgb(71, 164, 223);
   outline: none;
   border-radius: 3px;
   border: none;
@@ -1146,7 +1150,7 @@ body {
 }
 
 .footer-latest-btn:hover{
-  background-color: tomato;
+  background-color: rgb(14, 125, 194);
 }
 
 .copyrigth-box{

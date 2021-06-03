@@ -11,13 +11,15 @@
       integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
       crossorigin="anonymous"
     />
+
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&display=swap"
       rel="stylesheet"
     />
+
     <!-- <link rel="stylesheet" href=".style.css" /> -->
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./style/style.css" />
   </head>
   <body>
     <div class="container">
@@ -34,14 +36,16 @@
           <li class="navli-content"><a href="#">MATCHY-MATCHY</a></li>
           <li class="navli-content"><a href="#">CART</a></li>
           <li class="navli-content"><a href="#">EXCLUSIVE OFFER</a></li>
-          <li class="navli-content"><a href="#">CONTACT</a></li>
+          <li class="navli-content"><a href="contact.html">CONTACT</a></li>
         </ul>
       </nav>
 
       <div class="right-container">
-        <div class="content-container">
+        <div class="right-container_content-container">
           <div class="content">
-            <div class="content-headerbox">
+            <!--- Header Section below  -->
+
+            <header class="content-headerbox">
               <div class="content-headerbox-productName">
                 <div class="nav-open-btn">
                   <i class="fas fa-bars"></i>
@@ -64,13 +68,13 @@
                     <li><a href="">MATCHY-MATCHY</a></li>
                     <li><a href="">CARTS</a></li>
                     <li><a href="">EXCLUSIVE OFFER</a></li>
-                    <li><a href="">CONTACT</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
                   </ul>
                 </div>
 
                 <div class="content-headerbox-right-register">
                   <div class="content-headerbox-right-register-login">
-                    <a href="#">
+                    <a href="login-page.html">
                       <div
                         class="content-headerbox-right-register-login-user-fa"
                       >
@@ -88,7 +92,7 @@
                   </div>
 
                   <div class="content-headerbox-right-register-signUp">
-                    <a href="#">
+                    <a href="signUp-Page.html">
                       <div
                         class="content-headerbox-right-register-signUp-user-fa"
                       >
@@ -105,10 +109,76 @@
                   </div>
                 </div>
               </div>
-            </div>
+            </header>
 
             <!-- content goes here  -->
-            <main class="main-area"></main>
+            <div class="productMain-content">
+              <main class="main-area"></main>
+            </div>
+
+            <div class="footer">
+              <div class="footer-container">
+                <div class="label">
+                  <div class="label-logo-name">
+                    <h3 class="label-logo-name-h3">Richie'sRich</h3>
+                  </div>
+
+                  <div class="label-logo-media">
+                    <a href="" class="fab fa-facebook mediafont"></a>
+                    <a href="" class="fab fa-twitter mediafont"></a>
+                    <a href="" class="fab fa-instagram mediafont"></a>
+                    <a href="" class="fab fa-whatsapp mediafont"></a>
+                  </div>
+                </div>
+
+                <div class="customer-care">
+                  <div class="customer-care-support">
+                    <h5 class="customer-care-support-h5">Support</h5>
+                  </div>
+
+                  <ul class="customer-care-ul">
+                    <li class="customer-care-li"> <a href="contact.html">Contact Us</a> </li>
+                    <li class="customer-care-li"> <a href="">FAQ</a> </li>
+                    <li class="customer-care-li"> <a href="">Locate A Dealer</a> </li>
+                    <li class="customer-care-li"> <a href="">Delivery</a> </li>
+                    <li class="customer-care-li"> <a href="">Terms and conditions</a> </li>
+                    
+                  </ul>
+                </div>
+
+                <div class="about">
+                  <div class="about-name">
+                    <h5 class="about-name-h5">Richie'sRich</h5>
+                  </div>
+
+                  <ul class="about-ul">
+                    <li class="about-li"> <a href="">About Us</a> </li>
+                    <li class="about-li"> <a href="">Career</a> </li>
+                    <li class="about-li"> <a href="">Testimonials</a> </li>
+                    <li class="about-li"> <a href="">Access</a> </li>
+                    <li class="about-li"> <a href="">Exclusive Offers</a> </li>
+                  </ul>
+                </div>
+
+                <div class="footer-latest-register">
+                  <div class="footer-latest-div">
+                    <i class="far fa-envelope latestfont">
+                      <span
+                        >Stay up to date on the latest from Richies Rich</span
+                      >
+                    </i>
+                  </div>
+
+                  <div class="footer-latest-btn-div">
+                     <a href="signUp-Page.html"><button class="footer-latest-btn">Sign Up</button></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="copyrigth-box">
+              <p class="copyright-box-txt">&copy;copyright.2021</p>
+            </div>
           </div>
         </div>
       </div>
@@ -116,7 +186,5 @@
 
     <script src="./js/index.js" type="module"></script>
     <script src="./js/HomeScreen.js" type="module"></script>
-    <!-- <script src="./js/data.js" type="module"></script> -->
-    <!-- <script src="../js/app.js" type="module"></script> -->
   </body>
 </html>

@@ -6,7 +6,7 @@ const mainArea_main = document.querySelector(".main-area");
 const HomeScreen = {
   //Method.....
 
-  render() {
+  render: () => {
     const sections = [
       {
         header: { text: "Man Stuff", href: "#" },
@@ -21,10 +21,6 @@ const HomeScreen = {
         products: kidProducts,
       },
     ];
-
-    // sections.forEach((section) => {
-    //   mainArea_main.innerHTML += ProductCards.getHTMLString(section);
-    // });
 
     for (let i = 0; i < sections.length; i++) {
       mainArea_main.innerHTML += ProductCards.getHTMLString(sections[i]);

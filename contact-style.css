@@ -866,7 +866,6 @@ body {
 @media screen and (max-width: 530px) {
   .contact-box-guide-call-box {
     height: auto;
-    padding: 0px 13px;
   }
   .contact-guide {
     height: 30vh;

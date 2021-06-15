@@ -3,12 +3,9 @@ class ProductCards {
     const getCardsHTMLString = () => {
       let cardsHTMLString = "";
 
-      const font = "fas fa-star";
-
       // Build cards into string => cardsHTMLString
 
       products.forEach((product) => {
-        // product.getDiscount();
         product.getDiscount();
         cardsHTMLString += `
             <div class="container-sales">
@@ -84,12 +81,6 @@ class ProductCards {
             </div>
         `;
       });
-
-      {
-        /* <i class="fas fa-star-half-alt"></i>; */
-        // <i class="fas fa-star"></i>;
-        // <i class="far fa-star"></i>;
-      }
 
       return cardsHTMLString;
     };

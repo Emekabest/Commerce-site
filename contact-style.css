@@ -841,7 +841,7 @@ body {
 }
 
 .contact-box-guide-call-a-1 {
-  background-color: #ec2828;
+  background-color: #6ca6dd;
   padding: 8px 15px;
   width: auto;
   height: auto;
@@ -856,7 +856,7 @@ body {
 }
 
 .contact-box-guide-call-a-1:hover {
-  background-color: #fa4d2e;
+  background-color: #0e7dc2;
 }
 
 .contact-box-guide-call-a {
@@ -866,7 +866,6 @@ body {
 @media screen and (max-width: 530px) {
   .contact-box-guide-call-box {
     height: auto;
-    padding: 0px 13px;
   }
   .contact-guide {
     height: 30vh;
